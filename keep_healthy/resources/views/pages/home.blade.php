@@ -16,9 +16,9 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="text-bg">
-                    <span>The Best</span>
-                    <h1>MUSIC BAND EVER</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+                    <span>Keep Healthy</span>
+                    <h1>Anda Butuh Kami Ada </h1>
+                    <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan mudah dan cepat hanya dengan melakukan beberapa klik pada smartphone anda. Maka kami akan siap datang kerumah anda dengan segera</p>
                     <a href="#">Music & Entertainment</a> <a href="#">Buy Tickets </a>
                   </div>
                 </div>
@@ -34,9 +34,9 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="text-bg">
-                      <span>The Best</span>
-                    <h1>MUSIC BAND EVER</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+                      <span>Keep Healthy</span>
+                    <h1>Anda Butuh Kami Ada</h1>
+                    <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan mudah dan cepat hanya dengan melakukan beberapa klik pada smartphone anda. Maka kami akan siap datang kerumah anda dengan segera</p>
                     <a href="#">Music & Entertainment</a><a href="#">Buy Tickets </a>
                   </div>
                 </div>
@@ -55,9 +55,9 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="text-bg">
-                      <span>The Best</span>
-                    <h1>MUSIC BAND EVER</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+                      <span>Keep Healthy</span>
+                    <h1>Anda Butuh Kami Ada</h1>
+                    <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan mudah dan cepat hanya dengan melakukan beberapa klik pada smartphone anda. Maka kami akan siap datang kerumah anda dengan segera</p>
                     <a href="#">Music & Entertainment</a> <a href="#">Buy Tickets </a>
                   </div>
                 </div>
