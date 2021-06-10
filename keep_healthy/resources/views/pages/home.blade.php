@@ -127,36 +127,34 @@
 </div>
 <!-- end upcoming -->
 
-<!-- upcoming2 -->
-<div id="upcoming" class="upcoming">
-<div class="container-fluid padding_left3">
+<!-- about2  -->
+<div id="about" class="about">
+<div class="container">
   <div class="row display_boxflex">
-    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-     <div class="box_text">
-        <div class="titlepage">
-          <h2><br>Bersihkan Kamar Mandi</h2>
-        </div>
-        <p>Kami juga memiliki layanan untuk membersihkan kamar mandi di rumah anda sehingga anda juga dapat memilih layanan ini saat anda membutuhkannya</p>
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="about-box">
+        <h2>Bersihkan ruangan Rumah</h2>
+        <p>Dan juga terdapat layanan untuk membersihkan ruangan yang terdapat pada rumah anda sehingga anda juga dapat memilih layanan ini saat anda membutuhkannya</p>
         <a href="Javascript:void(0)">Read More</a>
       </div>
-    </div> 
-  
-    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 border_right">
-       <div class="upcomimg">
-         <figure><img src="images/up.jpg" alt="#"/></figure>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="about-box2">
+        <figure><img src="images/about2.png" alt="#" /></figure>
       </div>
-        </div>
-</div>
+    </div>
   </div>
+
 </div>
-<!-- end upcoming2 -->
+</div>
+<!-- end abouts -->
 
 
 
 <!-- Gallery -->
 
 
-<div id="gallery" class="Gallery">
+<!-- <div id="gallery" class="Gallery">
 <div class="container"> 
   <div class="row display_boxflex">
     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
@@ -226,7 +224,7 @@
     </div>
   </div>
 </div>
-</div>
+</div> -->
 
 <!-- end Gallery --> 
 @stop

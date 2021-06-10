@@ -48,9 +48,9 @@
             <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col logo_section">
               <div class="full">
                 <div class="center-desk">
-                  <div class="logo">
+                  <!-- <div class="logo">
                     <a href="index.html"><img src="images/logo.png" alt="#" /></a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@
                     <ul class="menu-area-main">
                       <li class="active"> <a href="{{ url('/') }}">Halaman Awal</a> </li>
                   
-                      <li> <a href="about.html">Menjadi Mitra</a> </li>
+                      <li> <a href="about.html ">Menjadi Mitra</a> </li>
                       <li> <a href="concerts.html">Artikel </a> </li>
       
                         <li > <a   href="#contact">login</a> </li>
