@@ -17,9 +17,9 @@
                 <div class="col-md-12">
                   <div class="text-bg">
                     <span>Keep Healthy</span>
-                    <h1>Anda Butuh Kami Ada </h1>
+                    <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
                     <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan mudah dan cepat hanya dengan melakukan beberapa klik pada smartphone anda. Maka kami akan siap datang kerumah anda dengan segera</p>
-                    <a href="#">Music & Entertainment</a> <a href="#">Buy Tickets </a>
+                    <a href="#"><img style=" width: 120px; height: 120px;" src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a> 
                   </div>
                 </div>
               </div>
@@ -35,9 +35,9 @@
                 <div class="col-md-12">
                   <div class="text-bg">
                       <span>Keep Healthy</span>
-                    <h1>Anda Butuh Kami Ada</h1>
+                    <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
                     <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan mudah dan cepat hanya dengan melakukan beberapa klik pada smartphone anda. Maka kami akan siap datang kerumah anda dengan segera</p>
-                    <a href="#">Music & Entertainment</a><a href="#">Buy Tickets </a>
+                    <a href="#"><img style=" width: 120px; height: 120px;" src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a> 
                   </div>
                 </div>
 
@@ -56,9 +56,9 @@
                 <div class="col-md-12">
                   <div class="text-bg">
                       <span>Keep Healthy</span>
-                    <h1>Anda Butuh Kami Ada</h1>
+                    <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
                     <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan mudah dan cepat hanya dengan melakukan beberapa klik pada smartphone anda. Maka kami akan siap datang kerumah anda dengan segera</p>
-                    <a href="#">Music & Entertainment</a> <a href="#">Buy Tickets </a>
+                    <a href="#"><img style=" width: 120px; height: 120px;" src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a> 
                   </div>
                 </div>
               </div>
@@ -67,14 +67,7 @@
         </div>
       </div>
    
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-  <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
    
-  </a>
-  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-    
-  </a>
  </div>
   
 
@@ -91,8 +84,8 @@
   <div class="row display_boxflex">
     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
       <div class="about-box">
-        <h2>About Us</h2>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+        <h2>Membersihkan Halaman Depan</h2>
+        <p>Salah satu layanan kami adalah dapat membersihkan halaman depan anda dan anda dapat memilih layanan ini saat anda membutuhkannya</p>
         <a href="Javascript:void(0)">Read More</a>
       </div>
     </div>
@@ -117,9 +110,9 @@
     <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
      <div class="box_text">
         <div class="titlepage">
-          <h2>Upcoming Concerts</h2>
+          <h2><br>Bersihkan Kamar Mandi</h2>
         </div>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it lookIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+        <p>Kami juga memiliki layanan untuk membersihkan kamar mandi di rumah anda sehingga anda juga dapat memilih layanan ini saat anda membutuhkannya</p>
         <a href="Javascript:void(0)">Read More</a>
       </div>
     </div> 
@@ -133,6 +126,32 @@
   </div>
 </div>
 <!-- end upcoming -->
+
+<!-- upcoming2 -->
+<div id="upcoming" class="upcoming">
+<div class="container-fluid padding_left3">
+  <div class="row display_boxflex">
+    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+     <div class="box_text">
+        <div class="titlepage">
+          <h2><br>Bersihkan Kamar Mandi</h2>
+        </div>
+        <p>Kami juga memiliki layanan untuk membersihkan kamar mandi di rumah anda sehingga anda juga dapat memilih layanan ini saat anda membutuhkannya</p>
+        <a href="Javascript:void(0)">Read More</a>
+      </div>
+    </div> 
+  
+    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 border_right">
+       <div class="upcomimg">
+         <figure><img src="images/up.jpg" alt="#"/></figure>
+      </div>
+        </div>
+</div>
+  </div>
+</div>
+<!-- end upcoming2 -->
+
+
 
 <!-- Gallery -->
 
