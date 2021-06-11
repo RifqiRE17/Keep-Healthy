@@ -26,6 +26,14 @@
   <!-- Tweaks for older IEs-->
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <!-- Awal Dropdown -->
+  <link rel="stylesheet" href="dropdown/fonts/icomoon/style.css">
+
+<link rel="stylesheet" href="dropdown/css/owl.carousel.min.css">
+
+<!-- Style -->
+<link rel="stylesheet" href="dropdown/css/style.css">
+  <!-- Akhir Dropdown -->
 
   
 <!--[if lt IE 9]>
@@ -66,9 +74,8 @@
                   
                       <li> <a href="about.html ">Menjadi Mitra</a> </li>
                       <li> <a href="concerts.html">Artikel </a> </li>
-                         <li > <a  href="#contact">login</a> </li> 
+                         <li > <a  href="#contact">keluar</a> </li>
                       <li  > <a  class="last_manu" href="#"></a> </li> 
-                      
                      </ul>
                    </nav>
                 
