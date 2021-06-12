@@ -80,7 +80,7 @@
 
                     <div class="input-group mb-3">
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
-                            placeholder="Email" required autocomplete="new-password">
+                            placeholder="Konfirmasi Password" required autocomplete="new-password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
