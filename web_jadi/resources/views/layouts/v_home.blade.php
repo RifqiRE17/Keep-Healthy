@@ -96,7 +96,7 @@
                     <h2>Membersihkan Halaman Depan</h2>
                     <p>Salah satu layanan kami adalah dapat membersihkan halaman depan anda dan anda dapat memilih
                         layanan ini saat anda membutuhkannya</p>
-                    <a href="Javascript:void(0)">Read More</a>
+                    <!-- <a href="Javascript:void(0)">Read More</a> -->
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -124,7 +124,7 @@
                     </div>
                     <p>Kami juga memiliki layanan untuk membersihkan kamar mandi di rumah anda sehingga anda juga dapat
                         memilih layanan ini saat anda membutuhkannya</p>
-                    <a href="Javascript:void(0)">Read More</a>
+                    <!-- <a href="Javascript:void(0)">Read More</a> -->
                 </div>
             </div>
 
@@ -145,11 +145,10 @@
             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                 <div class="box_text">
                     <div class="titlepage">
-                        <h2><br>Bersihkan Kamar Mandi</h2>
+                        <h2><br>Bersihkan Ruangan Rumah</h2>
                     </div>
-                    <p>Kami juga memiliki layanan untuk membersihkan kamar mandi di rumah anda sehingga anda juga dapat
-                        memilih layanan ini saat anda membutuhkannya</p>
-                    <a href="Javascript:void(0)">Read More</a>
+                    <p>Dan juga terdapat layanan untuk membersihkan ruangan yang terdapat pada rumah anda sehingga anda juga dapat memilih layanan ini saat anda membutuhkannya</p>
+                    <!-- <a href="Javascript:void(0)">Read More</a> -->
                 </div>
             </div>
 
@@ -235,7 +234,7 @@
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page
                         when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                         distribution of letters, as opposed to usin</p>
-                    <a href="Javascript:void(0)">Read More</a>
+                    <!-- <a href="Javascript:void(0)">Read More</a> -->
                 </div>
             </div>
         </div>
