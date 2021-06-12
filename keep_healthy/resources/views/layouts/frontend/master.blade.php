@@ -26,6 +26,7 @@
   <!-- Tweaks for older IEs-->
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -64,10 +65,8 @@
                   
                       <li> <a href="about.html ">Menjadi Mitra</a> </li>
                       <li> <a href="concerts.html">Artikel </a> </li>
-      
-                        <li > <a   href="#contact">login</a> </li>
-                      <li  > <a  class="last_manu" href="#"><img src="images/search_icon.png" alt="#" /></a> </li>
-                      
+                      <li > <a  href="#contact">keluar</a> </li>
+                      <li  > <a  class="last_manu" href="#"></a> </li> 
                      </ul>
                    </nav>
                 
