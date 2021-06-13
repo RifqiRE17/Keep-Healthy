@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome1');
 });
 
-Route::get('home', function () {
+Route::get('admin', function () {
     return view('main');
 });
 
@@ -98,3 +98,11 @@ Route::post('/simpan-kantor','UploadkantorController@store')->name('simpan-kanto
 Route::get('/edit-kantor/{id}', 'UploadkantorController@edit')->name('edit-kantor');
 Route::post('/update-kantor/{id}', 'UploadkantorController@update')->name('update-kantor');
 Route::get('/delete-kantor/{id}', 'UploadkantorController@destroy')->name('delete-kantor');
+
+
+Route::get('/data-artikel','UploadartikelController@index')->name('data-artikel');
+Route::get('/create-artikel','UploadartikelController@create')->name('create-artikel');
+Route::post('/simpan-artikel','UploadartikelController@store')->name('simpan-artikel');
+Route::get('/edit-artikel/{id}', 'UploadartikelController@edit')->name('edit-artikel');
+Route::post('/update-artikel/{id}', 'UploadartikelController@update')->name('update-artikel');
+Route::get('/delete-artikel/{id}', 'UploadartikelController@destroy')->name('delete-artikel');
