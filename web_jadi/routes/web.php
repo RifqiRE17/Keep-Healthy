@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/dashboard', [DashboardController::class,'dashboard']);
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', function () {
@@ -118,3 +120,10 @@ Route::post('/simpan-artikel','UploadartikelController@store')->name('simpan-art
 Route::get('/edit-artikel/{id}', 'UploadartikelController@edit')->name('edit-artikel');
 Route::post('/update-artikel/{id}', 'UploadartikelController@update')->name('update-artikel');
 Route::get('/delete-artikel/{id}', 'UploadartikelController@destroy')->name('delete-artikel');
+
+// route untuk mitra
+// ========================================================================
+Route::get('/mitra/register', [MitraController::class, 'formAddMitra']);
+Route::post('/mitra/register', [MitraController::class, 'registerMitra']);
+Route::get('/mitra/delete/{id}', [MitraController::class, 'deleteMitra']);
+Route::get('/dashboard/mitra', [MitraController::class, 'index']);
