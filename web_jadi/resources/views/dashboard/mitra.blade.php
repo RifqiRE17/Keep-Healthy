@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Laravel SB Admin 2">
-        <meta name="author" content="Alejandro RH">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Laravel SB Admin 2">
+    <meta name="author" content="Alejandro RH">
 
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Fonts -->
-        <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
-        <!-- Styles -->
-        <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <!-- Styles -->
+    <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 
-        <!-- Favicon -->
-        <link href="{{ asset('img/favicon.png') }}" rel="icon" type="image/png">
+    <!-- Favicon -->
+    <link href="{{ asset('img/favicon.png') }}" rel="icon" type="image/png">
 
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
 
-    </head>
+</head>
 
 <body id="page-top">
     <!-- Page Wrapper -->
@@ -94,8 +96,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -139,7 +140,7 @@
                                     <tr>
                                         <th>NAMA</th>
                                         <th>ALAMAT</th>
-                                        <th>EMAIL</th>
+                                        <th>NOMOR</th>
                                         <th>KTP</th>
                                         <th>AKSI</th>
                                     </tr>
@@ -149,12 +150,14 @@
                                     <tr>
                                         <td>{{ $item['nama'] }}</td>
                                         <td>{{ $item['alamat'] }}</td>
-                                        <td>{{$item['email']}}</td>
+                                        <td>{{$item['nomor']}}</td>
                                         <td>
-                                            <img src="{{ url('storage/'.$item['ktp']) }}" alt="ktp" class="img-fluid" width="50px">
+                                            <img src="{{ url('storage/'.$item['ktp']) }}" alt="ktp" class="img-fluid"
+                                                width="50px">
                                         </td>
                                         <td>
-                                            <a href="/mitra/delete/{{$item['id']}}" class="btn btn-sm btn-danger">HAPUS</a>
+                                            <a href="/mitra/delete/{{$item['id']}}"
+                                                class="btn btn-sm btn-danger">HAPUS</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -213,12 +216,13 @@
     <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
     <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js">
+    </script>
 
     <script>
-        $(document).ready( function () {
-            $('#table_id').DataTable();
-        } );
+    $(document).ready(function() {
+        $('#table_id').DataTable();
+    });
     </script>
 
 </body>
