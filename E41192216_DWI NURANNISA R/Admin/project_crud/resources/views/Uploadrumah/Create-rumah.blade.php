@@ -48,21 +48,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="card-body">
                 <form action="{{ route('simpan-rumah') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
-                <div class="form-group">
-                    <label class="control-label" for="nama">Nama Admin</label>
-                    <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama">
-                  </div>
+               
                   <div class="form-group">
                   <label class="control-label" for="hargalayanan">Harga Layanan</label>
-                    <input type="text" id="hargalayanan" name="hargalayanan" class="form-control" placeholder="Harga Layanan">
+                  <input type="text" id="hargalayanan" name="hargalayanan" placeholder="Harga Layanan" class="form-control
+                    @error('hargalayanan')
+                    is-invalid @enderror" autofoucus>
+                    @error('hargalayanan')
+                    <div class="invalid-feedback">{{ $message}}</div>
+                    @enderror
                   </div>
-                  <div class="form-group">
-                  <label class="control-label" for="alamat">Alamat</label>
-                    <input type="text" id="alamat" name="alamat" class="form-control" placeholder="Alamat">
-                  </div>
+                 
                   <div class="form-group">
                   <label class="control-label" for="upload_foto">Upload Foto</label>
-                    <input type="file" id="upload_foto" name="upload_foto" class="form-control">
+                  <input type="file" id="upload_foto" name="upload_foto" class="form-control @error('upload_foto')
+                    is-invalid @enderror" autofoucus>
+                    @error('upload_foto')
+                    <div class="invalid-feedback">{{ $message}}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
                     <button type="submit" class="btn btn-success">Simpan Data</button>

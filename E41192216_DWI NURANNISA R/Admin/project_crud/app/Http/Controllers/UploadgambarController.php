@@ -35,9 +35,17 @@ class UploadgambarController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'nama' => 'required|min:3',
+            'jabatan' => 'required',
+            'alamat' => 'required',
+            'upload_foto' => 'required',
+            'upload_ktp' => 'required',
+        ]);
+
         $nm = $request->upload_foto;
         $nm = $request->upload_ktp;
-        $namaFile = $nm->getClientOriginalName();
+        $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
 
             $dtUpload = new Uploadgambar;
             $dtUpload->nama = $request->nama;
@@ -84,6 +92,14 @@ class UploadgambarController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'nama' => 'required|min:3',
+            'jabatan' => 'required',
+            'alamat' => 'required',
+            'upload_foto' => 'required',
+            'upload_ktp' => 'required',
+        ]);
+        
         $ubah = Uploadgambar::findorfail($id);
         $awal = $ubah->upload_foto;
         $awal = $ubah->upload_ktp;

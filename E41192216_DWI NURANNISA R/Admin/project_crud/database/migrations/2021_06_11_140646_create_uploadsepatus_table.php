@@ -15,9 +15,7 @@ class CreateUploadsepatusTable extends Migration
     {
         Schema::create('uploadsepatu', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->String('nama', 100);
             $table->String('hargalayanan', 100);
-            $table->String('alamat', 100);
             $table->String('upload_foto', 100);
             $table->timestamps();
         });

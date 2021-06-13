@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Uploadkantor;
 class UploadkantorController extends Controller
 {
@@ -35,13 +36,16 @@ class UploadkantorController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'hargalayanan' => 'required',
+            'upload_foto' => 'required',
+        ]);
+
         $nm = $request->upload_foto;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
 
             $dtUpload = new Uploadkantor;
-            $dtUpload->nama = $request->nama;
             $dtUpload->hargalayanan = $request->hargalayanan;
-            $dtUpload->alamat = $request->alamat;
             $dtUpload->upload_foto = $namaFile;
             
 
@@ -83,14 +87,17 @@ class UploadkantorController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'hargalayanan' => 'required',
+            'upload_foto' => 'required',
+        ]);
+        
         $ubah = Uploadkantor::findorfail($id);
         $awal = $ubah->upload_foto;
         
 
         $dt = [
-            'nama' => $request['nama'],
             'hargalayanan' => $request['hargalayanan'],
-            'alamat' => $request['alamat'],
             'upload_foto' => $awal,
             
         ];

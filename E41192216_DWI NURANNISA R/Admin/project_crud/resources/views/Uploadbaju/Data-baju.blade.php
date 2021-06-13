@@ -46,21 +46,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="{{ route('create-baju') }}" class="btn btn-success">Tambah Data <i class="fas fa-plus-square"></i></a>
                 </div>
                 </div>
+           
 
             <div class="card-body">
                 <table class="table table-bordered">
                     <tr>
-                        <th>Nama</th>
                         <th>Harga Layanan</th>
-                        <th>Alamat</th>
                         <th>Upload Foto</th>
                         <th>Aksi</th>
                     </tr>
                     @foreach ($dataBaju as $item)
                     <tr>
-                        <td>{{ $item->nama }}</td>
                         <td>{{ $item->hargalayanan }}</td>
-                        <td>{{ $item->alamat }}</td>
                         <td >
                         <a href="{{ asset('baju/'. $item->upload_foto ) }}" target="_blank" rel="noopener noreferrer">Lihat Foto</a>
                         </td>

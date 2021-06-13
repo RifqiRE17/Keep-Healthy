@@ -9,5 +9,5 @@ class Uploadrumah extends Model
     protected $table = "uploadrumah";
     protected $primaryKey = "id";
     protected $fillable = [
-      'id','nama', 'hargalayanan', 'alamat', 'upload_foto',];
+      'id', 'hargalayanan', 'upload_foto'];
 }

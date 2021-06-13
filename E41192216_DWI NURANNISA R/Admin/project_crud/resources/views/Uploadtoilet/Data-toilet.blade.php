@@ -50,17 +50,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="card-body">
                 <table class="table table-bordered">
                     <tr>
-                        <th>Nama</th>
+                        
                         <th>Harga Layanan</th>
-                        <th>Alamat</th>
                         <th>Upload Foto</th>
                         <th>Aksi</th>
                     </tr>
                     @foreach ($dataToilet as $item)
                     <tr>
-                        <td>{{ $item->nama }}</td>
+                        
                         <td>{{ $item->hargalayanan }}</td>
-                        <td>{{ $item->alamat }}</td>
                         <td >
                         <a href="{{ asset('toilet/'. $item->upload_foto ) }}" target="_blank" rel="noopener noreferrer">Lihat Foto</a>
                         </td>

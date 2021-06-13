@@ -50,21 +50,43 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label class="control-label" for="nama">Nama Admin</label>
-                    <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama">
+                    <input type="text" id="nama" name="nama" placeholder="Nama" class="form-control @error('nama')
+                    is-invalid @enderror" autofocus>
+                    @error('nama')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
                   <label class="control-label" for="jabatan">Jabatan</label>
-                    <input type="text" id="jabatan" name="jabatan" class="form-control" placeholder="Jabatan">
+                    <input type="text" id="jabatan" name="jabatan" placeholder="Jabatan" class="form-control @error('jabatan')
+                    is-invalid @enderror" autofocus>
+                    @error('jabatan')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
                   <label class="control-label" for="alamat">Alamat</label>
-                    <input type="text" id="alamat" name="alamat" class="form-control" placeholder="Alamat">
+                    <input type="text" id="alamat" name="alamat" placeholder="Alamat" class="form-control @error('alamat')
+                    is-invalid @enderror" autofocus>
+                    @error('alamat')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
-                    <input type="file" id="upload_foto" name="upload_foto" class="form-control">
+                  <label class="control-label" for="upload_foto">Upload Foto</label>
+                    <input type="file" id="upload_foto" name="upload_foto" class="form-control @error('upload_foto')
+                    is-invalid @enderror" autofoucus>
+                    @error('upload_foto')
+                    <div class="invalid-feedback">{{ $message}}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
-                    <input type="file" id="upload_ktp" name="upload_ktp" class="form-control">
+                  <label class="control-label" for="upload_foto">Upload KTP</label>
+                    <input type="file" id="upload_ktp" name="upload_ktp" class="form-control @error('upload_ktp')
+                    is-invalid @enderror" autofoucus>
+                    @error('upload_ktp')
+                    <div class="invalid-feedback">{{ $message}}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
                     <button type="submit" class="btn btn-success">Simpan Data</button>

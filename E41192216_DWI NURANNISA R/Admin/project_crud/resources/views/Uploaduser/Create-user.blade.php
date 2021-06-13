@@ -49,22 +49,47 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <form action="{{ route('simpan-user') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <label class="control-label" for="nama">Nama Admin</label>
-                    <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama">
+                    <label class="control-label" for="nama">Nama User</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama" class="form-control
+                    @error('nama')
+                    is-invalid @enderror" autofoucus>
+                    @error('nama')
+                    <div class="invalid-feedback">{{ $message}}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
                   <label class="control-label" for="jabatan">Jenis Kelamin</label>
-                    <input type="text" id="jeniskelmain" name="jeniskelamin" class="form-control" placeholder="Jenis Kelamin">
+                  <input type="text" id="jeniskelamin" name="jeniskelamin" placeholder="Jenis Kelamin" class="form-control
+                    @error('jeniskelamin')
+                    is-invalid @enderror" autofoucus>
+                    @error('jeniskelamin')
+                    <div class="invalid-feedback">{{ $message}}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
                   <label class="control-label" for="alamat">Alamat</label>
-                    <input type="text" id="alamat" name="alamat" class="form-control" placeholder="Alamat">
+                  <input type="text" id="alamat" name="alamat" placeholder="Alamat" class="form-control
+                    @error('alamat')
+                    is-invalid @enderror" autofoucus>
+                    @error('alamat')
+                    <div class="invalid-feedback">{{ $message}}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
-                    <input type="file" id="upload_foto" name="upload_foto" class="form-control">
+                  <label class="control-label" for="upload_foto">Upload Foto</label>
+                  <input type="file" id="upload_foto" name="upload_foto" class="form-control @error('upload_foto')
+                    is-invalid @enderror" autofoucus>
+                    @error('upload_foto')
+                    <div class="invalid-feedback">{{ $message}}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
-                    <input type="file" id="upload_ktp" name="upload_ktp" class="form-control">
+                  <label class="control-label" for="upload_ktp">Upload KTP</label>
+                  <input type="file" id="upload_ktp" name="upload_ktp" class="form-control @error('upload_ktp')
+                    is-invalid @enderror" autofoucus>
+                    @error('upload_ktp')
+                    <div class="invalid-feedback">{{ $message}}</div>
+                    @enderror
                   </div>
                   <div class="form-group">
                     <button type="submit" class="btn btn-success">Simpan Data</button>

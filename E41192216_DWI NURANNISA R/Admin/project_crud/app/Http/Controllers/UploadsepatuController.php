@@ -35,13 +35,16 @@ class UploadsepatuController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'hargalayanan' => 'required',
+            'upload_foto' => 'required',
+        ]);
+
         $nm = $request->upload_foto;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
 
             $dtUpload = new Uploadsepatu;
-            $dtUpload->nama = $request->nama;
             $dtUpload->hargalayanan = $request->hargalayanan;
-            $dtUpload->alamat = $request->alamat;
             $dtUpload->upload_foto = $namaFile;
             
 
@@ -83,14 +86,17 @@ class UploadsepatuController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'hargalayanan' => 'required',
+            'upload_foto' => 'required',
+        ]);
+        
         $ubah = Uploadsepatu::findorfail($id);
         $awal = $ubah->upload_foto;
         
 
         $dt = [
-            'nama' => $request['nama'],
             'hargalayanan' => $request['hargalayanan'],
-            'alamat' => $request['alamat'],
             'upload_foto' => $awal,
             
         ];

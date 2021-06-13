@@ -35,6 +35,14 @@ class UploadUserController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'nama' => 'required|min:3',
+            'jeniskelamin' => 'required',
+            'alamat' => 'required',
+            'upload_foto' => 'required',
+            'upload_ktp' => 'required',
+        ]);
+
         $nm = $request->upload_foto;
         $nm = $request->upload_ktp;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
@@ -84,6 +92,14 @@ class UploadUserController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'nama' => 'required|min:3',
+            'jeniskelamin' => 'required',
+            'alamat' => 'required',
+            'upload_foto' => 'required',
+            'upload_ktp' => 'required',
+        ]);
+
         $ubah = Uploaduser::findorfail($id);
         $awal = $ubah->upload_foto;
         $awal = $ubah->upload_ktp;
