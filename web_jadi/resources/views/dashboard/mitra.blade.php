@@ -140,7 +140,7 @@
                                     <tr>
                                         <th>NAMA</th>
                                         <th>ALAMAT</th>
-                                        <th>NOMOR</th>
+                                        <th>nomor</th>
                                         <th>KTP</th>
                                         <th>AKSI</th>
                                     </tr>

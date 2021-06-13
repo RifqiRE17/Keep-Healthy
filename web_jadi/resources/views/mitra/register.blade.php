@@ -63,9 +63,9 @@
                                             value="{{old('nama')}}">
                                     </div>
                                     <div class="col-lg-6">
-                                        <label for="nomor" class="form-label">Nomor Hp</label>
-                                        <input type="number" class="form-control" id="nomor" name="nomor"
-                                            value="{{old('nomor')}}">
+                                        <label for="nomor" class="form-label">Nomor Telepon</label>
+                                        <input type="nomor" class="form-control" id="nomor" name="nomor"
+                                            value="{{old('email')}}">
                                     </div>
                                 </div>
                                 <div class="row mt-2">
