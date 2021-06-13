@@ -150,7 +150,7 @@
                                     <tr>
                                         <td>{{ $item['nama'] }}</td>
                                         <td>{{ $item['alamat'] }}</td>
-                                        <td>{{$item['nomor']}}</td>
+                                        <td>{{ $item['nomor']}}</td>
                                         <td>
                                             <img src="{{ url('storage/'.$item['ktp']) }}" alt="ktp" class="img-fluid"
                                                 width="50px">
