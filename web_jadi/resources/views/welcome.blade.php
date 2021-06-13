@@ -63,7 +63,7 @@
                                         <ul class="menu-area-main">
                                             <li> <a href="{{ url('/') }}">Halaman Awal</a> </li>
 
-                                            <li> <a href="about.html">Menjadi Mitra</a> </li>
+                                            <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
                                             <li> <a href="concerts.html">Artikel </a> </li>
                                             <li> <a href="{{ route('login') }}"
                                                     class="text-sm text-gray-700 underline">Log in</a></li>
