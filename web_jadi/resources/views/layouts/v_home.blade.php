@@ -130,7 +130,7 @@
 
             <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 border_right">
                 <div class="upcomimg">
-                    <figure><img src="images/up.jpg" alt="#" /></figure>
+                    <figure><img src="images/kamarmandi.jpg" alt="#" /></figure>
                 </div>
             </div>
         </div>
