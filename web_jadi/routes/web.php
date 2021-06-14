@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Mitra\MitraController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ArtikelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -133,3 +134,8 @@ Route::get('/dashboard/mitra', [MitraController::class, 'index']);
     // Route::get('admin', function () {
     //     return view('welcome1');
     // });
+
+
+
+    // route Artikel 
+    Route::get('/artikel', [ArtikelController::class, 'artikel']);
