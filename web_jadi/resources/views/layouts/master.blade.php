@@ -61,7 +61,7 @@
                                 <div class="limit-box">
                                     <nav class="main-menu ">
                                         <ul class="menu-area-main">
-                                            <li> <a href="{{ url('/') }}">Halaman Awal</a> </li>
+                                            <li> <a href="{{ url('/home') }}">Halaman Awal</a> </li>
 
                                             <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
                                             <li> <a href="concerts.html">Artikel </a> </li>

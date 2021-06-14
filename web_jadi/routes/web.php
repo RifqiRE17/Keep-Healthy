@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Mitra\MitraController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,13 +27,7 @@ Route::get('/dashboard', [DashboardController::class,'dashboard']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/', function () {
-    return view('welcome1');
-});
 
-Route::get('admin', function () {
-    return view('main');
-});
 
 
 Route::get('/data-gambar','UploadgambarController@index')->name('data-gambar');
@@ -127,3 +123,13 @@ Route::get('/mitra/register', [MitraController::class, 'formAddMitra']);
 Route::post('/mitra/register', [MitraController::class, 'registerMitra']);
 Route::get('/mitra/delete/{id}', [MitraController::class, 'deleteMitra']);
 Route::get('/dashboard/mitra', [MitraController::class, 'index']);
+
+
+
+    // Route::get('/', function () {
+    //     return view('welcome1');
+    // });
+    
+    // Route::get('admin', function () {
+    //     return view('welcome1');
+    // });

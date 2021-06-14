@@ -10,6 +10,12 @@ use Illuminate\Database\QueryException;
 
 class MitraController extends Controller
 {
+
+    public function __construct()
+    {
+       $this->middleware('auth');
+    }
+    
     public function index()
     {
 
