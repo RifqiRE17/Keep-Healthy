@@ -56,7 +56,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <th>Jenis Kelamin</th>
                                 <th>Alamat</th>
                                 <th>Upload Foto</th>
-                                <!-- <th>Upload KTP</th> -->
+                                <th>Upload KTP</th>
                                 <th>Aksi</th>
                             </tr>
                             @foreach ($dataUser as $item)
@@ -68,10 +68,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <a href="{{ asset('user/'. $item->upload_foto ) }}" target="_blank"
                                         rel="noopener noreferrer">Lihat Foto</a>
                                 </td>
-                                <!-- <td>
+                                <td>
                                     <a href="{{ asset('user/'. $item->upload_ktp ) }}" target="_blank"
                                         rel="noopener noreferrer">Lihat Foto KTP</a>
-                                </td> -->
+                                </td>
                                 <td>
                                     <a href="{{ url('edit-user',$item->id) }}"><i class="fas fa-edit"></i></a>
                                     |
