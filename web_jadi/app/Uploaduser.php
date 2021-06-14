@@ -9,5 +9,5 @@ class Uploaduser extends Model
     protected $table = "uploaduser";
     protected $primaryKey = "id";
     protected $fillable = [
-      'id','nama', 'jeniskelamin', 'alamat', 'upload_foto', 'upload_ktp'];
+      'id','nama', 'jeniskelamin', 'alamat', 'upload_foto', ];
 }

@@ -63,6 +63,22 @@
                     </div>
 
                     <div class="input-group mb-3">
+                        <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror"
+                            name="alamat" value="{{ old('alamat') }}" placeholder="Alamat" required
+                            autocomplete="alamat">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                                @error('alamat')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
                         <input id="password" type="password"
                             class="form-control @error('password') is-invalid @enderror" name="password"
                             placeholder="Password" required autocomplete="new-password">

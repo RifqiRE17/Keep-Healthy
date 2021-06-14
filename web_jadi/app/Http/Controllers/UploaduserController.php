@@ -40,11 +40,11 @@ class UploadUserController extends Controller
             'jeniskelamin' => 'required',
             'alamat' => 'required',
             'upload_foto' => 'required',
-            'upload_ktp' => 'required',
+            
         ]);
 
         $nm = $request->upload_foto;
-        $nm = $request->upload_ktp;
+       
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
 
             $dtUpload = new Uploaduser;
@@ -52,7 +52,7 @@ class UploadUserController extends Controller
             $dtUpload->jeniskelamin = $request->jeniskelamin;
             $dtUpload->alamat = $request->alamat;
             $dtUpload->upload_foto = $namaFile;
-            $dtUpload->upload_ktp = $namaFile;
+            
 
             $nm->move(public_path().'/user', $namaFile);
             $dtUpload->save();
@@ -94,26 +94,26 @@ class UploadUserController extends Controller
     {
         $request->validate([
             'nama' => 'required|min:3',
-            'jeniskelamin' => 'required',
+            // 'jeniskelamin' => 'required',
             'alamat' => 'required',
             'upload_foto' => 'required',
-            'upload_ktp' => 'required',
+            
         ]);
 
         $ubah = Uploaduser::findorfail($id);
         $awal = $ubah->upload_foto;
-        $awal = $ubah->upload_ktp;
+        
 
         $dt = [
             'nama' => $request['nama'],
             'jeniskelamin' => $request['jeniskelamin'],
             'alamat' => $request['alamat'],
             'upload_foto' => $awal,
-            'upload_ktp' => $awal,
+            
         ];
 
         $request->upload_foto->move(public_path().'/user', $awal);
-        $request->upload_ktp->move(public_path().'/user', $awal);
+        
         $ubah->update($dt);
         return redirect('data-user');
     }
@@ -129,7 +129,7 @@ class UploadUserController extends Controller
         $hapus = Uploaduser::findorfail($id);
 
         $file = public_path('/user/').$hapus->upload_foto;
-        $file = public_path('/user/').$hapus->upload_ktp;
+        
 
         if (file_exists($file)){
             //maka hapus file di folder public/img
