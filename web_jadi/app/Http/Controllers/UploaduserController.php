@@ -36,9 +36,10 @@ class UploadUserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama' => 'required|min:3',
-            'jeniskelamin' => 'required',
+            'name' => 'required|min:3',
+            'email' => 'required',
             'alamat' => 'required',
+            'password' => 'required',
             'upload_foto' => 'required',
             
         ]);
@@ -49,8 +50,9 @@ class UploadUserController extends Controller
 
             $dtUpload = new Uploaduser;
             $dtUpload->nama = $request->nama;
-            $dtUpload->jeniskelamin = $request->jeniskelamin;
+            $dtUpload->email = $request->email;
             $dtUpload->alamat = $request->alamat;
+            $dtUpload->password = $request->password;
             $dtUpload->upload_foto = $namaFile;
             
 
@@ -93,9 +95,10 @@ class UploadUserController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'nama' => 'required|min:3',
-            // 'jeniskelamin' => 'required',
+            'name' => 'required|min:3',
+            'email' => 'required',
             'alamat' => 'required',
+            // 'jeniskelamin' => 'required',
             'upload_foto' => 'required',
             
         ]);
@@ -105,8 +108,8 @@ class UploadUserController extends Controller
         
 
         $dt = [
-            'nama' => $request['nama'],
-            'jeniskelamin' => $request['jeniskelamin'],
+            'nama' => $request['name'],
+            'email' => $request['email'],
             'alamat' => $request['alamat'],
             'upload_foto' => $awal,
             

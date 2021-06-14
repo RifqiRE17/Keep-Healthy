@@ -40,38 +40,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.content-header -->
 
             <!-- Main content -->
-            <div class="content">
+            <!-- <div class="content">
                 <div class="card card-info card-outline">
                     <div class="card-header">
                         <div class="card-tools">
                             <a href="{{ route('create-user') }}" class="btn btn-success">Tambah Data <i
                                     class="fas fa-plus-square"></i></a>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="card-body">
                         <table class="table table-bordered">
                             <tr>
-                                <th>Nama</th>
-                                <th>Jenis Kelamin</th>
+                                <th>Name</th>
+                                <th>Email</th>
                                 <th>Alamat</th>
-                                <th>Upload Foto</th>
-                                <th>Upload KTP</th>
+                                <th>Foto Pengguna</th>
+                                <!-- <th>Upload KTP</th> -->
                                 <th>Aksi</th>
                             </tr>
                             @foreach ($dataUser as $item)
                             <tr>
-                                <td>{{ $item->nama }}</td>
-                                <td>{{ $item->jeniskelamin }}</td>
+                                <td>{{ $item->name }}</td>
+                                <td>{{ $item->email }}</td>
                                 <td>{{ $item->alamat }}</td>
                                 <td>
                                     <a href="{{ asset('user/'. $item->upload_foto ) }}" target="_blank"
                                         rel="noopener noreferrer">Lihat Foto</a>
                                 </td>
-                                <td>
+                                <!-- <td>
                                     <a href="{{ asset('user/'. $item->upload_ktp ) }}" target="_blank"
                                         rel="noopener noreferrer">Lihat Foto KTP</a>
-                                </td>
+                                </td> -->
                                 <td>
                                     <a href="{{ url('edit-user',$item->id) }}"><i class="fas fa-edit"></i></a>
                                     |

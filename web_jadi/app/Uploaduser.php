@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Uploaduser extends Model
 {
-    protected $table = "uploaduser";
+    protected $table = "users";
     protected $primaryKey = "id";
     protected $fillable = [
-      'id','nama', 'jeniskelamin', 'alamat', 'upload_foto', ];
+      'id','name', 'email', 'alamat', 'upload_foto', ];
 }
