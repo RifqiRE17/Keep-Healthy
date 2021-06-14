@@ -50,14 +50,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <form action="{{ route('update-user', $dt->id) }}" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="form-group">
-                                <label class="control-label" for="nama">Nama Admin</label>
-                                <input type="text" id="nama" name="nama" placeholder="Nama" class="form-control @error('nama') 
-                    is-invalid @enderror" value="{{ old('name', $dt->nama) }}">
-                                @error('nama')
+                                <label class="control-label" for="name">Nama User</label>
+                                <input type="text" id="name" name="name" placeholder="Nama" class="form-control @error('name') 
+                    is-invalid @enderror" value="{{ old('name', $dt->name) }}">
+                                @error('name')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="control-label" for="jabatan">Jenis Kelamin</label>
                                 <input type="text" id="jeniskelamin" name="jeniskelamin" placeholder="Jenis Kelamin"
                                     class="form-control @error('jeniskelamin') 
@@ -65,11 +65,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 @error('jabatan')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label class="control-label" for="alamat">Alamat</label>
                                 <input type="text" id="alamat" name="alamat" placeholder="Alamat" class="form-control @error('alamat') 
-                    is-invalid @enderror" value="{{ old('name', $dt->alamat) }}">
+                    is-invalid @enderror" value="{{ old('alamat', $dt->alamat) }}">
                                 @error('alamat')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
@@ -95,8 +95,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     @enderror
                   </div> -->
                             <!-- <div class="form-group">
-                    <img src="{{ asset('user/'. $dt->upload_ktp ) }}" height="5%" width="10%" alt="" srcset="">
-                  </div> -->
+                                <img src="{{ asset('user/'. $dt->upload_ktp ) }}" height="5%" width="10%" alt=""
+                                    srcset="">
+                            </div> -->
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">Ubah Data</button>
                             </div>

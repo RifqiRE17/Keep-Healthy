@@ -40,29 +40,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.content-header -->
 
             <!-- Main content -->
-            <!-- <div class="content">
+            <div class="content">
                 <div class="card card-info card-outline">
                     <div class="card-header">
                         <div class="card-tools">
                             <a href="{{ route('create-user') }}" class="btn btn-success">Tambah Data <i
                                     class="fas fa-plus-square"></i></a>
                         </div>
-                    </div> -->
+                    </div>
 
                     <div class="card-body">
                         <table class="table table-bordered">
                             <tr>
-                                <th>Name</th>
-                                <th>Email</th>
+                                <th>Nama</th>
                                 <th>Alamat</th>
-                                <th>Foto Pengguna</th>
-                                <!-- <th>Upload KTP</th> -->
+                                <th>Upload Foto</th>
                                 <th>Aksi</th>
                             </tr>
                             @foreach ($dataUser as $item)
                             <tr>
                                 <td>{{ $item->name }}</td>
-                                <td>{{ $item->email }}</td>
                                 <td>{{ $item->alamat }}</td>
                                 <td>
                                     <a href="{{ asset('user/'. $item->upload_foto ) }}" target="_blank"

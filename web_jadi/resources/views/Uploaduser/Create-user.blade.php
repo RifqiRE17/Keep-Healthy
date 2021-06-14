@@ -50,11 +50,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <form action="{{ route('simpan-user') }}" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="form-group">
-                                <label class="control-label" for="nama">Nama User</label>
-                                <input type="text" id="nama" name="nama" placeholder="Nama" class="form-control
-                    @error('nama')
+                                <label class="control-label" for="name">Nama User</label>
+                                <input type="text" id="name" name="name" placeholder="Nama" class="form-control
+                    @error('name')
                     is-invalid @enderror" autofoucus>
-                                @error('nama')
+                                @error('name')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>
@@ -89,7 +89,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 @enderror
                             </div>
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="control-label" for="password">Password</label>
                                 <input type="password" id="password" name="password" placeholder="Password" class="form-control
                     @error('email')
@@ -97,7 +97,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 @error('email')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
-                            </div>
+                            </div> -->
 
                             <div class="form-group">
                                 <label class="control-label" for="upload_foto">Upload Foto</label>
