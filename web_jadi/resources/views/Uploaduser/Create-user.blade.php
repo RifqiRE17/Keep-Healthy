@@ -58,7 +58,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>
+
                             <div class="form-group">
+                                <label class="control-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Email" class="form-control
+                    @error('email')
+                    is-invalid @enderror" autofoucus>
+                                @error('email')
+                                <div class="invalid-feedback">{{ $message}}</div>
+                                @enderror
+                            </div>
+
+                            <!-- <div class="form-group">
                                 <label class="control-label" for="jabatan">Jenis Kelamin</label>
                                 <input type="text" id="jeniskelamin" name="jeniskelamin" placeholder="Jenis Kelamin"
                                     class="form-control
@@ -67,7 +78,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 @error('jeniskelamin')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label class="control-label" for="alamat">Alamat</label>
                                 <input type="text" id="alamat" name="alamat" placeholder="Alamat" class="form-control
@@ -77,6 +88,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Password" class="form-control
+                    @error('email')
+                    is-invalid @enderror" autofoucus>
+                                @error('email')
+                                <div class="invalid-feedback">{{ $message}}</div>
+                                @enderror
+                            </div>
+
                             <div class="form-group">
                                 <label class="control-label" for="upload_foto">Upload Foto</label>
                                 <input type="file" id="upload_foto" name="upload_foto" class="form-control @error('upload_foto')
