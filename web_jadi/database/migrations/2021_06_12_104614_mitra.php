@@ -16,7 +16,7 @@ class Mitra extends Migration
         Schema::create('mitra', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->tinyInteger('nomor')->length(15);
+            $table->string('nomor');
             $table->string('alamat');
             $table->string('ktp')->unique();
             $table->timestamps();

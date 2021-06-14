@@ -26,7 +26,7 @@ class MitraController extends Controller
         try {
             $mitra=$request->validate([
                 "nama" => ["required", "max:50"],
-                "nomor" => ["required","max:12"],
+                "nomor" => ["required","min:11", "numeric" ],
                 "alamat" => ["required"],
                 "ktp" => ['required','image']
             ]);
