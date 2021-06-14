@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Mitra extends Migration
+class CreatePasswordResetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class Mitra extends Migration
      */
     public function up()
     {
-        Schema::create('mitra', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama');
-            $table->string('nomor');
-            $table->string('alamat');
-            $table->string('ktp')->unique();
-            $table->timestamps();
+        Schema::create('password_resets', function (Blueprint $table) {
+            $table->string('email')->index();
+            $table->string('token');
+            $table->timestamp('created_at')->nullable();
         });
     }
 
@@ -30,6 +27,6 @@ class Mitra extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('password_resets');
     }
 }
