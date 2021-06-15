@@ -139,7 +139,7 @@
                                                     cepat hanya dengan melakukan beberapa klik pada smartphone anda.
                                                     Maka kami akan
                                                     siap datang kerumah anda dengan segera</p>
-                                                <a href="#"><img style=" width: 120px; height: 120px;"
+                                                <a href="#"><img style=" width: 50px; height: 50px;"
                                                         src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
                                             </div>
                                         </div>
@@ -162,7 +162,7 @@
                                                     cepat hanya dengan melakukan beberapa klik pada smartphone anda.
                                                     Maka kami akan
                                                     siap datang kerumah anda dengan segera</p>
-                                                <a href="#"><img style=" width: 120px; height: 120px;"
+                                                <a href="#"><img style=" width: 50px; height: 50px;"
                                                         src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
                                             </div>
                                         </div>
@@ -188,7 +188,7 @@
                                                     cepat hanya dengan melakukan beberapa klik pada smartphone anda.
                                                     Maka kami akan
                                                     siap datang kerumah anda dengan segera</p>
-                                                <a href="#"><img style=" width: 120px; height: 120px;"
+                                                <a href="#"><img style=" width: 50px; height: 50px;"
                                                         src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
                                             </div>
                                         </div>
