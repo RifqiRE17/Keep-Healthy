@@ -38,7 +38,12 @@ class UploadtoiletController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
-        ]);
+           
+            ],
+            [
+                'required' => ':Data Harus Terisi',
+            ]
+    );
 
         $nm = $request->upload_foto;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
@@ -51,7 +56,7 @@ class UploadtoiletController extends Controller
             $nm->move(public_path().'/toilet', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-toilet');
+            return redirect()->route('data-toilet')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -89,6 +94,9 @@ class UploadtoiletController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
 
         $ubah = Uploadtoilet::findorfail($id);
@@ -103,7 +111,7 @@ class UploadtoiletController extends Controller
 
         $request->upload_foto->move(public_path().'/toilet', $awal);
         $ubah->update($dt);
-        return redirect('data-toilet');
+        return redirect('data-toilet')->withSuccess('Data Berhasil Diperbarui!');
     }
 
     /**
@@ -126,6 +134,6 @@ class UploadtoiletController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->withSuccess('Data Berhasil Dihapus!');
     }
 }

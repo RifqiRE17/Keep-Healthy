@@ -39,7 +39,11 @@ class UploadkantorController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
-        ]);
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+        ]
+    );
 
         $nm = $request->upload_foto;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
@@ -52,7 +56,7 @@ class UploadkantorController extends Controller
             $nm->move(public_path().'/kantor', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-kantor');
+            return redirect('data-kantor')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -90,7 +94,11 @@ class UploadkantorController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
-        ]);
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+        ]
+    );
         
         $ubah = Uploadkantor::findorfail($id);
         $awal = $ubah->upload_foto;
@@ -104,7 +112,7 @@ class UploadkantorController extends Controller
 
         $request->upload_foto->move(public_path().'/kantor', $awal);
         $ubah->update($dt);
-        return redirect('data-kantor');
+        return redirect('data-kantor')->withSuccess('Data Berhasil Diperbarui!');
     }
 
     /**
@@ -127,6 +135,6 @@ class UploadkantorController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->withSuccess('Data Berhasil Dihapus!');
     }
 }

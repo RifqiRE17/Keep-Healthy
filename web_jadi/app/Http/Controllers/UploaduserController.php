@@ -42,6 +42,9 @@ class UploadUserController extends Controller
             'password' => 'required',
             'upload_foto' => 'required',
             
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
 
         $nm = $request->upload_foto;
@@ -59,7 +62,7 @@ class UploadUserController extends Controller
             $nm->move(public_path().'/user', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-user');
+            return redirect('data-user')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -101,6 +104,9 @@ class UploadUserController extends Controller
             // 'jeniskelamin' => 'required',
             // 'upload_foto' => 'required',
             
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
 
         $ubah = Uploaduser::findorfail($id);
@@ -118,7 +124,7 @@ class UploadUserController extends Controller
         // $request->upload_foto->move(public_path().'/user', $awal);
         
         $ubah->update($dt);
-        return redirect('data-user')->with('success', 'Berhasil Melakukan Pembaruan');
+        return redirect('data-user')->with('success', 'Data Berhasil Diperbarui!');
     }
 
     /**

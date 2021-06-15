@@ -38,6 +38,9 @@ class UploadsepatuController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
 
         $nm = $request->upload_foto;
@@ -51,7 +54,7 @@ class UploadsepatuController extends Controller
             $nm->move(public_path().'/sepatu', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-sepatu');
+            return redirect('data-sepatu')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -103,7 +106,7 @@ class UploadsepatuController extends Controller
 
         $request->upload_foto->move(public_path().'/sepatu', $awal);
         $ubah->update($dt);
-        return redirect('data-sepatu');
+        return redirect('data-sepatu')->withSuccess('Data Berhasil Diperbarui!');
     }
 
     /**
@@ -126,6 +129,6 @@ class UploadsepatuController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->withSuccess('Data Berhasil Dihapus!');
     }
 }

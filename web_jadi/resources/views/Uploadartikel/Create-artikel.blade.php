@@ -45,7 +45,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="card-header">
                         <h3>Create Data Artikel</h3>
                     </div>
-
+                    <div class="progress progress-striped">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                            <span class="sr-only">90% Complete (success)</span>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <form action="{{ route('simpan-artikel') }}" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}

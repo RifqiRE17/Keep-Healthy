@@ -64,7 +64,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="nomor" class="form-label">Nomor Telepon</label>
-                                        <input type="number" class="form-control"  id="nomor" name="nomor"
+                                        <input type="number" class="form-control" id="nomor" name="nomor"
                                             value="{{old('email')}}">
                                     </div>
                                 </div>
@@ -99,6 +99,7 @@
 
     </div>
     <!-- End of Page Wrapper -->
+    @include('sweetalert::alert')
 
 </body>
 

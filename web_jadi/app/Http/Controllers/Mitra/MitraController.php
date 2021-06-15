@@ -35,7 +35,11 @@ class MitraController extends Controller
                 "nomor" => ["required","min:11", "numeric" ],
                 "alamat" => ["required"],
                 "ktp" => ['required','image']
-            ]);
+            ],
+            [
+                'required' => ':Data Harus Terisi',
+            ]
+        );
 
             $nm = $request->ktp;
             $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
@@ -49,7 +53,7 @@ class MitraController extends Controller
                 $nm->move(public_path().'/ktp', $namaFile);
                 $dtUpload->save();
     
-                return redirect('mitra/register')->with('success','Data Mitra baru telah berhasil disimpan');
+                return redirect('home')->with('success','Data Mitra baru telah berhasil disimpan');
 
         } catch (QueryException $err) {
             return redirect('/dashboard/mitra');

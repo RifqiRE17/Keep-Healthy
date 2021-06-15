@@ -38,6 +38,9 @@ class UploadmobilController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
 
         $nm = $request->upload_foto;
@@ -51,7 +54,7 @@ class UploadmobilController extends Controller
             $nm->move(public_path().'/mobil', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-mobil');
+            return redirect('data-mobil')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -89,6 +92,9 @@ class UploadmobilController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
         
         $ubah = Uploadmobil::findorfail($id);
@@ -103,7 +109,7 @@ class UploadmobilController extends Controller
 
         $request->upload_foto->move(public_path().'/mobil', $awal);
         $ubah->update($dt);
-        return redirect('data-mobil');
+        return redirect('data-mobil')->withSuccess('Data Berhasil Diperbarui!');
     }
 
     /**
@@ -126,6 +132,6 @@ class UploadmobilController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->withSuccess('Data Berhasil Dihapus!');
     }
 }

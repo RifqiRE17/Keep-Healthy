@@ -42,7 +42,11 @@ class UploadbajuController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
-        ]);
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+        ]
+    );
 
         $nm = $request->upload_foto;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
@@ -55,7 +59,7 @@ class UploadbajuController extends Controller
             $nm->move(public_path().'/baju', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-baju');
+            return redirect('data-baju')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -93,7 +97,11 @@ class UploadbajuController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
-        ]);
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+        ]
+    );
         
         $ubah = Uploadbaju::findorfail($id);
         $awal = $ubah->upload_foto;
@@ -107,7 +115,7 @@ class UploadbajuController extends Controller
 
         $request->upload_foto->move(public_path().'/baju', $awal);
         $ubah->update($dt);
-        return redirect('data-baju');
+        return redirect('data-baju')->withSuccess('Data Berhasil Diperbarui!');
     }
 
     /**
@@ -130,6 +138,6 @@ class UploadbajuController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->withSuccess('Data Berhasil Dihapus!');
     }
 }

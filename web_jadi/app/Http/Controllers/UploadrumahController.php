@@ -38,6 +38,9 @@ class UploadrumahController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
 
         $nm = $request->upload_foto;
@@ -51,7 +54,7 @@ class UploadrumahController extends Controller
             $nm->move(public_path().'/rumah', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-rumah');
+            return redirect('data-rumah')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -90,6 +93,9 @@ class UploadrumahController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
         
         $ubah = Uploadrumah::findorfail($id);
@@ -104,7 +110,7 @@ class UploadrumahController extends Controller
 
         $request->upload_foto->move(public_path().'/rumah', $awal);
         $ubah->update($dt);
-        return redirect('data-rumah');
+        return redirect('data-rumah')->withSuccess('Data Berhasil Diperbarui!');
     }
 
     /**
@@ -127,6 +133,6 @@ class UploadrumahController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->withSuccess('Data Berhasil Dihapus!');
     }
 }
