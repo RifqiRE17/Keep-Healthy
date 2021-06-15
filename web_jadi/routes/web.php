@@ -28,8 +28,9 @@ Route::get('/dashboard', [DashboardController::class,'dashboard']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
-
+Route::get('admin', function () {
+    return view('main');
+});
 
 Route::get('/data-gambar','UploadgambarController@index')->name('data-gambar');
 Route::get('/create-gambar','UploadgambarController@create')->name('create-gambar');
