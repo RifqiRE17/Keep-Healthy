@@ -39,7 +39,11 @@ class UploadartikelController extends Controller
             'namaartikel' => 'required',
             'isiartikel' => 'required',
             'upload_foto' => 'required',
-        ]);
+        ],
+        [
+            'required' => ':Data Harus Terisi',
+        ]
+    );
 
         $nm = $request->upload_foto;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
@@ -53,7 +57,7 @@ class UploadartikelController extends Controller
             $nm->move(public_path().'/artikel', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-artikel');
+            return redirect()->route('data-artikel')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -107,7 +111,7 @@ class UploadartikelController extends Controller
 
         $request->upload_foto->move(public_path().'/artikel', $awal);
         $ubah->update($dt);
-        return redirect('data-artikel');
+        return redirect('data-artikel')->withSuccess('Data Berhasil Diperbarui!');
     }
 
     /**
@@ -130,6 +134,6 @@ class UploadartikelController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->withSuccess('Data Berhasil Dihapus!');
     }
 }

@@ -80,44 +80,46 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             style="color: red"></i></a>
                                 </td>
 
-            <div class="card-body">
-                <table class="table table-bordered">
-                    <tr>
-                        <th>Nama</th>
-                        <th>Nomor</th>
-                        <th>Alamat</th>
-                        <th>Upload KTP</th>
-                        <th>Aksi</th>
-                    </tr>
-                    @foreach ($dataGambar as $item)
-                    <tr>
-                        <td>{{ $item->nama }}</td>
-                        <td>{{ $item->nomor }}</td>
-                        <td>{{ $item->alamat }}</td>
-                        <td>
-                        <a href="{{ asset('ktp/'. $item->ktp ) }}" target="_blank" rel="noopener noreferrer">Lihat Foto KTP</a>
-                        </td>
+                                <div class="card-body">
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th>Nama</th>
+                                            <th>Nomor</th>
+                                            <th>Alamat</th>
+                                            <th>Upload KTP</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                        @foreach ($dataGambar as $item)
+                                        <tr>
+                                            <td>{{ $item->nama }}</td>
+                                            <td>{{ $item->nomor }}</td>
+                                            <td>{{ $item->alamat }}</td>
+                                            <td>
+                                                <a href="{{ asset('ktp/'. $item->ktp ) }}" target="_blank"
+                                                    rel="noopener noreferrer">Lihat Foto KTP</a>
+                                            </td>
 
 
-                            </tr>
-                            @endforeach
-                        </table>
+                                        </tr>
+                                        @endforeach
+                                    </table>
+                                </div>
+
                     </div>
-
                 </div>
+                <!-- /.content -->
             </div>
-            <!-- /.content -->
+            <!-- /.content-wrapper -->
+            <!-- Main Footer -->
+            <footer class="main-footer">
+                @include('Template.footer')
+            </footer>
         </div>
-        <!-- /.content-wrapper -->
-        <!-- Main Footer -->
-        <footer class="main-footer">
-            @include('Template.footer')
-        </footer>
-    </div>
-    <!-- ./wrapper -->
+        <!-- ./wrapper -->
 
-    <!-- REQUIRED SCRIPTS -->
-    @include('Template.script')
+        <!-- REQUIRED SCRIPTS -->
+        @include('Template.script')
+        @include('sweetalert::alert')
 
 </body>
 
