@@ -118,7 +118,7 @@ class UploadUserController extends Controller
         // $request->upload_foto->move(public_path().'/user', $awal);
         
         $ubah->update($dt);
-        return redirect('data-user');
+        return redirect('data-user')->with('success', 'Berhasil Melakukan Pembaruan');
     }
 
     /**
@@ -141,6 +141,6 @@ class UploadUserController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->with('success','Data berhasil dihapus');
     }
 }
