@@ -40,7 +40,11 @@ class UploadgambarController extends Controller
             'nomor' => 'required',
             'alamat' => 'required',
             'ktp' => 'required',
-        ]);
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+        ]
+    );
 
         $nm = $request->ktp;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
@@ -54,7 +58,7 @@ class UploadgambarController extends Controller
             $nm->move(public_path().'/ktp', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-gambar');
+            return redirect('data-gambar')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -94,7 +98,11 @@ class UploadgambarController extends Controller
             'nomor' => 'required',
             'alamat' => 'required',
             'ktp' => 'required',
-        ]);
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+        ]
+    );
         
         $ubah = Uploadgambar::findorfail($id);
         $awal = $ubah->ktp;
@@ -108,7 +116,7 @@ class UploadgambarController extends Controller
 
         $request->ktp->move(public_path().'/ktp', $awal);
         $ubah->update($dt);
-        return redirect('data-gambar');
+        return redirect('data-gambar')->withSuccess('Data Berhasil Diperbarui!');
     }
 
     /**
@@ -130,7 +138,7 @@ class UploadgambarController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->withSuccess('Data Berhasil Dihapus!');
 
     }
 }

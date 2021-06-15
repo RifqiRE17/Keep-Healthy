@@ -38,6 +38,9 @@ class UploadmotorController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
 
         $nm = $request->upload_foto;
@@ -51,7 +54,7 @@ class UploadmotorController extends Controller
             $nm->move(public_path().'/motor', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-motor');
+            return redirect('data-motor')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -89,6 +92,9 @@ class UploadmotorController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
 
         $ubah = Uploadmotor::findorfail($id);
@@ -103,7 +109,7 @@ class UploadmotorController extends Controller
 
         $request->upload_foto->move(public_path().'/motor', $awal);
         $ubah->update($dt);
-        return redirect('data-motor');
+        return redirect('data-motor')->withSuccess('Data Berhasil Diperbarui!');
     }
 
     /**
@@ -126,6 +132,6 @@ class UploadmotorController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->withSuccess('Data Berhasil Dihapus!');
     }
 }

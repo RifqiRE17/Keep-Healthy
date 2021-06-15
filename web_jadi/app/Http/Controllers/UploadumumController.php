@@ -38,6 +38,9 @@ class UploadumumController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
 
         $nm = $request->upload_foto;
@@ -51,7 +54,7 @@ class UploadumumController extends Controller
             $nm->move(public_path().'/umum', $namaFile);
             $dtUpload->save();
 
-            return redirect('data-umum');
+            return redirect('data-umum')->withSuccess('Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -89,6 +92,9 @@ class UploadumumController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
         
         $ubah = Uploadumum::findorfail($id);
@@ -103,7 +109,7 @@ class UploadumumController extends Controller
 
         $request->upload_foto->move(public_path().'/umum', $awal);
         $ubah->update($dt);
-        return redirect('data-umum');
+        return redirect('data-umum')->withSuccess('Data Berhasil Diperbarui!');
     }
 
     /**
@@ -126,7 +132,7 @@ class UploadumumController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back();
+        return back()->withSuccess('Data Berhasil Dihapus!');
     
     }
 }

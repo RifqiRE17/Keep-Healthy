@@ -224,6 +224,7 @@
         $('#table_id').DataTable();
     });
     </script>
+    @include('sweetalert::alert')
 
 </body>
 

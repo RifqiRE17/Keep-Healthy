@@ -55,6 +55,9 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'alamat'=>['required', 'string','max:255'],
             
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
     }
 

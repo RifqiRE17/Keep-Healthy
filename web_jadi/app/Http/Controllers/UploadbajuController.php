@@ -42,7 +42,11 @@ class UploadbajuController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
-        ]);
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+        ]
+    );
 
         $nm = $request->upload_foto;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
@@ -93,7 +97,11 @@ class UploadbajuController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
-        ]);
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+        ]
+    );
         
         $ubah = Uploadbaju::findorfail($id);
         $awal = $ubah->upload_foto;

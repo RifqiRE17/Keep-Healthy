@@ -94,6 +94,9 @@ class UploadtoiletController extends Controller
         $request->validate([
             'hargalayanan' => 'required',
             'upload_foto' => 'required',
+        ],
+        [
+            'required' => 'Data Harus Terisi',
         ]);
 
         $ubah = Uploadtoilet::findorfail($id);

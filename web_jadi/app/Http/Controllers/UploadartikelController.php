@@ -41,7 +41,7 @@ class UploadartikelController extends Controller
             'upload_foto' => 'required',
         ],
         [
-            'required' => ':Data Harus Terisi',
+            'required' => 'Data Harus Terisi',
         ]
     );
 
@@ -96,7 +96,11 @@ class UploadartikelController extends Controller
             'namaartikel' => 'required',
             'isiartikel' => 'required',
             'upload_foto' => 'required',
-        ]);
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+        ]
+    );
         
         $ubah = Uploadartikel::findorfail($id);
         $awal = $ubah->upload_foto;
