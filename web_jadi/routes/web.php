@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Mitra\MitraController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ArtikelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,8 +28,9 @@ Route::get('/dashboard', [DashboardController::class,'dashboard']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
-
+Route::get('admin', function () {
+    return view('main');
+});
 
 Route::get('/data-gambar','UploadgambarController@index')->name('data-gambar');
 Route::get('/create-gambar','UploadgambarController@create')->name('create-gambar');
@@ -133,3 +135,8 @@ Route::get('/dashboard/mitra', [MitraController::class, 'index']);
     // Route::get('admin', function () {
     //     return view('welcome1');
     // });
+
+
+
+    // route Artikel 
+    Route::get('/artikel', [ArtikelController::class, 'artikel']);
