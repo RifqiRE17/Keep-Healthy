@@ -73,6 +73,17 @@
                LAYANAN SERVICE
                 
               </p>
+
+              </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('data-artikel') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Artikel</p>
+                </a>
+              </li>
+            </ul>
+
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">

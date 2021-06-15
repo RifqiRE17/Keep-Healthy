@@ -57,6 +57,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Email" class="form-control @error('email') 
+                    is-invalid @enderror" value="{{ old('email', $dt->email) }}">
+                                @error('name')
+                                <div class="invalid-feedback">{{ $message}}</div>
+                                @enderror
+                            </div>
+
                             <!-- <div class="form-group">
                                 <label class="control-label" for="jabatan">Jenis Kelamin</label>
                                 <input type="text" id="jeniskelamin" name="jeniskelamin" placeholder="Jenis Kelamin"
@@ -74,18 +84,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="control-label" for="upload_foto">Upload Foto</label>
                                 <input type="file" id="upload_foto" name="upload_foto" class="form-control @error('upload_foto')
                     is-invalid @enderror" autofoucus>
                                 @error('upload_foto')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
-                            </div>
-                            <div class="form-group">
+                            </div> -->
+                            <!-- <div class="form-group">
                                 <img src="{{ asset('user/'. $dt->upload_foto ) }}" height="5%" width="10%" alt=""
                                     srcset="">
-                            </div>
+                            </div> -->
                             <!-- <div class="form-group">
                   <label class="control-label" for="upload_foto">Upload KTP</label>
                   <input type="file" id="upload_ktp" name="upload_ktp" class="form-control @error('upload_ktp')

@@ -99,7 +99,7 @@ class UploadUserController extends Controller
             'email' => 'required',
             'alamat' => 'required',
             // 'jeniskelamin' => 'required',
-            'upload_foto' => 'required',
+            // 'upload_foto' => 'required',
             
         ]);
 
@@ -111,7 +111,7 @@ class UploadUserController extends Controller
             'nama' => $request['name'],
             'email' => $request['email'],
             'alamat' => $request['alamat'],
-            'upload_foto' => $awal,
+            // 'upload_foto' => $awal,
             
         ];
 

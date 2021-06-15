@@ -68,7 +68,7 @@
                             autocomplete="alamat">
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
+                                <span class=as fa-envelope"></span>
                                 @error('alamat')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>

@@ -53,18 +53,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <table class="table table-bordered">
                             <tr>
                                 <th>Nama</th>
+                                <th>Email</th>
                                 <th>Alamat</th>
-                                <th>Upload Foto</th>
+
+                                <!-- <th>Upload Foto</th> -->
                                 <th>Aksi</th>
                             </tr>
                             @foreach ($dataUser as $item)
                             <tr>
                                 <td>{{ $item->name }}</td>
+                                <td>{{ $item->email }}</td>
                                 <td>{{ $item->alamat }}</td>
-                                <td>
+                                <!-- <td>
                                     <a href="{{ asset('user/'. $item->upload_foto ) }}" target="_blank"
                                         rel="noopener noreferrer">Lihat Foto</a>
-                                </td>
+                                </td> -->
                                 <!-- <td>
                                     <a href="{{ asset('user/'. $item->upload_ktp ) }}" target="_blank"
                                         rel="noopener noreferrer">Lihat Foto KTP</a>
