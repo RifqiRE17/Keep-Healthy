@@ -58,10 +58,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label class="control-label" for="jabatan">Layanan Service</label>
-                                <input type="text" id="jabatan" name="jabatan" placeholder="Jabatan" class="form-control @error('jabatan')
+                                <label class="control-label" for="nomor">Nomor</label>
+                                <input type="text" id="nomor" name="nomor" placeholder="nomor" class="form-control @error('nomor')
                     is-invalid @enderror" autofocus>
-                                @error('jabatan')
+                                @error('nomor')
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
@@ -74,18 +74,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label class="control-label" for="upload_foto">Upload Foto</label>
-                                <input type="file" id="upload_foto" name="upload_foto" class="form-control @error('upload_foto')
+                                <label class="control-label" for="upload_foto">KTP</label>
+                                <input type="file" id="ktp" name="ktp" class="form-control @error('ktp')
                     is-invalid @enderror" autofoucus>
-                                @error('upload_foto')
-                                <div class="invalid-feedback">{{ $message}}</div>
-                                @enderror
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="upload_foto">Upload KTP</label>
-                                <input type="file" id="upload_ktp" name="upload_ktp" class="form-control @error('upload_ktp')
-                    is-invalid @enderror" autofoucus>
-                                @error('upload_ktp')
+                                @error('ktp')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>

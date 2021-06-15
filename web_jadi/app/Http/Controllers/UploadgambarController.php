@@ -91,26 +91,22 @@ class UploadgambarController extends Controller
     {
         $request->validate([
             'nama' => 'required|min:3',
-            'jabatan' => 'required',
+            'nomor' => 'required',
             'alamat' => 'required',
-            'upload_foto' => 'required',
-            'upload_ktp' => 'required',
+            'ktp' => 'required',
         ]);
         
         $ubah = Uploadgambar::findorfail($id);
-        $awal = $ubah->upload_foto;
-        $awal = $ubah->upload_ktp;
+        $awal = $ubah->ktp;
 
         $dt = [
             'nama' => $request['nama'],
-            'jabatan' => $request['jabatan'],
+            'nomor' => $request['nomor'],
             'alamat' => $request['alamat'],
-            'upload_foto' => $awal,
-            'upload_ktp' => $awal,
+            'ktp' => $awal,
         ];
 
-        $request->upload_foto->move(public_path().'/img', $awal);
-        $request->upload_ktp->move(public_path().'/img', $awal);
+        $request->ktp->move(public_path().'/ktp', $awal);
         $ubah->update($dt);
         return redirect('data-gambar');
     }
@@ -125,8 +121,7 @@ class UploadgambarController extends Controller
     {
         $hapus = Uploadgambar::findorfail($id);
 
-        $file = public_path('/img/').$hapus->upload_foto;
-        $file = public_path('/img/').$hapus->upload_ktp;
+        $file = public_path('/ktp/').$hapus->upload_ktp;
 
         if (file_exists($file)){
             //maka hapus file di folder public/img
