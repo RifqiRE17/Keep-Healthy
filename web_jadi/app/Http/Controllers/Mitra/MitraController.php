@@ -13,7 +13,7 @@ class MitraController extends Controller
 
     public function __construct()
     {
-       $this->middleware('auth');
+    //    $this->middleware('auth');
     }
     
     public function index()
@@ -30,19 +30,26 @@ class MitraController extends Controller
     public function registerMitra(Request $request)
     {
         try {
-            $mitra=$request->validate([
+            $request->validate([
                 "nama" => ["required", "max:50"],
                 "nomor" => ["required","min:11", "numeric" ],
                 "alamat" => ["required"],
                 "ktp" => ['required','image']
             ]);
 
-            $fileName = time().'_'.$request->ktp->getClientOriginalName();
-            $path = $request->file('ktp')->storeAs('ktp', $fileName, 'public');
-
-            $mitra['ktp']=$path;
-            Mitra::create($mitra);
-            return redirect('/dashboard/mitra');
+            $nm = $request->ktp;
+            $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
+    
+                $dtUpload = new Mitra;
+                $dtUpload->nama = $request->nama;
+                $dtUpload->nomor = $request->nomor;
+                $dtUpload->alamat = $request->alamat;
+                $dtUpload->ktp = $namaFile;
+    
+                $nm->move(public_path().'/ktp', $namaFile);
+                $dtUpload->save();
+    
+                return redirect('mitra/register');
 
         } catch (QueryException $err) {
             return redirect('/dashboard/mitra');

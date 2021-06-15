@@ -152,7 +152,7 @@
                                         <td>{{ $item['alamat'] }}</td>
                                         <td>{{ $item['nomor']}}</td>
                                         <td>
-                                            <img src="{{ url('storage/'.$item['ktp']) }}" alt="ktp" class="img-fluid"
+                                            <img src="{{ asset('ktp/'.$item['ktp']) }}" alt="ktp" class="img-fluid"
                                                 width="50px">
                                         </td>
                                         <td>

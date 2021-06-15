@@ -37,24 +37,21 @@ class UploadgambarController extends Controller
     {
         $request->validate([
             'nama' => 'required|min:3',
-            'jabatan' => 'required',
+            'nomor' => 'required',
             'alamat' => 'required',
-            'upload_foto' => 'required',
-            'upload_ktp' => 'required',
+            'ktp' => 'required',
         ]);
 
-        $nm = $request->upload_foto;
-        $nm = $request->upload_ktp;
+        $nm = $request->ktp;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
 
             $dtUpload = new Uploadgambar;
             $dtUpload->nama = $request->nama;
-            $dtUpload->jabatan = $request->jabatan;
+            $dtUpload->nomor = $request->nomor;
             $dtUpload->alamat = $request->alamat;
-            $dtUpload->upload_foto = $namaFile;
-            $dtUpload->upload_ktp = $namaFile;
+            $dtUpload->ktp = $namaFile;
 
-            $nm->move(public_path().'/img', $namaFile);
+            $nm->move(public_path().'/ktp', $namaFile);
             $dtUpload->save();
 
             return redirect('data-gambar');

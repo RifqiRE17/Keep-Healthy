@@ -44,7 +44,7 @@
               <li class="nav-item">
                 <a href="{{ route('data-gambar') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Data Admin</p>
+                  <p>Data Mitra</p>
                 </a>
               </li>
             </ul>
@@ -150,7 +150,7 @@
               </li>
             </ul>
           </li>
-          
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

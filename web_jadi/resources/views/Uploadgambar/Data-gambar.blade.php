@@ -25,12 +25,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">ADMIN</h1>
+            <h1 class="m-0">MITRA</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data Admin</li>
+              <li class="breadcrumb-item active">Data Mitra</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -51,22 +51,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <table class="table table-bordered">
                     <tr>
                         <th>Nama</th>
-                        <th>Jabatan</th>
+                        <th>Nomor</th>
                         <th>Alamat</th>
-                        <th>Upload Foto</th>
                         <th>Upload KTP</th>
                         <th>Aksi</th>
                     </tr>
                     @foreach ($dataGambar as $item)
                     <tr>
                         <td>{{ $item->nama }}</td>
-                        <td>{{ $item->jabatan }}</td>
+                        <td>{{ $item->nomor }}</td>
                         <td>{{ $item->alamat }}</td>
                         <td>
-                        <a href="{{ asset('img/'. $item->upload_foto ) }}" target="_blank" rel="noopener noreferrer">Lihat Foto</a>
-                        </td>
-                        <td>
-                        <a href="{{ asset('img/'. $item->upload_ktp ) }}" target="_blank" rel="noopener noreferrer">Lihat Foto KTP</a>
+                        <a href="{{ asset('ktp/'. $item->ktp ) }}" target="_blank" rel="noopener noreferrer">Lihat Foto KTP</a>
                         </td>
 
                         <td>
