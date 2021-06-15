@@ -61,7 +61,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <div class="form-group">
                                 <label class="control-label" for="email">Email</label>
                                 <input type="email" id="email" name="email" placeholder="Email" class="form-control @error('email') 
-                    is-invalid @enderror" value="{{ old('email', $dt->email) }}">
+                    is-invalid @enderror" value="{{ old('name', $dt->email) }}">
                                 @error('name')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
@@ -79,7 +79,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <div class="form-group">
                                 <label class="control-label" for="alamat">Alamat</label>
                                 <input type="text" id="alamat" name="alamat" placeholder="Alamat" class="form-control @error('alamat') 
-                    is-invalid @enderror" value="{{ old('alamat', $dt->alamat) }}">
+                    is-invalid @enderror" value="{{ old('name', $dt->alamat) }}">
                                 @error('alamat')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror

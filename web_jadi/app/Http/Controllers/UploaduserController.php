@@ -111,11 +111,11 @@ class UploadUserController extends Controller
             'nama' => $request['name'],
             'email' => $request['email'],
             'alamat' => $request['alamat'],
-            // 'upload_foto' => $awal,
+            'upload_foto' => $awal,
             
         ];
 
-        $request->upload_foto->move(public_path().'/user', $awal);
+        // $request->upload_foto->move(public_path().'/user', $awal);
         
         $ubah->update($dt);
         return redirect('data-user');
