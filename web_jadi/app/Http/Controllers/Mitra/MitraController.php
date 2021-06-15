@@ -49,7 +49,7 @@ class MitraController extends Controller
                 $nm->move(public_path().'/ktp', $namaFile);
                 $dtUpload->save();
     
-                return redirect('mitra/register');
+                return redirect('mitra/register')->with('success','Data Mitra baru telah berhasil disimpan');
 
         } catch (QueryException $err) {
             return redirect('/dashboard/mitra');
