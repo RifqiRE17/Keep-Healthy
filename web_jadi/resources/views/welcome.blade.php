@@ -302,9 +302,9 @@
                             <div class="hover_box">
 
                                 <ul class="icon_hu">
-                                    <h3>Music night</h3>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <h3>Membersihkan Kaca</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -315,9 +315,9 @@
                             <div class="hover_box">
 
                                 <ul class="icon_hu">
-                                    <h3>Music night</h3>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <h3>Membersihkan Lantai</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -328,9 +328,9 @@
                             <div class="hover_box">
 
                                 <ul class="icon_hu">
-                                    <h3>Music night</h3>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <h3>Membersihkan Kamar Mandi</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -341,9 +341,9 @@
                             <div class="hover_box">
 
                                 <ul class="icon_hu">
-                                    <h3>Music night</h3>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <h3>Mencuci Baju</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -352,13 +352,9 @@
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="Gallery_text">
                         <div class="titlepage">
-                            <h2>Gallery</h2>
+                            <h2>Keep Healthy</h2>
                         </div>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page
-                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                            normal
-                            distribution of letters, as opposed to usin</p>
+                        <p>Kami akan melakukan pelayanan yang terbaik hingga anda puas</p>
                         <!-- <a href="Javascript:void(0)">Read More</a> -->
                     </div>
                 </div>
@@ -376,7 +372,7 @@
                         <form class="contact_bg">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="titlepage">
+                                    <!-- <div class="titlepage">
                                         <h2>Contact us</h2>
                                     </div>
                                     <div class="col-md-12">
@@ -394,30 +390,30 @@
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                         <button class="send">Send</button>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </form>
 
-                    </div>
+                    <!-- </div>
                     <div class="col-md-12 border_top">
                         <form class="news">
                             <h3>Newsletter</h3>
                             <input class="newslatter" placeholder="ENTER YOUR MAIL" type="text" name=" ENTER YOUR MAIL">
                             <button class="submit">Subscribe</button>
                         </form>
-                    </div>
+                    </div> -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
                                 <div class="address">
                                     <ul class="loca">
                                         <li>
-                                            <a href="#"><img src="icon/loc.png" alt="#" /></a>Locations
+                                            <a href="#"><img src="icon/loc.png" alt="#" /></a>Jember
 
                                         <li>
 
-                                            <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775
+                                            <a href="#"><img src="icon/call.png" alt="#" /></a>+6287761675825
                                         </li>
                                         <li>
                                             <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com
@@ -445,8 +441,7 @@
             <div class="container">
                 <div class="copyright">
 
-                    <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html
-                            Templates</a></p>
+                    <p>Keep Healthy</p>
                 </div>
             </div>
         </div>
