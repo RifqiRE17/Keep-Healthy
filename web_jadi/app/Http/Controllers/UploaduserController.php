@@ -147,6 +147,6 @@ class UploadUserController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back()->with('success','Data berhasil dihapus');
+        return back();
     }
 }

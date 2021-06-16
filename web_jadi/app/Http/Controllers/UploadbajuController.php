@@ -138,6 +138,6 @@ class UploadbajuController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back()->withSuccess('Data Berhasil Dihapus!');
+        return back();
     }
 }

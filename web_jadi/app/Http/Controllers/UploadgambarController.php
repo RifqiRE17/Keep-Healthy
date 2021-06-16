@@ -116,7 +116,7 @@ class UploadgambarController extends Controller
 
         $request->ktp->move(public_path().'/ktp', $awal);
         $ubah->update($dt);
-        return redirect('data-gambar')->withSuccess('Data Berhasil Diperbarui!');
+        return back();
     }
 
     /**
@@ -138,7 +138,7 @@ class UploadgambarController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back()->withSuccess('Data Berhasil Dihapus!');
+        return back()->with('success','Data berhasil dihapus');
 
     }
 }
