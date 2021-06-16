@@ -92,29 +92,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- ./delete -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
         integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 
     <!-- REQUIRED SCRIPTS -->
     @include('Template.script')
     @include('sweetalert::alert')
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 <script>
 $('.delete').click(function() {
-    var id = $(this).attr('data-id');
-    var nama = $(this).attr('data-nama');
+    var idartikel = $(this).attr('data-id');
+    var namaartikel = $(this).attr('data-nama');
 
     swal({
             title: "Yakin?",
-            text: "Kamu Akan Menghapus Data " + nama + "",
+            text: "Kamu Akan Menghapus Data " + namaartikel + "",
             icon: "warning",
             buttons: true,
             dangerMode: true,
         })
         .then((willDelete) => {
             if (willDelete) {
-                window.location = "/delete-artikel/" + id + ""
+                window.location = "/delete-artikel/" + idartikel + ""
                 swal("Data Berhasil DiHapus", {
                     icon: "success",
                 });

@@ -71,8 +71,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td>
                                     <a href="{{ url('edit-gambar',$item->id) }}"><i class="fas fa-edit"></i></a>
                                     |
-                                    <a href="{{ url('delete-gambar',$item->id) }}"><i class="fas fa-trash-alt"
-                                            style="color: red"></i></a>
+                                    <a href="#"><i class="fas fa-trash-alt delete" data-id="{{ $item->id }}"
+                                            data-nama="{{ $item->nama }}" style=" color: red"></i></a>
                                 </td>
 
 
@@ -92,11 +92,40 @@ scratch. This page gets rid of all links and provides the needed markup only.
             @include('Template.footer')
         </footer>
     </div>
-    <!-- ./wrapper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
 
     <!-- REQUIRED SCRIPTS -->
     @include('Template.script')
     @include('sweetalert::alert')
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
+<script>
+$('.delete').click(function() {
+    var id = $(this).attr('data-id');
+    var nama = $(this).attr('data-nama');
+
+    swal({
+            title: "Yakin?",
+            text: "Kamu Akan Menghapus Data " + nama + "",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+            if (willDelete) {
+                window.location = "/delete-gambar/" + id + ""
+                swal("Data Berhasil DiHapus", {
+                    icon: "success",
+                });
+            } else {
+                swal("Data Tidak Jadi DiHapus");
+            }
+        });
+
+});
+</script>
+
 
 </html>
