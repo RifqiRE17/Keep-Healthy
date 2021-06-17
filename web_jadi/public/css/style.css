@@ -978,6 +978,12 @@ transition: all 0.3s ease-in;
     
      min-height: 980px;
 }
+
+.header-top-artikel {
+    padding-top: 50px;
+   
+    
+}
  .header {
      position: absolute;
      z-index: 999;

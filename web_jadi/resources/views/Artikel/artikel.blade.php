@@ -1,5 +1,8 @@
+<<<<<<< Updated upstream
 @extends('layouts.master')
 @section('content')
+=======
+>>>>>>> Stashed changes
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -18,10 +21,100 @@
     <link href="/css/owl.theme.default.css" rel="stylesheet"/>
     <!-- Bootstrap CSS -->
     <link href="/css/style_Artikel.css" rel="stylesheet" />
+
+    <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+   
+    
     <!-- Modernizr JS -->
     <script src="/js/modernizr-3.5.0.min.js"></script>
 </head>
 <body>
+<!-- <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div> -->
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header-top-artikel">
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-9">
+
+
+<div class="menu-area">
+    <div class="limit-box">
+        <nav class="main-menu ">
+            <ul class="menu-area-main">
+                <li> <a href="{{ url('/home') }}">Halaman Awal</a> </li>
+
+                <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
+                <li> <a href="/Artikel/artikel">Artikel </a> </li>
+                <li>
+
+                    <a href="{{ route('login') }}" class="text-center">Login</a>
+
+                </li>
+                <li>
+                    <li> <a href="concerts.html">Artikel </a> </li>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
+                        role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" v-pre>
+                        {{ Auth::user()->name }}
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" style="background-color: aqua;"
+                            href="{{ route('logout') }}" onclick="event.preventDefault();
+                         document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                            class="d-none">
+                            @csrf
+                        </form>
+                    </div>
+                </li> -->
+
+
+
+                <li> <a class="last_manu" href="#"><img src="images/search_icon.png"
+                            alt="#" /></a> </li>
+
+            </ul>
+        </nav>
+
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
 
 <div class="container-fluid paddding mb-5">
     <div class="row mx-0">
