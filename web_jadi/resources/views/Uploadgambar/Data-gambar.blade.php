@@ -85,6 +85,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </tr>
                             @endforeach
                         </table>
+                        <br>
                         <ul class="pagination justify-content-center mb-10">
                             {{ $dataGambar->links() }}
                         </ul>
