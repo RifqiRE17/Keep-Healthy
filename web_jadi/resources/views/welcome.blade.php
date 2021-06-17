@@ -64,7 +64,7 @@
                                             <li> <a href="{{ url('/') }}">Halaman Awal</a> </li>
 
                                             <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
-                                            <li> <a href="{{ url('artikel') }}">Artikel </a> </li>
+                                            <li> <a href="/Artikel/artikel">Artikel </a> </li>
                                             <li> <a href="{{ route('login') }}"
                                                     class="text-sm text-gray-700 underline">Log in</a></li>
                                             <li><a href="{{ route('register') }}"

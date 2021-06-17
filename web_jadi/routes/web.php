@@ -139,4 +139,4 @@ Route::get('/dashboard/mitra', [MitraController::class, 'index']);
 
 
     // route Artikel 
-    Route::get('/artikel', [ArtikelController::class, 'artikel']);
+    Route::get('Artikel/artikel', [ArtikelController::class, 'artikel']);
