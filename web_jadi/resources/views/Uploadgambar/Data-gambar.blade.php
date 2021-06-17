@@ -49,8 +49,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </div>
                     </div>
 
-                    <div class="card-boy">
-                        <form method="GET" action="{{url('data-artikel')}}">
+                    <div class="card-body">
+                        <form method="GET" action="{{url('data-gambar')}}">
                             <input type="text" name="keyword">
                             <button type="submit">Pencarian</button>
                         </form>
