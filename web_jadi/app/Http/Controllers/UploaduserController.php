@@ -11,9 +11,14 @@ class UploadUserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $dataUser = Uploaduser::latest()->get();
+        $keyword = $request->keyword;
+        $dataUser = Uploaduser::where('name', 'LIKE', '%'.$keyword.'%')
+        ->orwhere('alamat', 'LIKE', '%'.$keyword.'%')
+        ->paginate(4);
+        $dataUser->appends($request->all());
+        // $dataUser = Uploaduser::latest()->get();
         return view('Uploaduser.Data-user', compact('dataUser'));
     }
 

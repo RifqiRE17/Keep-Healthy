@@ -100,18 +100,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- REQUIRED SCRIPTS -->
     @include('Template.script')
 
-    @push('styles')
+    <!-- @push('styles')
     <link href="{{asset('vendor/summernote/summernote.min.css')}}" rel="stylesheet">
-    @endpush
+    @endpush -->
 
-    @push('script')
+    <!-- @push('script')
     <script type="text/javascript" src="{{asset('vendor/summernote/summernote.min.js')}}"></script>
     <script type="text/javascript">
     $(document).ready(function() {
         $('#summernote').summernote();
     });
     </script>
-    @endpush
+    @endpush -->
 
 </body>
 
