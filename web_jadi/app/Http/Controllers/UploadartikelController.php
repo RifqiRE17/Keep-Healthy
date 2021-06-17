@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Uploadartikel;
+use App\Uploaduser;
+
 class UploadartikelController extends Controller
 {
     /**
@@ -11,9 +13,13 @@ class UploadartikelController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $dataArtikel = Uploadartikel::latest()->get();
+        $keyword = $request->keyword;
+        $dataArtikel = Uploadartikel::where('namaartikel', 'LIKE', '%'.$keyword.'%')
+        ->paginate(3);
+        $dataArtikel->appends($request->all());
+        // $dataArtikel = Uploadartikel::latest()->get();
         return view('Uploadartikel.Data-artikel', compact('dataArtikel'));
     }
 

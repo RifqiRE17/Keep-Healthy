@@ -13,9 +13,13 @@ class UploadbajuController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $dataBaju = Uploadbaju::latest()->get();
+        $keyword = $request->keyword;
+        $dataBaju = Uploadbaju::where('hargalayanan', 'LIKE', '%'.$keyword.'%')
+        ->paginate(3);
+        $dataBaju->appends($request->all());
+        // $dataBaju = Uploadbaju::latest()->paginate();
         return view('Uploadbaju.Data-baju', compact('dataBaju'));
     }
 

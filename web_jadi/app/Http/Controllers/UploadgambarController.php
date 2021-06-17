@@ -11,9 +11,14 @@ class UploadgambarController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $dataGambar = Uploadgambar::latest()->get();
+        $keyword = $request->keyword;
+        $dataGambar = Uploadgambar::where('nama', 'LIKE', '%'.$keyword.'%')
+        ->orwhere('alamat', 'LIKE', '%'.$keyword.'%')
+        ->paginate(4);
+        $dataGambar->appends($request->all());
+        // $dataGambar = Uploadgambar::latest()->paginate(2);
         return view('Uploadgambar.Data-gambar',compact('dataGambar'));
     }
 
