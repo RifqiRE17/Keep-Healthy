@@ -49,7 +49,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </div>
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-boy">
+                        <form method="GET" action="{{url('data-artikel')}}">
+                            <input type="text" name="keyword">
+                            <button type="submit">Pencarian</button>
+                        </form>
+                        <br>
                         <table class="table table-bordered">
                             <tr>
                                 <th>Nama</th>
@@ -80,6 +85,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </tr>
                             @endforeach
                         </table>
+                        <ul class="pagination justify-content-center mb-10">
+                            {{ $dataGambar->links() }}
+                        </ul>
                     </div>
 
                 </div>

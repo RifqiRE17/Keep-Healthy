@@ -50,9 +50,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
 
 
+
                     <div class="card-body">
+                        <form method="GET" action="{{url('data-artikel')}}">
+                            <input type="text" name="keyword">
+                            <button type="submit">Pencarian</button>
+                        </form>
+                        <br>
                         <table class="table table-bordered">
                             <tr>
+
                                 <th>Nama Artikel</th>
                                 <th>Isi Artikel</th>
                                 <th>Foto Artikel</th>
@@ -60,6 +67,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </tr>
                             @foreach ($dataArtikel as $item)
                             <tr>
+
                                 <td>{{ $item->namaartikel }}</td>
                                 <td>{{ $item->isiartikel }}</td>
                                 <td>
@@ -68,21 +76,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </td>
                                 <td>
                                     <a href="{{ url('edit-artikel',$item->id) }}"><i class="fas fa-edit"></i></a>
-                                    |
+
                                     <a href="#"><i class="fas fa-trash-alt delete" data-id="{{ $item->id }}"
                                             data-nama="{{ $item->namaartikel }}" style=" color: red"></i></a>
                                 </td>
-
-
-
                             </tr>
                             @endforeach
+
                         </table>
+                        <br>
+                        <ul class="pagination justify-content-center mb-10">
+                            {{ $dataArtikel->links() }}
+                        </ul>
+
+
+
+
                     </div>
                 </div>
             </div>
+
             <!-- /.content -->
         </div>
+
         <!-- /.content-wrapper -->
         <!-- Main Footer -->
         <footer class="main-footer">

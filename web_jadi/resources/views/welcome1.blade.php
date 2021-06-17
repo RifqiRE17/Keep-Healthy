@@ -102,4 +102,3 @@
 </body>
 
 </html>
-@include('sweetalert::alert')
