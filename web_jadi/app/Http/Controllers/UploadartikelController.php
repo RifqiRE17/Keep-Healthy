@@ -17,7 +17,7 @@ class UploadartikelController extends Controller
     {
         $keyword = $request->keyword;
         $dataArtikel = Uploadartikel::where('namaartikel', 'LIKE', '%'.$keyword.'%')
-        ->paginate(3);
+        ->paginate(2);
         $dataArtikel->appends($request->all());
         // $dataArtikel = Uploadartikel::latest()->get();
         return view('Uploadartikel.Data-artikel', compact('dataArtikel'));
