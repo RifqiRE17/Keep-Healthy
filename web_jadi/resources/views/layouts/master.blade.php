@@ -113,6 +113,7 @@
 
             <!-- end header -->
             @yield('content')
+            
             <!--  footer -->
             <footr>
                 <div class="footer ">

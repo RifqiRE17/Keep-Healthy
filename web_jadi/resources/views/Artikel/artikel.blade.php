@@ -1,3 +1,6 @@
+@extends('layouts.master')
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
@@ -28,7 +31,7 @@
                 <div class="fh5co_suceefh5co_height_position_absolute_font">
                     <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Dec 31,2017
                     </a></div>
-                    <div class=""><a href="single.html" class="fh5co_good_font"> After all is said and done, more is said than done </a></div>
+                    <div class=""><a href="{{ url('/single') }}" class="fh5co_good_font"> After all is said and done, more is said than done </a></div>
                 </div>
             </div>
         </div>
@@ -354,5 +357,7 @@
 <!-- Main -->
 <script src="/js/main.js"></script>
 
+
 </body>
 </html>
+@endsection

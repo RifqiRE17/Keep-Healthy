@@ -16,4 +16,9 @@ class ArtikelController extends Controller
     {
         return view('Artikel.artikel');
     }
+
+    public function single()
+    {
+        return view('Artikel.single');
+    }
 }
