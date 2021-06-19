@@ -65,7 +65,7 @@
 
                                             <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
                                             <li> <a href="Artikel/artikel">Artikel </a> </li>
-                                            <li> <a href="{{ route('login') }}"
+                                            <li> <a href="{{ route('admin') }}"
                                                     class="text-sm text-gray-700 underline">Log in</a></li>
                                             <li><a href="{{ route('register') }}"
                                                     class="ml-4 text-sm text-gray-700 underline">Register</a>

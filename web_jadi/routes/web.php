@@ -148,3 +148,10 @@ Route::get('/dashboard/mitra', [MitraController::class, 'index']);
 //Profil
 Route::get('profile', 'ProfileController@index');
 Route::post('profile', 'ProfileController@update');
+
+
+    // route untuk pembagian login
+// ========================================================================
+Route::group(['middleware' => ['auth','CekLevel:admin']], function() {
+    Route::get('/admin','AdminController@index')->name('admin');
+});
