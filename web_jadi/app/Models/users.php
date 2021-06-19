@@ -15,6 +15,8 @@ class users extends Model
         'name',
         'email',
         'alamat',
+        'nomor',
         'password',
+        'level',
     ];
 }

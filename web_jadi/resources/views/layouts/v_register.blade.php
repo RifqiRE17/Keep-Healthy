@@ -79,6 +79,22 @@
                     </div>
 
                     <div class="input-group mb-3">
+                        <input id="nomor" type="number" class="form-control @error('nomor') is-invalid @enderror"
+                            name="nomor" value="{{ old('nomor') }}" placeholder="Nomor" required
+                            autocomplete="nomor">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fa fa-phone"></span>
+                                @error('nomor')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
                         <input id="password" type="password"
                             class="form-control @error('password') is-invalid @enderror" name="password"
                             placeholder="Password" required autocomplete="new-password">
