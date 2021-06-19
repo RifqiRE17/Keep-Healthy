@@ -13,10 +13,10 @@ class CreateUploadartikelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('uploadartikel', function (Blueprint $table) {
+        Schema::create('uploadartikels', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->String('namaartikel', 100);
-            $table->String('isiartikel');
+            $table->longText('isiartikel');
             $table->String('upload_foto', 100);
             $table->timestamps();
         });
@@ -29,6 +29,6 @@ class CreateUploadartikelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('uploadartikel');
+        Schema::dropIfExists('uploadartikels');
     }
 }

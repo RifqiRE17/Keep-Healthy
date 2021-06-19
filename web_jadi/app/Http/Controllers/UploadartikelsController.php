@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
-use App\Uploadartikel;
+use App\Uploadartikels;
 use App\Uploaduser;
 
 class UploadartikelController extends Controller
@@ -16,11 +17,16 @@ class UploadartikelController extends Controller
     public function index(Request $request)
     {
         $keyword = $request->keyword;
+<<<<<<< HEAD:web_jadi/app/Http/Controllers/UploadartikelsController.php
+        $dataArtikel = Uploadartikels::where('namaartikel', 'LIKE', '%'.$keyword.'%')
+        ->paginate(3);
+=======
         $dataArtikel = Uploadartikel::where('namaartikel', 'LIKE', '%'.$keyword.'%')
         ->paginate(2);
+>>>>>>> adeb039edbb9b8339ed106e244b84e7f853fbd0f:web_jadi/app/Http/Controllers/UploadartikelController.php
         $dataArtikel->appends($request->all());
         // $dataArtikel = Uploadartikel::latest()->get();
-        return view('Uploadartikel.Data-artikel', compact('dataArtikel'));
+        return view('uploadartikels.Data-artikel', compact('dataArtikel'));
     }
 
     /**
@@ -30,7 +36,7 @@ class UploadartikelController extends Controller
      */
     public function create()
     {
-        return view('Uploadartikel.Create-artikel');
+        return view('uploadartikels.Create-artikel');
     }
 
     /**
@@ -54,7 +60,7 @@ class UploadartikelController extends Controller
         $nm = $request->upload_foto;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
 
-            $dtUpload = new Uploadartikel;
+            $dtUpload = new Uploadartikels;
             $dtUpload->namaartikel = $request->namaartikel;
             $dtUpload->isiartikel = $request->isiartikel;
             $dtUpload->upload_foto = $namaFile;
@@ -85,7 +91,7 @@ class UploadartikelController extends Controller
      */
     public function edit($id)
     {
-        $dt = Uploadartikel::findorfail($id);
+        $dt = Uploadartikels::findorfail($id);
         return view('Uploadartikel.Edit-artikel', compact('dt'));
     }
 
@@ -108,7 +114,7 @@ class UploadartikelController extends Controller
         ]
     );
         
-        $ubah = Uploadartikel::findorfail($id);
+        $ubah = Uploadartikels::findorfail($id);
         $awal = $ubah->upload_foto;
         
 
@@ -132,7 +138,7 @@ class UploadartikelController extends Controller
      */
     public function destroy($id)
     {
-        $hapus = Uploadartikel::findorfail($id);
+        $hapus = Uploadartikels::findorfail($id);
 
         $file = public_path('/artikel/').$hapus->upload_foto;
        

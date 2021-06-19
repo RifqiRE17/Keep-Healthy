@@ -7,6 +7,7 @@ use App\Http\Controllers\Mitra\MitraController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ArtikelController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -112,12 +113,12 @@ Route::post('/update-kantor/{id}', 'UploadkantorController@update')->name('updat
 Route::get('/delete-kantor/{id}', 'UploadkantorController@destroy')->name('delete-kantor');
 
 
-Route::get('/data-artikel','UploadartikelController@index')->name('data-artikel');
-Route::get('/create-artikel','UploadartikelController@create')->name('create-artikel');
-Route::post('/simpan-artikel','UploadartikelController@store')->name('simpan-artikel');
-Route::get('/edit-artikel/{id}', 'UploadartikelController@edit')->name('edit-artikel');
-Route::post('/update-artikel/{id}', 'UploadartikelController@update')->name('update-artikel');
-Route::get('/delete-artikel/{id}', 'UploadartikelController@destroy')->name('delete-artikel');
+Route::get('/data-artikel','UploadartikelsController@index')->name('data-artikel');
+Route::get('/create-artikel','UploadartikelsController@create')->name('create-artikel');
+Route::post('/simpan-artikel','UploadartikelsController@store')->name('simpan-artikel');
+Route::get('/edit-artikel/{id}', 'UploadartikelsController@edit')->name('edit-artikel');
+Route::post('/update-artikel/{id}', 'UploadartikelsController@update')->name('update-artikel');
+Route::get('/delete-artikel/{id}', 'UploadartikelsController@destroy')->name('delete-artikel');
 
 // route untuk mitra
 // ========================================================================
@@ -143,6 +144,7 @@ Route::get('/dashboard/mitra', [MitraController::class, 'index']);
     // eoute Single artikel
     Route::get('/single', [ArtikelController::class, 'single']);
 
-    //Profil
-    Route::get('profile', 'ProfileController@index');
-    Route::post('profile', 'ProfileController@update');
+   
+//Profil
+Route::get('profile', 'ProfileController@index');
+Route::post('profile', 'ProfileController@update');
