@@ -8,8 +8,13 @@ use Illuminate\Support\Facades\DB;
 
 class users extends Model
 {
-    public function allData()
-    (
-        return DB::table('users')->get();
-    )
+    use HasFactory;
+    protected $table="users";
+
+    protected $fillable = [
+        'name',
+        'email',
+        'alamat',
+        'password',
+    ];
 }

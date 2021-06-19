@@ -83,10 +83,18 @@
                                                 <div class="dropdown-menu dropdown-menu-right"
                                                     aria-labelledby="navbarDropdown">
                                                     <a class="dropdown-item" style="background-color: aqua;"
+                                                        href="{{ url('profile') }}">
+                                                        Profil
+                                                    </a>
+                                                    <br>
+                                                    <a class="dropdown-item" style="background-color: aqua;"
                                                         href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                                         {{ __('Logout') }}
                                                     </a>
+
+
+
 
                                                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                                         class="d-none">
@@ -113,17 +121,17 @@
 
             <!-- end header -->
             @yield('content')
-            
+
             <!--  footer -->
             <footr>
-        <div class="footer ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <form class="contact_bg">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <!-- <div class="titlepage">
+                <div class="footer ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form class="contact_bg">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- <div class="titlepage">
                                         <h2>Contact us</h2>
                                     </div>
                                     <div class="col-md-12">
@@ -142,11 +150,11 @@
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                         <button class="send">Send</button>
                                     </div> -->
-                                </div>
-                            </div>
-                        </form>
+                                        </div>
+                                    </div>
+                                </form>
 
-                    <!-- </div>
+                                <!-- </div>
                     <div class="col-md-12 border_top">
                         <form class="news">
                             <h3>Newsletter</h3>
@@ -154,49 +162,55 @@
                             <button class="submit">Subscribe</button>
                         </form>
                     </div> -->
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                <div class="address">
-                                    <ul class="loca">
-                                        <li>
-                                            <a href="#"><img src="icon/loc.png" alt="#" /></a>Jember
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                            <div class="address">
+                                                <ul class="loca">
+                                                    <li>
+                                                        <a href="#"><img src="icon/loc.png" alt="#" /></a>Jember
 
-                                        <li>
+                                                    <li>
 
-                                            <a href="#"><img src="icon/call.png" alt="#" /></a>+6287761675825
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com
-                                        </li>
-                                    </ul>
+                                                        <a href="#"><img src="icon/call.png"
+                                                                alt="#" /></a>+6287761675825
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="icon/email.png"
+                                                                alt="#" /></a>demo@gmail.com
+                                                    </li>
+                                                </ul>
 
 
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                            <ul class="social_link">
+                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-linkedin-square"
+                                                            aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                <ul class="social_link">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
+
+                        </div>
+                        <div class="container">
+                            <div class="copyright">
+
+                                <p>Keep Healthy</p>
                             </div>
                         </div>
                     </div>
-
-                </div>
-
-            </div>
-            <div class="container">
-                <div class="copyright">
-
-                    <p>Keep Healthy</p>
-                </div>
-            </div>
-        </div>
-    </footr>            <!-- end footer -->
+            </footr> <!-- end footer -->
             <!-- Javascript files-->
             <script src="js/jquery.min.js"></script>
             <script src="js/popper.min.js"></script>

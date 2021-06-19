@@ -142,3 +142,7 @@ Route::get('/dashboard/mitra', [MitraController::class, 'index']);
     Route::get('Artikel/artikel', [ArtikelController::class, 'artikel']);
     // eoute Single artikel
     Route::get('/single', [ArtikelController::class, 'single']);
+
+    //Profil
+    Route::get('profile', 'ProfileController@index');
+    Route::post('profile', 'ProfileController@update');
