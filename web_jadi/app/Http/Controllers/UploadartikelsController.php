@@ -17,8 +17,13 @@ class UploadartikelController extends Controller
     public function index(Request $request)
     {
         $keyword = $request->keyword;
+<<<<<<< HEAD:web_jadi/app/Http/Controllers/UploadartikelsController.php
         $dataArtikel = Uploadartikels::where('namaartikel', 'LIKE', '%'.$keyword.'%')
         ->paginate(3);
+=======
+        $dataArtikel = Uploadartikel::where('namaartikel', 'LIKE', '%'.$keyword.'%')
+        ->paginate(2);
+>>>>>>> adeb039edbb9b8339ed106e244b84e7f853fbd0f:web_jadi/app/Http/Controllers/UploadartikelController.php
         $dataArtikel->appends($request->all());
         // $dataArtikel = Uploadartikel::latest()->get();
         return view('uploadartikels.Data-artikel', compact('dataArtikel'));
