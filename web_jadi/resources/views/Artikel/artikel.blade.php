@@ -46,11 +46,7 @@
                             <div class="full">
                                 <div class="center-desk">
                                     <div class="logo">
-<<<<<<< HEAD
-                                        <a href="index.html"><img src="/images/logo.png" alt="#" /></a>
-=======
                                         <a href="{{ url('/home') }}"><img src="/images/logo.png" alt="#" /></a>
->>>>>>> adeb039edbb9b8339ed106e244b84e7f853fbd0f
                                     </div>
                                 </div>
                             </div>
