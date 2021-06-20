@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\uploadartikel;
-use Illuminate\Http\Request;
 
 class ArtikelController extends Controller
 {
@@ -19,6 +18,8 @@ class ArtikelController extends Controller
         $dataterbaruright = uploadartikel::paginate(4); 
         $dataterbaruleft = uploadartikel::latest()->get()->random(1);
         $dataterbarunews = uploadartikel::latest()->get()->random(5);
+        
+        
 
         return view('Artikel.artikel',compact('dataterbaruright','dataterbaruleft','dataterbarunews','semuaartikel'));
     }
@@ -26,8 +27,10 @@ class ArtikelController extends Controller
     public function single($namaartikel)
     {
         $artikel = uploadartikel::where('namaartikel',$namaartikel)->first();
+
         return view('Artikel.single', [
             'artikel' => $artikel
         ]);
     }
+
 }

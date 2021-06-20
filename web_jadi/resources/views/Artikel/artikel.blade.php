@@ -112,10 +112,10 @@
     <div class="row mx-0">
         @foreach ($dataterbaruleft as $item)
         <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
-            <div class="fh5co_suceefh5co_height"><img src="/imagess/nick-karvounis-78711.jpg" alt="img"/>
+            <div class="fh5co_suceefh5co_height"><img src="{{ asset('artikel/'. $item->upload_foto ) }}" alt="img"/>
                 <div class="fh5co_suceefh5co_height_position_absolute"></div>
                 <div class="fh5co_suceefh5co_height_position_absolute_font">
-                    <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Dec 31,2017
+                    <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['created_at']}} 
                     </a></div>
                     <div class=""><a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font"> {{$item['namaartikel']}}</a></div>
                 </div>
@@ -126,7 +126,7 @@
             <div class="row">
                 @foreach ($dataterbaruright as $item)
                 <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-                    <div class="fh5co_suceefh5co_height_2"><img src="/imagess/science-578x362.jpg" alt=""/>
+                    <div class="fh5co_suceefh5co_height_2"><img src="{{ asset('artikel/'. $item->upload_foto ) }}" alt=""/>
                         <div class="fh5co_suceefh5co_height_position_absolute"></div>
                         <div class="fh5co_suceefh5co_height_position_absolute_font_2">
                             <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['created_at']}} </a></div>
@@ -209,7 +209,7 @@
         @foreach ($dataterbarunews as $item)
             <div class="item px-2">
                 <div class="fh5co_hover_news_img">
-                    <div class="fh5co_news_img"><img src="/imagess/39-324x235.jpg" alt=""/></div>
+                    <div class="fh5co_news_img"><img src="{{ asset('artikel/'. $item->upload_foto ) }}" alt=""/></div>
                     <div>
                         <a href="{{ url('/single', $item->namaartikel) }}" class="d-block fh5co_small_post_heading"><span class="">{{$item['namaartikel']}}</span></a>
                         <div class="c_g"><i class="fa fa-clock-o"></i>{{$item['created_at']}}</div>
@@ -232,7 +232,7 @@
                 <div class="row pb-4">
                     <div class="col-md-5">
                         <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="/imagess/nathan-mcbride-229637.jpg" alt=""/></div>
+                            <div class="fh5co_news_img"><img src="{{ asset('artikel/'. $item->upload_foto ) }}" alt=""/></div>
                             <div></div>
                         </div>
                     </div>
