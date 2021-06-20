@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 
-use Illuminate\Http\Request;
+
 use App\Uploadartikels;
 use App\Uploaduser;
+use Illuminate\Http\Request;
 
 class UploadartikelsController extends Controller
 {
@@ -17,8 +18,8 @@ class UploadartikelsController extends Controller
     public function index(Request $request)
     {
         $keyword = $request->keyword;
-        $dataArtikel = Uploadartikels::where('namaartikel', 'LIKE', '%'.$keyword.'%')
-        ->paginate(3);
+        // $dataArtikel = Uploadartikels::where('namaartikel', 'LIKE', '%'.$keyword.'%')
+        // ->paginate(3);
         $dataArtikel = Uploadartikels::where('namaartikel', 'LIKE', '%'.$keyword.'%')
         ->paginate(2);
         $dataArtikel->appends($request->all());
@@ -47,6 +48,7 @@ class UploadartikelsController extends Controller
         $request->validate([
             'namaartikel' => 'required',
             'isiartikel' => 'required',
+            'tanggal_upload' => 'required',
             'upload_foto' => 'required',
         ],
         [
@@ -60,6 +62,7 @@ class UploadartikelsController extends Controller
             $dtUpload = new Uploadartikels;
             $dtUpload->namaartikel = $request->namaartikel;
             $dtUpload->isiartikel = $request->isiartikel;
+            $dtUpload->tanggal_upload = $request->tanggal_upload;
             $dtUpload->upload_foto = $namaFile;
             
 
@@ -104,6 +107,7 @@ class UploadartikelsController extends Controller
         $request->validate([
             'namaartikel' => 'required',
             'isiartikel' => 'required',
+            'tanggal_upload' => 'required',
             'upload_foto' => 'required',
         ],
         [
@@ -118,6 +122,7 @@ class UploadartikelsController extends Controller
         $dt = [
             'namaartikel' => $request['namaartikel'],
             'isiartikel' => $request['isiartikel'],
+            'tanggal_upload' => $request['tanggal_upload'],
             'upload_foto' => $awal,
             
         ];

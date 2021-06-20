@@ -67,6 +67,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 @enderror
                             </div>
                             <div class="form-group">
+                                <label class="control-label" for="Tanggal_upload">Tanggal Upload</label>
+                                <input type="date" id="tanggal_upload" name="tanggal_upload" placeholder="Tanggal Upload" class="form-control @error('tanggal_upload') 
+                    is-invalid @enderror" value="{{ old('tanggal_upload', $dt->tanggal_upload) }}">
+                                @error('tanggal_upload')
+                                <div class="invalid-feedback">{{ $message}}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
                                 <label class="control-label" for="upload_foto">Foto Artikel</label>
                                 <input type="file" id="upload_foto" name="upload_foto" class="form-control @error('upload_foto')
                     is-invalid @enderror" autofoucus>

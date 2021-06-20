@@ -26,17 +26,19 @@
 </head>
 <body class="single">
 <div id="fh5co-title-box" style="background-image: url(/imagess/camila-cordeiro-114636.jpg);" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="page-title">
-        <img src="{{ asset('artikel/'. $artikel->upload_foto ) }}" alt="Free HTML5 by FreeHTMl5.co">
-        <span>{{ $artikel->created_at }}</span>
-        <h2>{{ $artikel->namaartikel }}</h2>
+    <div class="overlay">
+    <div class="fh5co_hover_news_img">
+    <div class="fh5co_news_img"> <img src="{{ asset('artikel/'. $artikel->upload_foto ) }}" alt="Free HTML5 by FreeHTMl5.co"></div>
     </div>
+    </div>
+      
+    
 </div>
 <div id="fh5co-single-content" class="container-fluid pb-4 pt-4 paddding">
     <div class="container paddding">
         <div class="row mx-0">
             <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+            <h2>{{ $artikel->namaartikel }}</h2>
                 <p>
                     {!! $artikel->isiartikel !!}
                 </p>

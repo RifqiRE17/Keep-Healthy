@@ -17,6 +17,7 @@ class CreateUploadartikelsTable extends Migration
             $table->bigIncrements('id');
             $table->String('namaartikel', 100);
             $table->longText('isiartikel');
+            $table->date('tanggal_upload');
             $table->String('upload_foto', 100);
             $table->timestamps();
         });

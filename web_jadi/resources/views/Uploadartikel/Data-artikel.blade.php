@@ -62,6 +62,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                                 <th>Nama Artikel</th>
                                 <th>Isi Artikel</th>
+                                <th>Tanggal Upload</th>
                                 <th>Foto Artikel</th>
                                 <th>Aksi</th>
                             </tr>
@@ -70,6 +71,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                                 <td>{{ $item->namaartikel }}</td>
                                 <td>{{ $item->isiartikel }}</td>
+                                <td>{{ $item->tanggal_upload }}</td>
                                 <td>
                                     <a href="{{ asset('artikel/'. $item->upload_foto ) }}" target="_blank"
                                         rel="noopener noreferrer">Lihat Foto Artikel</a>

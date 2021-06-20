@@ -143,6 +143,8 @@ Route::get('/dashboard/mitra', [MitraController::class, 'index']);
     Route::get('Artikel/artikel', [ArtikelController::class, 'artikel']);
     // eoute Single artikel
     Route::get('/single/{namaartikel}', [ArtikelController::class, 'single']);
+    // Route Read More Artikel
+    // Route::get('/Artikel/artikel/{post}', 'ArtikelController@readmore');
 
    
 //Profil
