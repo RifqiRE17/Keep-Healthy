@@ -36,6 +36,7 @@
     <script src="/js/modernizr-3.5.0.min.js"></script>
 </head>
 <body>
+<!-- Header -->
 <header>
         <!-- header inner -->
         <div class="header-top-artikel">
@@ -336,7 +337,7 @@
 <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
 </div>
-
+<!-- Footer -->
 <footr>
         <div class="footer ">
             <div class="container">
@@ -419,6 +420,7 @@
             </div>
         </div>
     </footr>
+<!-- Akhir Footer -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="/js/owl.carousel.min.js"></script>
