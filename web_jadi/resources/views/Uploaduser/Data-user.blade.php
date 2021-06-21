@@ -59,6 +59,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <table class="table table-bordered">
                             <tr>
                                 <th>Nama</th>
+                                <th>Level</th>
                                 <th>Email</th>
                                 <th>Nomor</th>
                                 <th>Alamat</th>
@@ -69,6 +70,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             @foreach ($dataUser as $item)
                             <tr>
                                 <td>{{ $item->name }}</td>
+                                <td>{{ $item->level }}</td>
                                 <td>{{ $item->email }}</td>
                                 <td>{{ $item->nomor }}</td>
                                 <td>{{ $item->alamat }}</td>
