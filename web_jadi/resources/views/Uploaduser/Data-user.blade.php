@@ -60,6 +60,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <tr>
                                 <th>Nama</th>
                                 <th>Email</th>
+                                <th>Nomor</th>
                                 <th>Alamat</th>
 
                                 <!-- <th>Upload Foto</th> -->
@@ -69,6 +70,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <tr>
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->email }}</td>
+                                <td>{{ $item->nomor }}</td>
                                 <td>{{ $item->alamat }}</td>
                                 <!-- <td>
                                     <a href="{{ asset('user/'. $item->upload_foto ) }}" target="_blank"
