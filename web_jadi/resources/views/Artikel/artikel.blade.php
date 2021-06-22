@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,11 +9,11 @@
     <link href="/css/media_query.css" rel="stylesheet" />
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="/css/animate.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="/css/owl.carousel.css" rel="stylesheet" />
-    <link href="/css/owl.theme.default.css" rel="stylesheet"/>
+    <link href="/css/owl.theme.default.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link href="/css/style_Artikel.css" rel="stylesheet" />
 
@@ -31,16 +31,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen">
 
-        
+
     <!-- Modernizr JS -->
     <script src="/js/modernizr-3.5.0.min.js"></script>
 </head>
+
 <body>
-<!-- Header -->
-<header>
+    <!-- Header -->
+    <header>
         <!-- header inner -->
         <div class="header-top-artikel">
-            <div class="header"  style="background-color: #0BF7C8;">
+            <div class="header" style="background-color: #0BF7C8;">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col logo_section">
@@ -106,6 +107,7 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 </header>
 
 
@@ -121,10 +123,36 @@
                     <div class=""><a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font"> {{$item['namaartikel']}}</a></div>
                     <div class="fh5co_consectetur">  
                     <p>{!!$item->isiartikel = substr($item->isiartikel, 0, 100)!!}<a href="{{ url('/single', $item->namaartikel) }}" style="color:white">  Readmore </a></p>
+=======
+    </header>
+
+
+    <div class="container-fluid paddding mb-5" style="padding-top: 84px;">
+        <div class="row mx-0">
+            @foreach ($dataterbaruleft as $item)
+            <?php
+                $isiartikel = substr($item->isiartikel, 100, 100);?>
+            <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
+                <div class="fh5co_suceefh5co_height"><img src="{{ asset('artikel/'. $item->upload_foto ) }}"
+                        alt="img" />
+                    <div class="fh5co_suceefh5co_height_position_absolute"></div>
+                    <div class="fh5co_suceefh5co_height_position_absolute_font">
+                        <div><a href="#" class="color_fff"> <i
+                                    class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['tanggal_upload']}} </a></div>
+                        <div><a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font_2">
+                                {{$item['namaartikel']}} </a></div>
+                        <div class="fh5co_consectetur" style="color: white;  ">
+                            {!!$isiartikel!!}
+                            <a href="{{ url('/single', $item->namaartikel) }}" style="color:aqua;">Readmore
+                            </a>
+
+                        </div>
+
+>>>>>>> 2c0031feac85d5a8af0b417dc7f187eb46d60476
                     </div>
-                     
                 </div>
             </div>
+<<<<<<< HEAD
         </div>
         @endforeach
         <div class="col-md-6">
@@ -136,15 +164,38 @@
                         <div class="fh5co_suceefh5co_height_position_absolute_font_2">
                             <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['tanggal_upload']}} </a></div>
                             <div class=""><a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font_2"> {{$item['namaartikel']}} </a></div>
+=======
+            @endforeach
+            <div class="col-md-6">
+                <div class="row">
+                    @foreach ($dataterbaruright as $item)
+                    <?php
+                $isiartikel = substr($item->isiartikel, 100, 100);?>
+                    <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
+                        <div class="fh5co_suceefh5co_height_2"><img src="{{ asset('artikel/'. $item->upload_foto ) }}"
+                                alt="" />
+                            <div class="fh5co_suceefh5co_height_position_absolute"></div>
+                            <div class="fh5co_suceefh5co_height_position_absolute_font_2">
+                                <div style="position:relative; top:-48px;"><a href="#" class="color_fff"> <i
+                                            class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['tanggal_upload']}} </a></div>
+                                <div style="position:relative; top:-45px;"><a
+                                        href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font_2">
+                                        {{$item['namaartikel']}} </a></div>
+                                <div class="fh5co_consectetur" style="color: white; position:relative; top:-40px; ">
+                                    {!!$isiartikel!!}
+                                    <a href="{{ url('/single', $item->namaartikel) }}" style="color:aqua;">Readmore
+                                    </a>
+                                </div>
+                            </div>
+>>>>>>> 2c0031feac85d5a8af0b417dc7f187eb46d60476
                         </div>
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
             </div>
         </div>
     </div>
-</div>
-<!-- <div class="container-fluid pt-3">
+    <!-- <div class="container-fluid pt-3">
     <div class="container animate-box" data-animate-effect="fadeIn">
         <div>
             <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Trending</div>
@@ -205,27 +256,33 @@
     </div>
 </div> -->
 
-<div class="container-fluid pb-4 pt-5">
-    <div class="container animate-box">
-        <div>
-            <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
-        </div>
-        <div class="owl-carousel owl-theme" id="slider2">
-        @foreach ($dataterbarunews as $item)
-            <div class="item px-2">
-                <div class="fh5co_hover_news_img">
-                    <div class="fh5co_news_img"><img src="{{ asset('artikel/'. $item->upload_foto ) }}" alt=""/></div>
-                    <div>
-                        <a href="{{ url('/single', $item->namaartikel) }}" class="d-block fh5co_small_post_heading"><span class="">{{$item['namaartikel']}}</span></a>
-                        <div class="c_g"><i class="fa fa-clock-o"></i>{{$item['tanggal_upload']}}</div>
+    <div class="container-fluid pb-4 pt-5">
+        <div class="container animate-box">
+            <div>
+                <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
+            </div>
+            <div class="owl-carousel owl-theme" id="slider2">
+                @foreach ($dataterbarunews as $item)
+                <div class="item px-2">
+                    <div class="fh5co_hover_news_img">
+                        <div class="fh5co_news_img"><img src="{{ asset('artikel/'. $item->upload_foto ) }}" alt="" />
+                        </div>
+                        <div>
+                            <a href="{{ url('/single', $item->namaartikel) }}"
+                                class="d-block fh5co_small_post_heading"><span
+                                    class="">{{$item['namaartikel']}}</span></a>
+                            <div class="c_g"><i class="fa fa-clock-o"></i>{{$item['tanggal_upload']}}</div>
+                            <a href="{{ url('/single', $item->namaartikel) }}" style="color:aqua;">Readmore
+                            </a>
+                        </div>
                     </div>
                 </div>
+                @endforeach
             </div>
-            @endforeach
         </div>
     </div>
-</div>
 
+<<<<<<< HEAD
 <div class="container-fluid pb-4 pt-4 paddding">
     <div class="container paddding">
         <div class="row mx-0">
@@ -249,12 +306,39 @@
                         <div class="fh5co_consectetur">  
                             <p>{!!$item->isiartikel = substr($item->isiartikel, 0, 100)!!}<a href="{{ url('/single', $item->namaartikel) }}" style="color:black"> Readmore </a></p>
                             
+=======
+    <div class="container-fluid pb-4 pt-4 paddding">
+        <div class="container paddding">
+            <div class="row mx-0">
+                <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+                    <div>
+                        <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
+                    </div>
+                    @foreach ($semuaartikel as $item)
+                    <?php
+                $isiartikel = substr($item->isiartikel,100,100);?>
+
+
+                    <div class="row pb-4">
+                        <div class="col-md-5">
+                            <div class="fh5co_hover_news_img">
+                                <div class="fh5co_news_img"><img src="{{ asset('artikel/'. $item->upload_foto ) }}"
+                                        alt="" /></div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-7 animate-box">
+                            <a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_magna py-2">
+                                {{$item['namaartikel']}}</a>
+                            <p class="fh5co_mini_time py-3"> {{$item['tanggal_upload']}} </p>
+                            <p class="fh5co_consectetur"> {!!html_entity_decode($isiartikel)!!} </p>
+                            <a href="{{ url('/single', $item->namaartikel)}}" style="color: aqua;">Readmore </a>
+>>>>>>> 2c0031feac85d5a8af0b417dc7f187eb46d60476
                         </div>
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
-            </div>
-            <!-- <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                <!-- <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
                 <div>
                     <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Tags</div>
                 </div>
@@ -312,20 +396,34 @@
                     </div>
                 </div>
             </div> -->
+<<<<<<< HEAD
         </div>
         <ul class="pagination justify-content-center mb-10">
                             {{ $semuaartikel->links() }}
                         </ul>
         
+=======
+            </div>
+            <div class="row mx-0 animate-box" data-animate-effect="fadeInUp">
+                <div class="col-12 text-center pb-4 pt-4">
+                    <a href="#" class="btn_mange_pagging"><i class="fa fa-long-arrow-left"></i>&nbsp;&nbsp; Previous</a>
+                    <a href="#" class="btn_pagging">1</a>
+                    <a href="#" class="btn_pagging">2</a>
+                    <a href="#" class="btn_pagging">3</a>
+                    <a href="#" class="btn_pagging">...</a>
+                    <a href="#" class="btn_mange_pagging">Next <i class="fa fa-long-arrow-right"></i>&nbsp;&nbsp; </a>
+                </div>
+            </div>
+        </div>
+>>>>>>> 2c0031feac85d5a8af0b417dc7f187eb46d60476
     </div>
-</div>
 
 
-<div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
-</div>
-<!-- Footer -->
-<footr>
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    </div>
+    <!-- Footer -->
+    <footr>
         <div class="footer ">
             <div class="container">
                 <div class="row">
@@ -356,7 +454,7 @@
                             </div>
                         </form>
 
-                    <!-- </div>
+                        <!-- </div>
                     <div class="col-md-12 border_top">
                         <form class="news">
                             <h3>Newsletter</h3>
@@ -364,64 +462,65 @@
                             <button class="submit">Subscribe</button>
                         </form>
                     </div> -->
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                <div class="address">
-                                    <ul class="loca">
-                                        <li>
-                                            <a href="#"><img src="/icon/loc.png" alt="#" /></a>Jember
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                    <div class="address">
+                                        <ul class="loca">
+                                            <li>
+                                                <a href="#"><img src="/icon/loc.png" alt="#" /></a>Jember
 
-                                        <li>
+                                            <li>
 
-                                            <a href="#"><img src="/icon/call.png" alt="#" /></a>+6287761675825
+                                                <a href="#"><img src="/icon/call.png" alt="#" /></a>+6287761675825
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="/icon/email.png" alt="#" /></a>demo@gmail.com
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                    <ul class="social_link">
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                                         </li>
-                                        <li>
-                                            <a href="#"><img src="/icon/email.png" alt="#" /></a>demo@gmail.com
-                                        </li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                     </ul>
-
-
                                 </div>
                             </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                <ul class="social_link">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
+
                     </div>
 
                 </div>
+                <div class="container">
+                    <div class="copyright">
 
-            </div>
-            <div class="container">
-                <div class="copyright">
-
-                    <p>Keep Healthy</p>
+                        <p>Keep Healthy</p>
+                    </div>
                 </div>
             </div>
-        </div>
     </footr>
-<!-- Akhir Footer -->
+    <!-- Akhir Footer -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/owl.carousel.min.js"></script>
-<!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
-<!-- Waypoints -->
-<script src="/js/jquery.waypoints.min.js"></script>
-<!-- Main -->
-<script src="/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script>
+    <!-- Waypoints -->
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <!-- Main -->
+    <script src="/js/main.js"></script>
 
 </body>
+
 </html>

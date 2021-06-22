@@ -105,6 +105,7 @@ class UploadUserController extends Controller
         $request->validate([
             'name' => 'required|min:3',
             'email' => 'required',
+            'nomor' => 'required|min:11',
             'alamat' => 'required',
             // 'jeniskelamin' => 'required',
             // 'upload_foto' => 'required',
@@ -121,6 +122,7 @@ class UploadUserController extends Controller
         $dt = [
             'nama' => $request['name'],
             'email' => $request['email'],
+            'nomor' => $request['nomor'],
             'alamat' => $request['alamat'],
             'upload_foto' => $awal,
             
