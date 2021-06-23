@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>24 News — Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
+    <title>KeepHealthy</title>
     <link href="/css/media_query.css" rel="stylesheet" />
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -163,6 +163,7 @@
             </div>
         </div>
     </div>
+</div>
     <!-- <div class="container-fluid pt-3">
     <div class="container animate-box" data-animate-effect="fadeIn">
         <div>
@@ -274,7 +275,7 @@
                             <a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_magna py-2">
                                 {{$item['namaartikel']}}</a>
                             <p class="fh5co_mini_time py-3"> {{$item['tanggal_upload']}} </p>
-                            <p class="fh5co_consectetur"> {!!html_entity_decode($isiartikel)!!} </p>
+                            <p class="fh5co_consectetur"> {!!($isiartikel)!!} </p>
                             <a href="{{ url('/single', $item->namaartikel)}}" style="color: aqua;">Readmore </a>
                         </div>
                     </div>
@@ -338,19 +339,13 @@
                     </div>
                 </div>
             </div> -->
-            </div>
-            <div class="row mx-0 animate-box" data-animate-effect="fadeInUp">
-                <div class="col-12 text-center pb-4 pt-4">
-                    <a href="#" class="btn_mange_pagging"><i class="fa fa-long-arrow-left"></i>&nbsp;&nbsp; Previous</a>
-                    <a href="#" class="btn_pagging">1</a>
-                    <a href="#" class="btn_pagging">2</a>
-                    <a href="#" class="btn_pagging">3</a>
-                    <a href="#" class="btn_pagging">...</a>
-                    <a href="#" class="btn_mange_pagging">Next <i class="fa fa-long-arrow-right"></i>&nbsp;&nbsp; </a>
-                </div>
-            </div>
         </div>
+        <ul class="pagination justify-content-center mb-10">
+                            {{ $semuaartikel->links() }}
+                        </ul>
+        
     </div>
+</div>
 
 
     <div class="gototop js-top">

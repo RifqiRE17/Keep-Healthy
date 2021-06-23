@@ -61,11 +61,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <div class="form-group">
                                 <label class="control-label" for="email">Email</label>
                                 <input type="email" id="email" name="email" placeholder="Email" class="form-control @error('email') 
-                    is-invalid @enderror" value="{{ old('name', $dt->email) }}">
-                                @error('name')
+                    is-invalid @enderror" value="{{ old('email', $dt->email) }}">
+                                @error('email')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="nomor">Nomor</label>
+                                <input type="number" id="nomor" name="nomor" placeholder="nomor" class="form-control @error('nomor') 
+                    is-invalid @enderror" value="{{ old('nomor', $dt->nomor) }}">
+                                @error('nomor')
+                                <div class="invalid-feedback">{{ $message}}</div>
+                                @enderror
+                            </div>
+
 
                             <!-- <div class="form-group">
                                 <label class="control-label" for="jabatan">Jenis Kelamin</label>

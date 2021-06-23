@@ -14,13 +14,12 @@ class ArtikelController extends Controller
 
     public function artikel()
     {
-        $semuaartikel = uploadartikel::all();
-        $dataterbaruright = uploadartikel::paginate(4); 
+        $semuaartikel = uploadartikel::paginate(4);
+        $dataterbaruright = uploadartikel::latest()->get()->random(4); 
         $dataterbaruleft = uploadartikel::latest()->get()->random(1);
         $dataterbarunews = uploadartikel::latest()->get()->random(5);
         
-        
-
+    
         return view('Artikel.artikel',compact('dataterbaruright','dataterbaruleft','dataterbarunews','semuaartikel'));
     }
 
@@ -37,5 +36,4 @@ class ArtikelController extends Controller
             'artikel' => $artikel
         ]);
     }
-
 }
