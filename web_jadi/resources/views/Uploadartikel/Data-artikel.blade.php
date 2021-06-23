@@ -52,10 +52,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                     <div class="card-body">
-                        <form method="GET" action="{{url('data-artikel')}}">
-                            <input type="text" name="keyword">
-                            <button type="submit">Pencarian</button>
-                        </form>
+                        <br>
+                        <div class="col-md-4">
+                            <form action="{{ url('data-user') }}" method="get">
+                                <div class="input-group custom-search-form">
+                                    <input type="text" name="keyword" class="form-control" placeholder="search">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary">Pencarian</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
                         <br>
                         <table class="table table-bordered">
                             <tr>

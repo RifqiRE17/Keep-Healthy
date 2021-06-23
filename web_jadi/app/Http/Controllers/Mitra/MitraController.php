@@ -32,12 +32,12 @@ class MitraController extends Controller
         try {
             $request->validate([
                 "nama" => ["required", "max:50"],
-                "nomor" => ["required","min:11", "numeric" ],
+                "nomor" => ["required","min:11", "numeric", 'unique:Mitra' ],
                 "alamat" => ["required"],
                 "ktp" => ['required','image']
             ],
             [
-                'required' => ':Data Harus Terisi',
+                'required' => 'Data Harus Terisi',
             ]
         );
 
