@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>24 News — Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
+    <title>KeepHealthy</title>
     <link href="/css/media_query.css" rel="stylesheet" />
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -107,37 +107,6 @@
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
-</header>
-
-
-<div class="container-fluid paddding mb-5" style="padding-top: 84px;">
-    <div class="row mx-0">
-        @foreach ($dataterbaruleft as $item)
-        <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
-            <div class="fh5co_suceefh5co_height"><img src="{{ asset('artikel/'. $item->upload_foto ) }}" alt="img"/>
-                <div class="fh5co_suceefh5co_height_position_absolute"></div>
-                <div class="fh5co_suceefh5co_height_position_absolute_font">
-                    <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['tanggal_upload']}} 
-                    </a></div>
-                    <div class=""><a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font"> {{$item['namaartikel']}}</a></div>
-                    <div class="fh5co_consectetur">  
-                    <p>{!!$item->isiartikel = substr($item->isiartikel, 0, 100)!!}<a href="{{ url('/single', $item->namaartikel) }}" style="color:white">  Readmore </a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        @endforeach
-        <div class="col-md-6">
-            <div class="row">
-                @foreach ($dataterbaruright as $item)
-                <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-                    <div class="fh5co_suceefh5co_height_2"><img src="{{ asset('artikel/'. $item->upload_foto ) }}" alt=""/>
-                        <div class="fh5co_suceefh5co_height_position_absolute"></div>
-                        <div class="fh5co_suceefh5co_height_position_absolute_font_2">
-                            <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['tanggal_upload']}} </a></div>
-                            <div class=""><a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font_2"> {{$item['namaartikel']}} </a></div>
-=======
     </header>
 
 
@@ -187,7 +156,6 @@
                                     </a>
                                 </div>
                             </div>
->>>>>>> 50be73384ad60275aedd7789cd05ecf84a899844
                         </div>
                     </div>
                     @endforeach
@@ -282,30 +250,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-<div class="container-fluid pb-4 pt-4 paddding">
-    <div class="container paddding">
-        <div class="row mx-0">
-            <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
-                <div>
-                    <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
-                </div>
-                @foreach ($semuaartikel as $item)
-                <?php
-                $isiartikel = substr($item->isiartikel, 0, 100);
-                ?>
-                <div class="row pb-4" name="keyword">
-                    <div class="col-md-5">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="{{ asset('artikel/'. $item->upload_foto ) }}" alt=""/></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <div class="col-md-7 animate-box">
-                        <a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_magna py-2"> {{$item['namaartikel']}}</a> <p class="fh5co_mini_time py-3"> {{$item['tanggal_upload']}} </p>
-                        <div class="fh5co_consectetur">  
-                            <p>{!!$item->isiartikel = substr($item->isiartikel, 0, 100)!!}<a href="{{ url('/single', $item->namaartikel) }}" style="color:black"> Readmore </a></p>
-=======
 
     <div class="container-fluid pb-4 pt-4 paddding">
         <div class="container paddding">
@@ -331,9 +275,8 @@
                             <a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_magna py-2">
                                 {{$item['namaartikel']}}</a>
                             <p class="fh5co_mini_time py-3"> {{$item['tanggal_upload']}} </p>
-                            <p class="fh5co_consectetur"> {!!html_entity_decode($isiartikel)!!} </p>
+                            <p class="fh5co_consectetur"> {!!($isiartikel)!!} </p>
                             <a href="{{ url('/single', $item->namaartikel)}}" style="color: aqua;">Readmore </a>
->>>>>>> 50be73384ad60275aedd7789cd05ecf84a899844
                         </div>
                     </div>
                     @endforeach
@@ -400,10 +343,7 @@
         <ul class="pagination justify-content-center mb-10">
                             {{ $semuaartikel->links() }}
                         </ul>
-<<<<<<< HEAD
-=======
         
->>>>>>> 50be73384ad60275aedd7789cd05ecf84a899844
     </div>
 </div>
 
