@@ -107,6 +107,7 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 </header>
 
 
@@ -136,6 +137,57 @@
                         <div class="fh5co_suceefh5co_height_position_absolute_font_2">
                             <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['tanggal_upload']}} </a></div>
                             <div class=""><a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font_2"> {{$item['namaartikel']}} </a></div>
+=======
+    </header>
+
+
+    <div class="container-fluid paddding mb-5" style="padding-top: 84px;">
+        <div class="row mx-0">
+            @foreach ($dataterbaruleft as $item)
+            <?php
+                $isiartikel = substr($item->isiartikel, 100, 100);?>
+            <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
+                <div class="fh5co_suceefh5co_height"><img src="{{ asset('artikel/'. $item->upload_foto ) }}"
+                        alt="img" />
+                    <div class="fh5co_suceefh5co_height_position_absolute"></div>
+                    <div class="fh5co_suceefh5co_height_position_absolute_font">
+                        <div><a href="#" class="color_fff"> <i
+                                    class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['tanggal_upload']}} </a></div>
+                        <div><a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font_2">
+                                {{$item['namaartikel']}} </a></div>
+                        <div class="fh5co_consectetur" style="color: white;  ">
+                            {!!$isiartikel!!}
+                            <a href="{{ url('/single', $item->namaartikel) }}" style="color:aqua;">Readmore
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            <div class="col-md-6">
+                <div class="row">
+                    @foreach ($dataterbaruright as $item)
+                    <?php
+                $isiartikel = substr($item->isiartikel, 100, 100);?>
+                    <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
+                        <div class="fh5co_suceefh5co_height_2"><img src="{{ asset('artikel/'. $item->upload_foto ) }}"
+                                alt="" />
+                            <div class="fh5co_suceefh5co_height_position_absolute"></div>
+                            <div class="fh5co_suceefh5co_height_position_absolute_font_2">
+                                <div style="position:relative; top:-48px;"><a href="#" class="color_fff"> <i
+                                            class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['tanggal_upload']}} </a></div>
+                                <div style="position:relative; top:-45px;"><a
+                                        href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font_2">
+                                        {{$item['namaartikel']}} </a></div>
+                                <div class="fh5co_consectetur" style="color: white; position:relative; top:-40px; ">
+                                    {!!$isiartikel!!}
+                                    <a href="{{ url('/single', $item->namaartikel) }}" style="color:aqua;">Readmore
+                                    </a>
+                                </div>
+                            </div>
+>>>>>>> 50be73384ad60275aedd7789cd05ecf84a899844
                         </div>
                     </div>
                     @endforeach
@@ -230,6 +282,7 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 <div class="container-fluid pb-4 pt-4 paddding">
     <div class="container paddding">
         <div class="row mx-0">
@@ -252,6 +305,35 @@
                         <a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_magna py-2"> {{$item['namaartikel']}}</a> <p class="fh5co_mini_time py-3"> {{$item['tanggal_upload']}} </p>
                         <div class="fh5co_consectetur">  
                             <p>{!!$item->isiartikel = substr($item->isiartikel, 0, 100)!!}<a href="{{ url('/single', $item->namaartikel) }}" style="color:black"> Readmore </a></p>
+=======
+
+    <div class="container-fluid pb-4 pt-4 paddding">
+        <div class="container paddding">
+            <div class="row mx-0">
+                <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+                    <div>
+                        <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
+                    </div>
+                    @foreach ($semuaartikel as $item)
+                    <?php
+                $isiartikel = substr($item->isiartikel,100,100);?>
+
+
+                    <div class="row pb-4">
+                        <div class="col-md-5">
+                            <div class="fh5co_hover_news_img">
+                                <div class="fh5co_news_img"><img src="{{ asset('artikel/'. $item->upload_foto ) }}"
+                                        alt="" /></div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-7 animate-box">
+                            <a href="{{ url('/single', $item->namaartikel) }}" class="fh5co_magna py-2">
+                                {{$item['namaartikel']}}</a>
+                            <p class="fh5co_mini_time py-3"> {{$item['tanggal_upload']}} </p>
+                            <p class="fh5co_consectetur"> {!!html_entity_decode($isiartikel)!!} </p>
+                            <a href="{{ url('/single', $item->namaartikel)}}" style="color: aqua;">Readmore </a>
+>>>>>>> 50be73384ad60275aedd7789cd05ecf84a899844
                         </div>
                     </div>
                     @endforeach
@@ -318,6 +400,10 @@
         <ul class="pagination justify-content-center mb-10">
                             {{ $semuaartikel->links() }}
                         </ul>
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 50be73384ad60275aedd7789cd05ecf84a899844
     </div>
 </div>
 
