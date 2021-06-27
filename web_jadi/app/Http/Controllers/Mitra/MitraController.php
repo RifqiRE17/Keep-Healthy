@@ -32,25 +32,33 @@ class MitraController extends Controller
         try {
             $request->validate([
                 "nama" => ["required", "max:50"],
-                "nomor" => ["required","min:11", "numeric", 'unique:Mitra' ],
+                "nomor" => ["required","min:12", "numeric", "unique:Mitra" ],
                 "alamat" => ["required"],
+                "foto" => ['required','image'],
                 "ktp" => ['required','image']
             ],
             [
                 'required' => 'Data Harus Terisi',
+                'nomor.min' => 'Data Nomor Minimal 12 Angka ',
+                'nomor.unique' => 'Data Nomor Sudah Ada! ',
             ]
         );
 
             $nm = $request->ktp;
             $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
+            $nn = $request->foto;
+            $namaFiles = time().rand(100,900).".".$nn->getClientOriginalName();
     
                 $dtUpload = new Mitra;
                 $dtUpload->nama = $request->nama;
                 $dtUpload->nomor = $request->nomor;
                 $dtUpload->alamat = $request->alamat;
                 $dtUpload->ktp = $namaFile;
+                $dtUpload->foto = $namaFiles;
     
                 $nm->move(public_path().'/ktp', $namaFile);
+                $dtUpload->save();
+                $nn->move(public_path().'/user', $namaFiles);
                 $dtUpload->save();
     
                 return redirect('home')->with('success','Data Mitra baru telah berhasil disimpan');

@@ -141,6 +141,7 @@
                                         <th>NAMA</th>
                                         <th>ALAMAT</th>
                                         <th>nomor</th>
+                                        <th>Foto Pengguna</th>
                                         <th>KTP</th>
                                         <th>AKSI</th>
                                     </tr>

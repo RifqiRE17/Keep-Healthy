@@ -42,25 +42,34 @@ class UploadgambarController extends Controller
     {
         $request->validate([
             'nama' => 'required|min:3',
-            'nomor' => 'required',
+            'nomor' => 'required|min:12|unique:Mitra',
             'alamat' => 'required',
             'ktp' => 'required',
+            'foto' => 'required',
+
         ],
         [
             'required' => 'Data Harus Terisi',
+            'unique'=>'Data Sudah Ada!',
+            'nama.min'=>'Nama Harus Lebih Dari 3 Kata',
+            'nomor.min'=>'Data Nomor Telepon Harus 12 Angka',
         ]
     );
 
         $nm = $request->ktp;
         $namaFile = time().rand(100,900).".".$nm->getClientOriginalName();
+        $nn = $request->foto;
+        $namaFiles = time().rand(100,900).".".$nn->getClientOriginalName();
 
             $dtUpload = new Uploadgambar;
             $dtUpload->nama = $request->nama;
             $dtUpload->nomor = $request->nomor;
             $dtUpload->alamat = $request->alamat;
             $dtUpload->ktp = $namaFile;
+            $dtUpload->foto = $namaFiles;
 
             $nm->move(public_path().'/ktp', $namaFile);
+            $nn->move(public_path().'/user', $namaFiles);
             $dtUpload->save();
 
             return redirect('data-gambar')->withSuccess('Data Berhasil Ditambahkan!');
@@ -100,28 +109,35 @@ class UploadgambarController extends Controller
     {
         $request->validate([
             'nama' => 'required|min:3',
-            'nomor' => 'required',
+            'nomor' => 'required|min:12', 'unique:Mitra',
             'alamat' => 'required',
             'ktp' => 'required',
+            'foto' => 'required',
         ],
         [
             'required' => 'Data Harus Terisi',
+            'unique'=>'Data Sudah Ada!',
+            'nama.min'=>'Nama Harus Lebih Dari 3 Kata',
+            'nomor.min'=>'Data Nomor Telepon Harus 12 Angka',
         ]
     );
         
         $ubah = Uploadgambar::findorfail($id);
         $awal = $ubah->ktp;
+        $awals = $ubah->foto;
 
         $dt = [
             'nama' => $request['nama'],
             'nomor' => $request['nomor'],
             'alamat' => $request['alamat'],
             'ktp' => $awal,
+            'foto' => $awals,
         ];
 
         $request->ktp->move(public_path().'/ktp', $awal);
+        $request->foto->move(public_path().'/user', $awals);
         $ubah->update($dt);
-        return back();
+        return redirect('data-gambar')->with('success', 'Data Berhasil Diperbarui!');
     }
 
     /**
@@ -135,6 +151,7 @@ class UploadgambarController extends Controller
         $hapus = Uploadgambar::findorfail($id);
 
         $file = public_path('/ktp/').$hapus->upload_ktp;
+        $file = public_path('/user/').$hapus->foto;
 
         if (file_exists($file)){
             //maka hapus file di folder public/img
@@ -143,7 +160,7 @@ class UploadgambarController extends Controller
 
         //hapus data di database
         $hapus->delete();
-        return back()->with('success','Data berhasil dihapus');
+        return back();
 
     }
 }

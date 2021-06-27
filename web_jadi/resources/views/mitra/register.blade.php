@@ -63,10 +63,10 @@
                                             value="{{old('nama')}}">
                                     </div>
                                     <div class="col-lg-6">
-                                        <label for="nomor" class="form-label">Nomor Telepon</label>
-                                        <input type="number" class="form-control" id="nomor" name="nomor"
-                                            value="{{old('email')}}">
+                                        <label for="foto" class="form-label">Foto Pengguna</label>
+                                        <input type="file" class="form-control" id="foto" name="foto">
                                     </div>
+
                                 </div>
                                 <div class="row mt-2">
                                     <div class="col-lg-6">
@@ -77,6 +77,11 @@
                                     <div class="col-lg-6">
                                         <label for="ktp" class="form-label">KTP</label>
                                         <input type="file" class="form-control" id="ktp" name="ktp">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="nomor" class="form-label">Nomor Telepon</label>
+                                        <input type="number" class="form-control" id="nomor" name="nomor"
+                                            value="{{old('email')}}">
                                     </div>
                                 </div>
 

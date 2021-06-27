@@ -52,7 +52,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="card-body">
                         <br>
                         <div class="col-md-4">
-                            <form action="{{ url('data-user') }}" method="get">
+                            <form action="{{ url('data-gambar') }}" method="get">
                                 <div class="input-group custom-search-form">
                                     <input type="text" name="keyword" class="form-control" placeholder="search">
                                     <span class="input-group-btn">
@@ -67,6 +67,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <th>Nama</th>
                                 <th>Nomor</th>
                                 <th>Alamat</th>
+                                <th>Upload Foto</th>
                                 <th>Upload KTP</th>
                                 <th>Aksi</th>
                             </tr>
@@ -75,6 +76,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td>{{ $item->nama }}</td>
                                 <td>{{ $item->nomor }}</td>
                                 <td>{{ $item->alamat }}</td>
+                                <td>
+                                    <a href="{{ asset('user/'. $item->foto ) }}" target="_blank"
+                                        rel="noopener noreferrer">Lihat Foto</a>
+                                </td>
                                 <td>
                                     <a href="{{ asset('ktp/'. $item->ktp ) }}" target="_blank"
                                         rel="noopener noreferrer">Lihat Foto KTP</a>

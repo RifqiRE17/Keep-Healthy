@@ -82,9 +82,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>
+
                             <div class="form-group">
-                                <img src="{{ asset('ktp/'. $dt->ktp ) }}" height="5%" width="10%" alt=""
-                                    srcset="">
+                                <img src="{{ asset('ktp/'. $dt->ktp ) }}" height="5%" width="10%" alt="" srcset="">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="foto">Foto Pengguna</label>
+                                <input type="file" id="foto" name="foto" class="form-control @error('foto')
+                    is-invalid @enderror" autofoucus>
+                                @error('foto')
+                                <div class="invalid-feedback">{{ $message}}</div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group">
+                                <img src="{{ asset('user/'. $dt->foto ) }}" height="5%" width="10%" alt="" srcset="">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">Ubah Data</button>

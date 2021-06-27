@@ -15,5 +15,6 @@ class Mitra extends Model
         'nomor',
         'alamat',
         'ktp',
+        'foto',
     ];
 }

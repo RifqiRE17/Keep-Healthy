@@ -82,6 +82,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 @enderror
                             </div>
                             <div class="form-group">
+                                <label class="control-label" for="foto">Foto Pengguna</label>
+                                <input type="file" id="foto" name="foto" class="form-control @error('foto')
+                    is-invalid @enderror" autofoucus>
+                                @error('foto')
+                                <div class="invalid-feedback">{{ $message}}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
                                 <button type="submit" class="btn btn-success">Simpan Data</button>
                             </div>
                         </form>

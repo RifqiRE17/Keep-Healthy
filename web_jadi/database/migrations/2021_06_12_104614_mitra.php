@@ -19,6 +19,7 @@ class Mitra extends Migration
             $table->string('nomor')->unique();
             $table->string('alamat');
             $table->string('ktp');
+            $table->string('foto');
             $table->timestamps();
         });
     }
