@@ -44,16 +44,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="card card-info card-outline">
                     <div class="card-header">
                         <div class="card-tools">
-
+                            <a href="{{ route('buat-kategori') }}" class="btn btn-success">Tambah Data <i
+                                    class="fas fa-plus-square"></i></a>
                         </div>
                     </div>
+
 
 
 
                     <div class="card-body">
                         <br>
                         <div class="col-md-4">
-                            <form action="{{ url('kategori/data-kategori') }}" method="get">
+                            <form action="{{ url('data-kategori') }}" method="get">
                                 <div class="input-group custom-search-form">
                                     <input type="text" name="keyword" class="form-control" placeholder="search">
                                     <span class="input-group-btn">
@@ -67,11 +69,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <tr>
 
                                 <th>Nama Layanan Servis</th>
+                                <th>Aksi</th>
                             </tr>
                             @foreach ($kategori as $item)
                             <tr>
 
                                 <td>{{ $item->layanan_servis }}</td>
+                                <td>
+                                    <a href="{{ url('edit-kategori',$item->id) }}"><i class="fas fa-edit"></i></a>
+                                    |
+                                    <a href="#"><i class="fas fa-trash-alt delete" data-id="{{ $item->id }}"
+                                            data-nama="{{ $item->layanan_servis }}" style=" color: red"></i></a>
+                                </td>
 
                             </tr>
                             @endforeach
@@ -98,32 +107,34 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </footer>
     </div>
     <!-- ./delete -->
+    <footer class="main-footer">
+        @include('Template.footer')
+    </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
         integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-
 
 
     <!-- REQUIRED SCRIPTS -->
     @include('Template.script')
     @include('sweetalert::alert')
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
 </body>
-<!-- <script>
+<script>
 $('.delete').click(function() {
-    var idartikel = $(this).attr('data-id');
-    var namaartikel = $(this).attr('data-nama');
+    var id = $(this).attr('data-id');
+    var nama = $(this).attr('data-layanan_servis');
 
     swal({
             title: "Yakin?",
-            text: "Kamu Akan Menghapus Data " + namaartikel + "",
+            text: "Kamu Akan Menghapus Data " + nama + "",
             icon: "warning",
             buttons: true,
             dangerMode: true,
         })
         .then((willDelete) => {
             if (willDelete) {
-                window.location = "/delete-artikel/" + idartikel + ""
+                window.location = "/delete-kategori/" + id + ""
                 swal("Data Berhasil DiHapus", {
                     icon: "success",
                 });
@@ -133,6 +144,7 @@ $('.delete').click(function() {
         });
 
 });
-</script> -->
+</script>
+
 
 </html>

@@ -84,6 +84,22 @@
                                             value="{{old('email')}}">
                                     </div>
                                 </div>
+                                <div class="row mt-2">
+                                    <div class="col-lg-6">
+                                        <label for="kategori" class="form-label">Memilih Layanan Kebersihan</label>
+                                        <select class="form-control" id="kategori" name="kategori"
+                                            value="{{old('kategori')}}">
+                                            <option value="">Pilih Layanan Service</option>
+                                            @foreach ($kategori as $item)
+                                            <option value="{{$item->id}}" @if ($kategori->id === $post->id)
+                                                selected
+                                                @endif
+                                                >
+                                                {{$item->layanan_servis}}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
 
                                 <button type="submit" class="btn btn-sm btn-primary mt-5">TAMBAH</button>
                             </form>

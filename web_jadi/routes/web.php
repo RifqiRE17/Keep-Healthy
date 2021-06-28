@@ -152,7 +152,14 @@ Route::get('profile', 'ProfileController@index');
 Route::post('profile', 'ProfileController@update');
 
 //kategori
-Route::get('/kategori/data-kategori', 'KategoriController@index');
+Route::get('/data-kategori', 'KategoriController@index')->name('data-kategori');
+Route::get('/buat-kategori','KategoriController@create')->name('buat-kategori');
+Route::post('/simpan-kategori','KategoriController@store')->name('simpan-kategori');
+Route::get('/edit-kategori/{id}', 'KategoriController@edit')->name('edit-kategori');
+Route::post('/update-kategori/{id}', 'KategoriController@update')->name('update-kategori');
+Route::get('/delete-kategori/{id}', 'KategoriController@destroy')->name('delete-kategori');
+
+
 
 
     // route untuk pembagian login

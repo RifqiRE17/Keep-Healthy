@@ -27,7 +27,7 @@ class KategoriController extends Controller
      */
     public function create()
     {
-        //
+        return view('kategori.buat-kategori');
     }
 
     /**
@@ -38,9 +38,29 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $request->validate([
+            'layanan_servis' => 'required|unique:Kategori',
+            
 
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+            'unique'=>'Data Sudah Ada!',
+            
+        ]
+    );
+
+      
+
+            $kategori = new Kategori;
+            $kategori->layanan_servis = $request->layanan_servis;
+           
+
+         
+            $kategori->save();
+
+            return redirect('data-kategori')->withSuccess('Data Berhasil Ditambahkan!');
+      }
     /**
      * Display the specified resource.
      *
@@ -58,9 +78,10 @@ class KategoriController extends Controller
      * @param  \App\Models\Kategori  $kategori
      * @return \Illuminate\Http\Response
      */
-    public function edit(Kategori $kategori)
+    public function edit($id)
     {
-        //
+        $kategori = Kategori::findorfail($id);
+        return view('kategori.edit-kategori', compact('kategori'));
     }
 
     /**
@@ -70,10 +91,33 @@ class KategoriController extends Controller
      * @param  \App\Models\Kategori  $kategori
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Kategori $kategori)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'layanan_servis' => 'required|unique:Kategori',
+           
+        ],
+        [
+            'required' => 'Data Harus Terisi',
+            'unique'=>'Data Sudah Ada!',
+            
+        ]
+    );
+        
+        $ubah = Kategori::findorfail($id);
+       
+
+        $kategori = [
+            'layanan_servis' => $request['layanan_servis'],
+           
+        ];
+
+     
+        $ubah->update($kategori);
+        return redirect('data-kategori')->with('success', 'Data Berhasil Diperbarui!');
     }
+
+    
 
     /**
      * Remove the specified resource from storage.
@@ -81,8 +125,14 @@ class KategoriController extends Controller
      * @param  \App\Models\Kategori  $kategori
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kategori $kategori)
+    public function destroy($id)
     {
-        //
+        $hapus = Kategori::findorfail($id);
+
+        
+
+        //hapus data di database
+        $hapus->delete();
+        return back();
     }
 }
