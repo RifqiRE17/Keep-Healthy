@@ -151,6 +151,9 @@ Route::get('/dashboard/mitra', [MitraController::class, 'index']);
 Route::get('profile', 'ProfileController@index');
 Route::post('profile', 'ProfileController@update');
 
+//kategori
+Route::get('/kategori/data-kategori', 'KategoriController@index');
+
 
     // route untuk pembagian login
 // ========================================================================
