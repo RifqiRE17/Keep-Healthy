@@ -90,14 +90,7 @@
                                         <select class="form-control" id="kategori" name="kategori"
                                             value="{{old('kategori')}}">
                                             <option value="">Pilih Layanan Service</option>
-                                            @foreach ($kategori as $item)
-                                            <option value="{{$item->id}}" @if ($kategori->id === $post->id)
-                                                selected
-                                                @endif
-                                                >
-                                                {{$item->layanan_servis}}</option>
-                                            @endforeach
-                                        </select>
+
                                     </div>
                                 </div>
 
