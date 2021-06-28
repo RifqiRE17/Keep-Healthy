@@ -54,16 +54,11 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'alamat'=>['required', 'string','max:255'],
-            "nomor" => ["required","min:12", "numeric" ],
+            "nomor" => ["required","min:11", "numeric" ],
             
         ],
-        
         [
             'required' => 'Data Harus Terisi',
-            'email.unique' => 'Data Email Sudah Ada',
-            'password.confirmed' => 'Konfirmasi Password Salah',
-            'password.min' => 'Password Minimal 8 Karakter',
-            'nomor.min' => 'Data Nomor Minimal 12 Angka',
         ]);
     }
 

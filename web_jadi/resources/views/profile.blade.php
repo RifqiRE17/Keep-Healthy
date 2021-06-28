@@ -36,6 +36,11 @@
                                 <td>:</td>
                                 <td>{{ $user->alamat }}</td>
                             </tr>
+                            <tr>
+                                <td>Nomor</td>
+                                <td>:</td>
+                                <td>{{ $user->nomor }}</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -102,6 +107,21 @@
                                     required="">{{ $user->alamat }}</textarea>
 
                                 @error('alamat')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="nomor" class="col-md-2 col-form-label text-md-right">Nomor</label>
+
+                            <div class="col-md-6">
+                                <textarea name="nomor" class="form-control @error('nomor') is-invalid @enderror"
+                                    required="">{{ $user->nomor }}</textarea>
+
+                                @error('nomor')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
