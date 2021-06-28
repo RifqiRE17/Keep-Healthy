@@ -90,7 +90,7 @@
                                         <select class="form-control" id="kategori" name="kategori"
                                             value="{{old('kategori')}}">
                                             <option value="">Pilih Layanan Service</option>
-
+                                        </select>
                                     </div>
                                 </div>
 
