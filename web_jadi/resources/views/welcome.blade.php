@@ -413,7 +413,7 @@
 
                                         <li>
 
-                                            <a href="#"><img src="icon/call.png" alt="#" /></a>+6287761675825
+                                            <a href="https://api.whatsapp.com/send?phone=6287761675825"><img src="icon/call.png" alt="#" /></a>+6287761675825
                                         </li>
                                         <li>
                                             <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com
