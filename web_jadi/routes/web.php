@@ -126,6 +126,7 @@ Route::get('/mitra/register', [MitraController::class, 'formAddMitra']);
 Route::post('/mitra/register', [MitraController::class, 'registerMitra']);
 Route::get('/mitra/delete/{id}', [MitraController::class, 'deleteMitra']);
 Route::get('/dashboard/mitra', [MitraController::class, 'index']);
+Route::get('/mitra/register',[MitraController::class,'show']);
 
 
 

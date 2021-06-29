@@ -17,4 +17,11 @@ class Mitra extends Model
         'ktp',
         'foto',
     ];
+
+    // protected $table = "kategori";
+
+    // protected $fillable = [
+    //     'layanan_servis',
+      
+    // ];
 }

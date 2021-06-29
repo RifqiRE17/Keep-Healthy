@@ -5,11 +5,20 @@ namespace App\Http\Controllers\Mitra;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Mitra;
+use App\Models\Kategori;
 use Illuminate\Database\QueryException;
 
 
 class MitraController extends Controller
 {
+    // Menampilkan Data dari database
+    function show()
+    {
+        $data= Kategori::all();
+        return view('mitra.register',['kategoris'=>$data]);
+        // return DB::table('kategori')->get();
+        // return view('mitra.register',['layanan'=>$data]);
+    }
 
     public function __construct()
     {
@@ -88,5 +97,6 @@ class MitraController extends Controller
     {
         return view ('mitra.register');
     }
+
 
 }
