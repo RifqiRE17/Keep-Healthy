@@ -88,7 +88,7 @@ class UploadgambarController extends Controller
     {
         {
             $data= Kategori::all();
-            return view('Uploadgambar.Create-gambar',['kategoris'=>$data]);
+            return view('Uploadgambar.Create-gambar',compact('data'));
             // return DB::table('kategori')->get();
             // return view('mitra.register',['layanan'=>$data]);
         }
@@ -102,8 +102,9 @@ class UploadgambarController extends Controller
      */
     public function edit($id)
     {
+        $data= Kategori::all();
         $dt = Uploadgambar::findorfail($id);
-        return view('Uploadgambar.Edit-gambar', compact('dt'));
+        return view('Uploadgambar.Edit-gambar', compact('dt','data'));
     }
 
     /**

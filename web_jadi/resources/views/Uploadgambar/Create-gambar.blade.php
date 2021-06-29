@@ -79,7 +79,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <select class="form-control" id="layanan_servis" name="layanan_servis"
                                             value="{{old('layanan_servis')}}">
                                             <option value="">Pilih Layanan Service</option>
-                                            @foreach($kategoris as $kategori)
+                                            @foreach($data as $kategori)
                                             <option value="{{$kategori['layanan_servis']}}">{{$kategori['layanan_servis']}}</option>
                                             @endforeach 
                                         </select>
