@@ -161,6 +161,10 @@ Route::get('/edit-kategori/{id}', 'KategoriController@edit')->name('edit-kategor
 Route::post('/update-kategori/{id}', 'KategoriController@update')->name('update-kategori');
 Route::get('/delete-kategori/{id}', 'KategoriController@destroy')->name('delete-kategori');
 
+// Katalog
+Route::get('layouts/katalog', 'KatalogController@index');
+
+
 
 
 

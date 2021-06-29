@@ -62,7 +62,7 @@
                                     <nav class="main-menu ">
                                         <ul class="menu-area-main">
                                             <li> <a href="{{ url('/home') }}">Halaman Awal</a> </li>
-
+                                            <li> <a href="/layouts/katalog">Layanan</a> </li>
                                             <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
                                             <li> <a href="/Artikel/artikel">Artikel </a> </li>
                                             <!-- <li>
