@@ -67,6 +67,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <th>Nama</th>
                                 <th>Nomor</th>
                                 <th>Alamat</th>
+                                <th>Layanan Servis</th>
                                 <th>Upload Foto</th>
                                 <th>Upload KTP</th>
                                 <th>Aksi</th>
@@ -76,6 +77,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td>{{ $item->nama }}</td>
                                 <td>{{ $item->nomor }}</td>
                                 <td>{{ $item->alamat }}</td>
+                                <td>{{ $item->layanan_servis }}</td>
                                 <td>
                                     <a href="{{ asset('user/'. $item->foto ) }}" target="_blank"
                                         rel="noopener noreferrer">Lihat Foto</a>

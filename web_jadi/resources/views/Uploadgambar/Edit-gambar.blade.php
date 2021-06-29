@@ -74,6 +74,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>
+                          
                             <div class="form-group">
                                 <label class="control-label" for="ktp">Upload KTP</label>
                                 <input type="file" id="ktp" name="ktp" class="form-control @error('ktp')

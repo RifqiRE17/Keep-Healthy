@@ -20,6 +20,7 @@ class Mitra extends Migration
             $table->string('alamat');
             $table->string('ktp');
             $table->string('foto');
+            $table->string('layanan_servis');
             $table->timestamps();
         });
     }

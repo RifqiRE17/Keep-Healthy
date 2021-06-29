@@ -14,6 +14,7 @@ class Mitra extends Model
         'nama',
         'nomor',
         'alamat',
+        'layanan_servis',
         'ktp',
         'foto',
     ];

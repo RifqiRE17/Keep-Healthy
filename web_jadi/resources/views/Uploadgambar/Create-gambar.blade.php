@@ -73,6 +73,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
+                            <div class="row mt-2">
+                                    <div class="col-lg-6">
+                                        <label for="layanan_servis" class="form-label">Memilih Layanan Kebersihan</label>
+                                        <select class="form-control" id="layanan_servis" name="layanan_servis"
+                                            value="{{old('layanan_servis')}}">
+                                            <option value="">Pilih Layanan Service</option>
+                                            @foreach($kategoris as $kategori)
+                                            <option value="{{$kategori['layanan_servis']}}">{{$kategori['layanan_servis']}}</option>
+                                            @endforeach 
+                                        </select>
+                                    </div>
+                                </div>
                             <div class="form-group">
                                 <label class="control-label" for="upload_foto">KTP</label>
                                 <input type="file" id="ktp" name="ktp" class="form-control @error('ktp')

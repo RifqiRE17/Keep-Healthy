@@ -86,12 +86,12 @@
                                 </div>
                                 <div class="row mt-2">
                                     <div class="col-lg-6">
-                                        <label for="kategori" class="form-label">Memilih Layanan Kebersihan</label>
-                                        <select class="form-control" id="kategori" name="kategori"
-                                            value="{{old('kategori')}}">
+                                        <label for="layanan_servis" class="form-label">Memilih Layanan Kebersihan</label>
+                                        <select class="form-control" id="layanan_servis" name="layanan_servis"
+                                            value="{{old('layanan_servis')}}">
                                             <option value="">Pilih Layanan Service</option>
                                             @foreach($kategoris as $kategori)
-                                            <option value="">{{$kategori['layanan_servis']}}</option>
+                                            <option value="{{$kategori['layanan_servis']}}">{{$kategori['layanan_servis']}}</option>
                                             @endforeach 
                                         </select>
                                     </div>

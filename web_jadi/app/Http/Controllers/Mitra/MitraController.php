@@ -43,6 +43,7 @@ class MitraController extends Controller
                 "nama" => ["required", "max:50"],
                 "nomor" => ["required","min:12", "numeric", "unique:Mitra" ],
                 "alamat" => ["required"],
+                "layanan_servis" => ["required"],
                 "foto" => ['required','image'],
                 "ktp" => ['required','image']
             ],
@@ -62,6 +63,7 @@ class MitraController extends Controller
                 $dtUpload->nama = $request->nama;
                 $dtUpload->nomor = $request->nomor;
                 $dtUpload->alamat = $request->alamat;
+                $dtUpload->layanan_servis = $request->layanan_servis;
                 $dtUpload->ktp = $namaFile;
                 $dtUpload->foto = $namaFiles;
     

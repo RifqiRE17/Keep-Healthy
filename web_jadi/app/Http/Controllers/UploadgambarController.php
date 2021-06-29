@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Uploadgambar;
+use App\Models\Kategori;
 class UploadgambarController extends Controller
 {
     /**
@@ -44,6 +45,7 @@ class UploadgambarController extends Controller
             'nama' => 'required|min:3',
             'nomor' => 'required|min:12|unique:Mitra',
             'alamat' => 'required',
+            'layanan_servis' => 'required',
             'ktp' => 'required',
             'foto' => 'required',
 
@@ -65,6 +67,7 @@ class UploadgambarController extends Controller
             $dtUpload->nama = $request->nama;
             $dtUpload->nomor = $request->nomor;
             $dtUpload->alamat = $request->alamat;
+            $dtUpload->layanan_servis = $request->layanan_servis;
             $dtUpload->ktp = $namaFile;
             $dtUpload->foto = $namaFiles;
 
@@ -81,9 +84,14 @@ class UploadgambarController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        {
+            $data= Kategori::all();
+            return view('Uploadgambar.Create-gambar',['kategoris'=>$data]);
+            // return DB::table('kategori')->get();
+            // return view('mitra.register',['layanan'=>$data]);
+        }
     }
 
     /**
@@ -111,6 +119,7 @@ class UploadgambarController extends Controller
             'nama' => 'required|min:3',
             'nomor' => 'required|min:12', 'unique:Mitra',
             'alamat' => 'required',
+            'layanan_servis' => 'required',
             'ktp' => 'required',
             'foto' => 'required',
         ],
@@ -130,6 +139,7 @@ class UploadgambarController extends Controller
             'nama' => $request['nama'],
             'nomor' => $request['nomor'],
             'alamat' => $request['alamat'],
+            'layanan_servis' => $request['layanan_servis'],
             'ktp' => $awal,
             'foto' => $awals,
         ];

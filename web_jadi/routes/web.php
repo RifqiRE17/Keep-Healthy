@@ -39,6 +39,7 @@ Route::post('/simpan-gambar','UploadgambarController@store')->name('simpan-gamba
 Route::get('/edit-gambar/{id}', 'UploadgambarController@edit')->name('edit-gambar');
 Route::post('/update-gambar/{id}', 'UploadgambarController@update')->name('update-gambar');
 Route::get('/delete-gambar/{id}', 'UploadgambarController@destroy')->name('delete-gambar');
+Route::get('/create-gambar','UploadgambarController@show')->name('create-gambar');
 
 
 Route::get('/data-user','UploaduserController@index')->name('data-user');

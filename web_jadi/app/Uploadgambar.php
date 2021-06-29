@@ -9,5 +9,5 @@ class Uploadgambar extends Model
     protected $table = "mitra";
     protected $primaryKey = "id";
     protected $fillable = [
-      'id','nama', 'nomor', 'alamat', 'ktp'];
+      'id','nama', 'nomor', 'alamat', 'layanan_servis', 'ktp'];
 }
