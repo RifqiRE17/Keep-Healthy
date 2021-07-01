@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Sixteen Clothing HTML Template</title>
+    <title>LAYANAN SERVICE</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/vendor_katalog/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -126,13 +126,16 @@ https://templatemo.com/tm-546-sixteen-clothing
   <!-- Body Header Akhir -->
 
     <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="jumper">
             <div></div>
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>   -->
+    <div class="loader_bg">
+        <div class="loader"><img src="/images/loading.gif" alt="#" /></div>
+    </div>
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
@@ -181,155 +184,199 @@ https://templatemo.com/tm-546-sixteen-clothing
               <div class="down-content">
                 <a href="#"><h4> {{$item['nama']}}</h4></a>
                 <p>{{$item['layanan_servis']}}</p>
-               
-                @foreach ($dataToilet as $item)
-                <h6>{{$item['hargalayanan']}}</h6>
+                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}"> <span>{{$item['nomor']}}</span></a>
+                
+                
+                @foreach ($data as $item)
+                <h6>{{$item['harga_servis']}}</h6>
                 @endforeach
-               
-               
-               
+              
+
               
                 
-                <ul class="stars">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                </ul>
-                <span>Reviews (24)</span>
+               
+              
+               
               </div>
             </div>
           </div>
-       
+       @endforeach
+
+       @foreach ($katalog as $item)
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="/assets_katalog/images/product_02.jpg" alt=""></a>
+              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
               <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <h6>$30.25</h6>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                <ul class="stars">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                </ul>
-                <span>Reviews (21)</span>
+              <a href="#"><h4> {{$item['nama']}}</h4></a>
+                <p>{{$item['layanan_servis']}}</p>
+                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}"> <span>{{$item['nomor']}}</span></a>
+               
+                
+                
+                @foreach ($data as $item)
+                <h6>{{$item['harga_servis']}}</h6>
+                @endforeach
+               
+            
+               
+              
+              </div>
+            </div>
+            
+          </div>
+          @endforeach
+          
+
+          @foreach ($katalog as $item)
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
+              <div class="down-content">
+              <a href="#"><h4> {{$item['nama']}}</h4></a>
+                <p>{{$item['layanan_servis']}}</p>
+                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}"> <span>{{$item['nomor']}}</span></a>
+               
+               
+                <h6>{{$item['hargalayanan']}}</h6>
+           
+              
               </div>
             </div>
           </div>
           @endforeach
+
+          @foreach ($katalog as $item)
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="/assets_katalog/images/product_03.jpg" alt=""></a>
+              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
               <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <h6>$20.45</h6>
-                <p>Sixteen Clothing is free CSS template provided by TemplateMo.</p>
-                <ul class="stars">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                </ul>
-                <span>Reviews (36)</span>
+              <a href="#"><h4> {{$item['nama']}}</h4></a>
+                <p>{{$item['layanan_servis']}}</p>
+                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}"> <span>{{$item['nomor']}}</span> </a>
+               
+              
+                <h6>{{$item['hargalayanan']}}</h6>
+                
+            
               </div>
             </div>
           </div>
+          @endforeach
+
+          @foreach ($katalog as $item)
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="/assets_katalog/images/product_04.jpg" alt=""></a>
+              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
               <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <h6>$15.25</h6>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                <ul class="stars">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                </ul>
-                <span>Reviews (48)</span>
+              <a href="#"><h4> {{$item['nama']}}</h4></a>
+                <p>{{$item['layanan_servis']}}</p>
+                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">  <span>{{$item['nomor']}}</span></a>
+               
+               
+                <h6>{{$item['hargalayanan']}}</h6>
+              
+              
               </div>
             </div>
           </div>
+          @endforeach
+
+          @foreach ($katalog as $item)
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="/assets_katalog/images/product_05.jpg" alt=""></a>
+              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
               <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <h6>$12.50</h6>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                <ul class="stars">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                </ul>
-                <span>Reviews (16)</span>
+              <a href="#"><h4> {{$item['nama']}}</h4></a>
+                <p>{{$item['layanan_servis']}}</p>
+                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}"> <span>{{$item['nomor']}}</span></a>
+               
+                
+                <h6>{{$item['hargalayanan']}}</h6>
+              
+              
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="/assets_katalog/images/product_06.jpg" alt=""></a>
-              <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <h6>$22.50</h6>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                <ul class="stars">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                </ul>
-                <span>Reviews (32)</span>
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
     </div>
+    
+    <div id="gallery" class="Gallery">
+        <div class="container">
+            <div class="row display_boxflex">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
+                            <div class="Gallery_img">
+                                <figure><img src="/images/Gallery1.jpg" alt="#" /></figure>
+                            </div>
+                            <div class="hover_box">
 
-    <div class="best-features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>About Sixteen Clothing</h2>
+                                <ul class="icon_hu">
+                                    <h3>Membersihkan Kaca</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
+                            <div class="Gallery_img">
+                                <figure><img src="/images/Gallery2.jpg" alt="#" /></figure>
+                            </div>
+                            <div class="hover_box">
+
+                                <ul class="icon_hu">
+                                    <h3>Membersihkan Lantai</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott1">
+                            <div class="Gallery_img">
+                                <figure><img src="/images/Gallery3.jpg" alt="#" /></figure>
+                            </div>
+                            <div class="hover_box">
+
+                                <ul class="icon_hu">
+                                    <h3>Membersihkan Kamar Mandi</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="Gallery_img">
+                                <figure><img src="/images/Gallery4.jpg" alt="#" /></figure>
+                            </div>
+                            <div class="hover_box">
+
+                                <ul class="icon_hu">
+                                    <h3>Mencuci Baju</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="Gallery_text">
+                        <div class="titlepage">
+                            <h2>Keep Healthy</h2>
+                        </div>
+                        <p>Kami akan melakukan pelayanan yang terbaik hingga anda puas</p>
+                        <!-- <a href="Javascript:void(0)">Read More</a> -->
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="left-content">
-              <h4>Looking for the best products?</h4>
-              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
-              <ul class="featured-list">
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur an adipisicing elit</a></li>
-                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-                <li><a href="#">Corporis, omnis doloremque</a></li>
-                <li><a href="#">Non cum id reprehenderit</a></li>
-              </ul>
-              <a href="about.html" class="filled-button">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="right-image">
-              <img src="/assets_katalog/images/feature-image.jpg" alt="">
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
 
-    <div class="call-to-action">
+
+    <!-- <div class="call-to-action">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -347,7 +394,7 @@ https://templatemo.com/tm-546-sixteen-clothing
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     
     <!-- <footer>
@@ -461,6 +508,16 @@ https://templatemo.com/tm-546-sixteen-clothing
     <script src="/assets_katalog/js/slick.js"></script>
     <script src="/assets_katalog/js/isotope.js"></script>
     <script src="/assets_katalog/js/accordions.js"></script>
+
+    <script src="/js/jquery.min.js"></script>
+            <script src="/js/popper.min.js"></script>
+            <script src="/js/bootstrap.bundle.min.js"></script>
+            <script src="/js/jquery-3.0.0.min.js"></script>
+            <script src="/js/plugin.js"></script>
+            <!-- sidebar -->
+            <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="/js/custom.js"></script>
+            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
 
     <script language = "text/Javascript"> 

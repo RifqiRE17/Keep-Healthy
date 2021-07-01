@@ -50,12 +50,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <form action="{{ route('simpan-kategori') }}" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="form-group">
-                                <label class="control-label" for="hargalayanan">Layanan Service</label>
+                                <label class="control-label" for="layanan_servis">Layanan Service</label>
                                 <input type="text" id="layanan_servis" name="layanan_servis"
                                     placeholder="Layanan Servis" class="form-control
                     @error('layanan_servis')
                     is-invalid @enderror" autofoucus>
                                 @error('layanan_servis')
+                                <div class="invalid-feedback">{{ $message}}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="harga_servis">Harga</label>
+                                <input type="text" id="harga_servis" name="harga_servis"
+                                    placeholder="Harga" class="form-control
+                    @error('harga_servis')
+                    is-invalid @enderror" autofoucus>
+                                @error('harga_servis')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>

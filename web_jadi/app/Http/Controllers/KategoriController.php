@@ -40,6 +40,7 @@ class KategoriController extends Controller
     {
         $request->validate([
             'layanan_servis' => 'required|unique:Kategori',
+            'harga_servis' => 'required',
             
 
         ],
@@ -54,6 +55,7 @@ class KategoriController extends Controller
 
             $kategori = new Kategori;
             $kategori->layanan_servis = $request->layanan_servis;
+            $kategori->harga_servis = $request->harga_servis;
            
 
          
@@ -95,6 +97,7 @@ class KategoriController extends Controller
     {
         $request->validate([
             'layanan_servis' => 'required|unique:Kategori',
+            'harga_servis' => 'required',
            
         ],
         [
@@ -109,6 +112,7 @@ class KategoriController extends Controller
 
         $kategori = [
             'layanan_servis' => $request['layanan_servis'],
+            'harga_servis' => $request['harga_servis'],
            
         ];
 

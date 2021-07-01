@@ -11,9 +11,9 @@ class Kategori extends Model
 {
     use HasFactory;
     protected $table="kategori";
-
+    protected $primaryKey = "id";
     protected $fillable = [
-        'layanan_servis',
+        'id','layanan_servis', 'harga_servis',
       
     ];
 }

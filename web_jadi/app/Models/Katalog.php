@@ -12,6 +12,6 @@ class Katalog extends Model
         protected $table = "mitra";
         protected $primaryKey = "id";
         protected $fillable = [
-          'id','nama', 'nomor', 'alamat', 'layanan_servis', 'ktp'];
+          'id','nama', 'nomor', 'alamat', 'layanan_servis', 'ktp',];
     
 }
