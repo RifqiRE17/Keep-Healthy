@@ -60,16 +60,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 @enderror
                             </div>
 
-                            <div class="form-group">
-                                <label class="control-label" for="harga_servis">Harga</label>
-                                <input type="text" id="harga_servis" name="harga_servis"
-                                    placeholder="Harga" class="form-control @error('harga_servis') 
-                    is-invalid @enderror" value="{{ old('harga_servis', $kategori->harga_servis) }}">
-                                @error('harga_servis')
-                                <div class="invalid-feedback">{{ $message}}</div>
-                                @enderror
-                            </div>
-
+                     
 
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">Ubah Data</button>
