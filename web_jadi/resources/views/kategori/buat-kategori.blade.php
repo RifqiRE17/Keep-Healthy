@@ -59,7 +59,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="control-label" for="harga_servis">Harga</label>
                                 <input type="text" id="harga_servis" name="harga_servis"
                                     placeholder="Harga" class="form-control
@@ -68,7 +68,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 @error('harga_servis')
                                 <div class="invalid-feedback">{{ $message}}</div>
                                 @enderror
-                            </div>
+                            </div> -->
                             <!-- <div class="form-group">
                                 <label class="control-label" for="upload_foto">Upload Foto</label>
                                 <input type="file" id="upload_foto" name="upload_foto" class="form-control @error('upload_foto')

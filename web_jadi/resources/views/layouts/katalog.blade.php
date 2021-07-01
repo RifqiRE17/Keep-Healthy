@@ -30,7 +30,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 <!-- header Head Awal -->
     
     <!-- Header Awal -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="/images/fevicon.png" type="image/gif" />
     <!-- bootstrap css -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- style css -->
@@ -55,15 +55,15 @@ https://templatemo.com/tm-546-sixteen-clothing
   <!-- Body Header Awal -->
   <header>
         <!-- header inner -->
-        <div class="header-top-artikel">
-            <div class="header" style="background-color:#0BF7C8;">
+        <div class="header-top">
+            <div class="header">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col logo_section">
                             <div class="full">
                                 <div class="center-desk">
                                     <div class="logo">
-                                        <a href="{{ url('/home') }}"><img src="/images/logo.png" alt="#" /></a>
+                                        <a href="index.html"><img src="/images/logo.png" alt="#" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                                     <nav class="main-menu ">
                                         <ul class="menu-area-main">
                                             <li> <a href="{{ url('/home') }}">Halaman Awal</a> </li>
-
+                                            <li> <a href="/layouts/katalog">Layanan</a> </li>
                                             <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
                                             <li> <a href="/Artikel/artikel">Artikel </a> </li>
                                             <!-- <li>
@@ -96,10 +96,18 @@ https://templatemo.com/tm-546-sixteen-clothing
                                                 <div class="dropdown-menu dropdown-menu-right"
                                                     aria-labelledby="navbarDropdown">
                                                     <a class="dropdown-item" style="background-color: aqua;"
+                                                        href="{{ url('profile') }}">
+                                                        Profil
+                                                    </a>
+                                                    <br>
+                                                    <a class="dropdown-item" style="background-color: aqua;"
                                                         href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                                         {{ __('Logout') }}
                                                     </a>
+
+
+
 
                                                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                                         class="d-none">
@@ -122,7 +130,91 @@ https://templatemo.com/tm-546-sixteen-clothing
                     </div>
                 </div>
             </div>
-    </header>
+            <!-- end header inner -->
+            <section class="slider_section">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-bg">
+                                    <span>Keep Healthy</span>
+                                    <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                    <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan mudah dan
+                                        cepat hanya dengan melakukan beberapa klik pada smartphone anda. Maka kami akan
+                                        siap datang kerumah anda dengan segera</p>
+                                    <a href="#"><img style=" width: 50px; height: 50px;" src="icon/playstore.png"
+                                            alt="#" />Dapatkan DI Google Play</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <div class="container ">
+                    <div class="carousel-caption">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-bg">
+                                    <span>Keep Healthy</span>
+                                    <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                    <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan mudah dan
+                                        cepat hanya dengan melakukan beberapa klik pada smartphone anda. Maka kami akan
+                                        siap datang kerumah anda dengan segera</p>
+                                    <a href="#"><img style=" width: 50px; height: 50px;" src="icon/playstore.png"
+                                            alt="#" />Dapatkan DI Google Play</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <div class="container">
+                    <div class="carousel-caption ">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-bg">
+                                    <span>Keep Healthy</span>
+                                    <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                    <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan mudah dan
+                                        cepat hanya dengan melakukan beberapa klik pada smartphone anda. Maka kami akan
+                                        siap datang kerumah anda dengan segera</p>
+                                    <a href="#"><img style=" width: 50px; height: 50px;" src="icon/playstore.png"
+                                            alt="#" />Dapatkan DI Google Play</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</section>
+</div>
+</header>
+
   <!-- Body Header Akhir -->
 
     <!-- ***** Preloader Start ***** -->
@@ -142,28 +234,112 @@ https://templatemo.com/tm-546-sixteen-clothing
     
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-          <div class="text-content">
-            <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
-          </div>
+    <div class="header-top">
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+            <!-- end header inner -->
+
+            <!-- end header -->
+            <section class="slider_section">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="text-bg">
+                                                <span>Keep Healthy</span>
+                                                <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                                <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan
+                                                    mudah dan
+                                                    cepat hanya dengan melakukan beberapa klik pada smartphone anda.
+                                                    Maka kami akan
+                                                    siap datang kerumah anda dengan segera</p>
+                                                <a href="#"><img style=" width: 50px; height: 50px;"
+                                                        src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="container ">
+                                <div class="carousel-caption">
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="text-bg">
+                                                <span>Keep Healthy</span>
+                                                <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                                <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan
+                                                    mudah dan
+                                                    cepat hanya dengan melakukan beberapa klik pada smartphone anda.
+                                                    Maka kami akan
+                                                    siap datang kerumah anda dengan segera</p>
+                                                <a href="#"><img style=" width: 50px; height: 50px;"
+                                                        src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="carousel-item">
+
+                            <div class="container">
+                                <div class="carousel-caption ">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="text-bg">
+                                                <span>Keep Healthy</span>
+                                                <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                                <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan
+                                                    mudah dan
+                                                    cepat hanya dengan melakukan beberapa klik pada smartphone anda.
+                                                    Maka kami akan
+                                                    siap datang kerumah anda dengan segera</p>
+                                                <a href="#"><img style=" width: 50px; height: 50px;"
+                                                        src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </section>
         </div>
-        <div class="banner-item-02">
-          <div class="text-content">
-            <h4>Flash Deals</h4>
-            <h2>Get your best products</h2>
-          </div>
-        </div>
-        <div class="banner-item-03">
-          <div class="text-content">
-            <h4>Last Minute</h4>
-            <h2>Grab last minute deals</h2>
-          </div>
-        </div>
-      </div>
-    </div>
+    </header>
     <!-- Banner Ends Here -->
 
     <div class="latest-products">

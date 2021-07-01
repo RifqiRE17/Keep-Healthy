@@ -69,14 +69,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <tr>
 
                                 <th>Nama Layanan Servis</th>
-                                <th>Harga</th>
+                                <!-- <th>Harga</th> -->
                                 <th>Aksi</th>
                             </tr>
                             @foreach ($kategori as $item)
                             <tr>
 
                                 <td>{{ $item->layanan_servis }}</td>
-                                <td>{{ $item->harga_servis }}</td>
+                                <!-- <td>{{ $item->harga_servis }}</td> -->
                                 <td>
                                     <a href="{{ url('edit-kategori',$item->id) }}"><i class="fas fa-edit"></i></a>
                                     |
