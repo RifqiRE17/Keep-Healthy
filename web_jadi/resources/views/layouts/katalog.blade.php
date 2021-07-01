@@ -76,7 +76,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                                     <nav class="main-menu ">
                                         <ul class="menu-area-main">
                                             <li> <a href="{{ url('/home') }}">Halaman Awal</a> </li>
-                                            <li> <a href="/layouts/katalog">Layanan</a> </li>
+                                            <!-- <li> <a href="/layouts/katalog">Layanan</a> </li> -->
                                             <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
                                             <li> <a href="/Artikel/artikel">Artikel </a> </li>
                                             <!-- <li>
@@ -725,7 +725,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <script src="/assets_katalog/js/isotope.js"></script>
                 <script src="/assets_katalog/js/accordions.js"></script>
 
-                <script src="/js/jquery.min.js"></script>
+
                 <script src="/js/popper.min.js"></script>
                 <script src="/js/bootstrap.bundle.min.js"></script>
                 <script src="/js/jquery-3.0.0.min.js"></script>
