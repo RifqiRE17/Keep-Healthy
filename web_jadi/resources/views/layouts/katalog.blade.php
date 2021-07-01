@@ -131,95 +131,96 @@ https://templatemo.com/tm-546-sixteen-clothing
                     </div>
                 </div>
             </div>
-            <!-- end header inner -->
-            <section class="slider_section">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
+    </header>
+    <!-- end header inner -->
+    <section class="slider_section">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
 
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="text-bg">
-                                                <span>Keep Healthy</span>
-                                                <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
-                                                <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan
-                                                    mudah dan
-                                                    cepat hanya dengan melakukan beberapa klik pada smartphone anda.
-                                                    Maka kami akan
-                                                    siap datang kerumah anda dengan segera</p>
-                                                <a href="#"><img style=" width: 50px; height: 50px;"
-                                                        src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-
-                            <div class="container ">
-                                <div class="carousel-caption">
-
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="text-bg">
-                                                <span>Keep Healthy</span>
-                                                <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
-                                                <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan
-                                                    mudah dan
-                                                    cepat hanya dengan melakukan beberapa klik pada smartphone anda.
-                                                    Maka kami akan
-                                                    siap datang kerumah anda dengan segera</p>
-                                                <a href="#"><img style=" width: 50px; height: 50px;"
-                                                        src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="carousel-item">
-
-                            <div class="container">
-                                <div class="carousel-caption ">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="text-bg">
-                                                <span>Keep Healthy</span>
-                                                <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
-                                                <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan
-                                                    mudah dan
-                                                    cepat hanya dengan melakukan beberapa klik pada smartphone anda.
-                                                    Maka kami akan
-                                                    siap datang kerumah anda dengan segera</p>
-                                                <a href="#"><img style=" width: 50px; height: 50px;"
-                                                        src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
-                                            </div>
-                                        </div>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="text-bg">
+                                        <span>Keep Healthy</span>
+                                        <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                        <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan
+                                            mudah dan
+                                            cepat hanya dengan melakukan beberapa klik pada smartphone anda.
+                                            Maka kami akan
+                                            siap datang kerumah anda dengan segera</p>
+                                        <a href="#"><img style=" width: 50px; height: 50px;" src="icon/playstore.png"
+                                                alt="#" />Dapatkan DI Google Play</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="carousel-item">
 
+                    <div class="container ">
+                        <div class="carousel-caption">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="text-bg">
+                                        <span>Keep Healthy</span>
+                                        <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                        <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan
+                                            mudah dan
+                                            cepat hanya dengan melakukan beberapa klik pada smartphone anda.
+                                            Maka kami akan
+                                            siap datang kerumah anda dengan segera</p>
+                                        <a href="#"><img style=" width: 50px; height: 50px;" src="icon/playstore.png"
+                                                alt="#" />Dapatkan DI Google Play</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
 
+                <div class="carousel-item">
 
-            </section>
+                    <div class="container">
+                        <div class="carousel-caption ">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="text-bg">
+                                        <span>Keep Healthy</span>
+                                        <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                        <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan rumah dengan
+                                            mudah dan
+                                            cepat hanya dengan melakukan beberapa klik pada smartphone anda.
+                                            Maka kami akan
+                                            siap datang kerumah anda dengan segera</p>
+                                        <a href="#"><img style=" width: 50px; height: 50px;" src="icon/playstore.png"
+                                                alt="#" />Dapatkan DI Google Play</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
+
+
+    </section>
+    </div>
     </header>
 
     <!-- Body Header Akhir -->
