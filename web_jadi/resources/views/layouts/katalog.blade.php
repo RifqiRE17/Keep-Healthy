@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
 
     <title>LAYANAN SERVICE</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/vendor_katalog/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<!--
+    <!--
   header
   
 
@@ -27,8 +28,8 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="/assets_katalog/css/fontawesome.css">
     <link rel="stylesheet" href="/assets_katalog/css/templatemo-sixteen.css">
     <link rel="stylesheet" href="/assets_katalog/css/owl.css">
-<!-- header Head Awal -->
-    
+    <!-- header Head Awal -->
+
     <!-- Header Awal -->
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
     <!-- bootstrap css -->
@@ -49,11 +50,11 @@ https://templatemo.com/tm-546-sixteen-clothing
     <script src="/js/modernizr-3.5.0.min.js"></script>
     <!-- Header Head Akhir -->
 
-  </head>
+</head>
 
-  <body>
-  <!-- Body Header Awal -->
-  <header>
+<body>
+    <!-- Body Header Awal -->
+    <header>
         <!-- header inner -->
         <div class="header-top-artikel">
             <div class="header" style="background-color:#0BF7C8;">
@@ -123,7 +124,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 </div>
             </div>
     </header>
-  <!-- Body Header Akhir -->
+    <!-- Body Header Akhir -->
 
     <!-- ***** Preloader Start ***** -->
     <!-- <div id="preloader">
@@ -139,169 +140,187 @@ https://templatemo.com/tm-546-sixteen-clothing
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
-    
+
     <!-- Page Content -->
     <!-- Banner Starts Here -->
     <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-          <div class="text-content">
-            <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
-          </div>
+        <div class="owl-banner owl-carousel">
+            <div class="banner-item-01">
+                <div class="text-content">
+                    <h4>Best Offer</h4>
+                    <h2>New Arrivals On Sale</h2>
+                </div>
+            </div>
+            <div class="banner-item-02">
+                <div class="text-content">
+                    <h4>Flash Deals</h4>
+                    <h2>Get your best products</h2>
+                </div>
+            </div>
+            <div class="banner-item-03">
+                <div class="text-content">
+                    <h4>Last Minute</h4>
+                    <h2>Grab last minute deals</h2>
+                </div>
+            </div>
         </div>
-        <div class="banner-item-02">
-          <div class="text-content">
-            <h4>Flash Deals</h4>
-            <h2>Get your best products</h2>
-          </div>
-        </div>
-        <div class="banner-item-03">
-          <div class="text-content">
-            <h4>Last Minute</h4>
-            <h2>Grab last minute deals</h2>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Banner Ends Here -->
 
     <div class="latest-products">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Latest Products</h2>
-              <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-          @foreach ($katalog as $item)
-          <div class="col-md-4">
-          
-            <div class="product-item">
-            
-              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-              <div class="down-content">
-                <a href="#"><h4> {{$item['nama']}}</h4></a>
-                <p>{{$item['layanan_servis']}}</p>
-                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}"> <span>{{$item['nomor']}}</span></a>
-                
-                
-                @foreach ($data as $item)
-                <h6>{{$item['harga_servis']}}</h6>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>List Layanan</h2>
+                        <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                @foreach ($katalog as $item)
+                <div class="col-md-4">
+
+                    <div class="product-item">
+
+                        <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
+                        <div class="down-content">
+                            <a href="#">
+                                <h4> {{$item['nama']}}</h4>
+                            </a>
+                            <p>{{$item['layanan_servis']}}</p>
+                            <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
+                                <span>{{$item['nomor']}}</span></a>
+
+
+                            @foreach ($data as $item)
+                            <h6>{{$item['harga_servis']}}</h6>
+                            @endforeach
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
                 @endforeach
-              
 
-              
-                
-               
-              
-               
-              </div>
-            </div>
-          </div>
-       @endforeach
+                @foreach ($katalog as $item)
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
+                        <div class="down-content">
+                            <a href="#">
+                                <h4> {{$item['nama']}}</h4>
+                            </a>
+                            <p>{{$item['layanan_servis']}}</p>
+                            <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
+                                <span>{{$item['nomor']}}</span></a>
 
-       @foreach ($katalog as $item)
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-              <div class="down-content">
-              <a href="#"><h4> {{$item['nama']}}</h4></a>
-                <p>{{$item['layanan_servis']}}</p>
-                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}"> <span>{{$item['nomor']}}</span></a>
-               
-                
-                
-                @foreach ($data as $item)
-                <h6>{{$item['harga_servis']}}</h6>
+
+
+                            @foreach ($data as $item)
+                            <h6>{{$item['harga_servis']}}</h6>
+                            @endforeach
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
                 @endforeach
-               
-            
-               
-              
-              </div>
-            </div>
-            
-          </div>
-          @endforeach
-          
 
-          @foreach ($katalog as $item)
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-              <div class="down-content">
-              <a href="#"><h4> {{$item['nama']}}</h4></a>
-                <p>{{$item['layanan_servis']}}</p>
-                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}"> <span>{{$item['nomor']}}</span></a>
-               
-               
-                <h6>{{$item['hargalayanan']}}</h6>
-           
-              
-              </div>
-            </div>
-          </div>
-          @endforeach
 
-          @foreach ($katalog as $item)
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-              <div class="down-content">
-              <a href="#"><h4> {{$item['nama']}}</h4></a>
-                <p>{{$item['layanan_servis']}}</p>
-                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}"> <span>{{$item['nomor']}}</span> </a>
-               
-              
-                <h6>{{$item['hargalayanan']}}</h6>
-                
-            
-              </div>
-            </div>
-          </div>
-          @endforeach
+                @foreach ($katalog as $item)
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
+                        <div class="down-content">
+                            <a href="#">
+                                <h4> {{$item['nama']}}</h4>
+                            </a>
+                            <p>{{$item['layanan_servis']}}</p>
+                            <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
+                                <span>{{$item['nomor']}}</span></a>
 
-          @foreach ($katalog as $item)
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-              <div class="down-content">
-              <a href="#"><h4> {{$item['nama']}}</h4></a>
-                <p>{{$item['layanan_servis']}}</p>
-                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">  <span>{{$item['nomor']}}</span></a>
-               
-               
-                <h6>{{$item['hargalayanan']}}</h6>
-              
-              
-              </div>
-            </div>
-          </div>
-          @endforeach
 
-          @foreach ($katalog as $item)
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-              <div class="down-content">
-              <a href="#"><h4> {{$item['nama']}}</h4></a>
-                <p>{{$item['layanan_servis']}}</p>
-                <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}"> <span>{{$item['nomor']}}</span></a>
-               
-                
-                <h6>{{$item['hargalayanan']}}</h6>
-              
-              
-              </div>
+                            <h6>{{$item['hargalayanan']}}</h6>
+
+
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+
+                @foreach ($katalog as $item)
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
+                        <div class="down-content">
+                            <a href="#">
+                                <h4> {{$item['nama']}}</h4>
+                            </a>
+                            <p>{{$item['layanan_servis']}}</p>
+                            <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
+                                <span>{{$item['nomor']}}</span> </a>
+
+
+                            <h6>{{$item['hargalayanan']}}</h6>
+
+
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+
+                @foreach ($katalog as $item)
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
+                        <div class="down-content">
+                            <a href="#">
+                                <h4> {{$item['nama']}}</h4>
+                            </a>
+                            <p>{{$item['layanan_servis']}}</p>
+                            <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
+                                <span>{{$item['nomor']}}</span></a>
+
+
+                            <h6>{{$item['hargalayanan']}}</h6>
+
+
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+
+                @foreach ($katalog as $item)
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
+                        <div class="down-content">
+                            <a href="#">
+                                <h4> {{$item['nama']}}</h4>
+                            </a>
+                            <p>{{$item['layanan_servis']}}</p>
+                            <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
+                                <span>{{$item['nomor']}}</span></a>
+
+
+                            <h6>{{$item['hargalayanan']}}</h6>
+
+
+                        </div>
+                    </div>
+                </div>
+                @endforeach
             </div>
-          </div>
-          @endforeach
         </div>
-      </div>
     </div>
-    
+
     <div id="gallery" class="Gallery">
         <div class="container">
             <div class="row display_boxflex">
@@ -396,7 +415,7 @@ https://templatemo.com/tm-546-sixteen-clothing
       </div>
     </div> -->
 
-    
+
     <!-- <footer>
       <div class="container">
         <div class="row">
@@ -510,28 +529,28 @@ https://templatemo.com/tm-546-sixteen-clothing
     <script src="/assets_katalog/js/accordions.js"></script>
 
     <script src="/js/jquery.min.js"></script>
-            <script src="/js/popper.min.js"></script>
-            <script src="/js/bootstrap.bundle.min.js"></script>
-            <script src="/js/jquery-3.0.0.min.js"></script>
-            <script src="/js/plugin.js"></script>
-            <!-- sidebar -->
-            <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
-            <script src="/js/custom.js"></script>
-            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
 
-    <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
-          t.style.color='#fff';
-          }
-      }
+    <script language="text/Javascript">
+    cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+    function clearField(t) { //declaring the array outside of the
+        if (!cleared[t.id]) { // function makes it static and global
+            cleared[t.id] = 1; // you could use true and false, but that's more typing
+            t.value = ''; // with more chance of typos
+            t.style.color = '#fff';
+        }
+    }
     </script>
 
 
-  </body>
+</body>
 
 </html>
