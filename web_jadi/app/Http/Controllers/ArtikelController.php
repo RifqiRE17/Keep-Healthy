@@ -14,10 +14,10 @@ class ArtikelController extends Controller
 
     public function artikel()
     {
-        $semuaartikel = uploadartikel::paginate(4);
-        $dataterbaruright = uploadartikel::latest()->get()->random(4); 
-        $dataterbaruleft = uploadartikel::latest()->get()->random(1);
-        $dataterbarunews = uploadartikel::latest()->get()->random(5);
+        $semuaartikel = uploadartikel::paginate();
+        $dataterbaruright = uploadartikel::all();
+        $dataterbaruleft = uploadartikel::all();
+        $dataterbarunews = uploadartikel::all();
         
     
         return view('Artikel.artikel',compact('dataterbaruright','dataterbaruleft','dataterbarunews','semuaartikel'));

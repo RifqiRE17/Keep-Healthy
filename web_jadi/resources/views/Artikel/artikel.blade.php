@@ -17,7 +17,7 @@
     <!-- Bootstrap CSS -->
     <link href="/css/style_Artikel.css" rel="stylesheet" />
 
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="/images/fevicon.png" type="/image/gif" />
     <!-- bootstrap css -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- style css -->
@@ -38,6 +38,10 @@
 
 <body>
     <!-- Header -->
+    <div class="loader_bg">
+        <div class="loader"><img src="/images/loading.gif" alt="#" /></div>
+    </div>
+
     <header>
         <!-- header inner -->
         <div class="header-top-artikel">
@@ -60,9 +64,9 @@
                                     <nav class="main-menu ">
                                         <ul class="menu-area-main">
                                             <li> <a href="{{ url('/home') }}">Halaman Awal</a> </li>
-
+                                            <li> <a href="/layouts/katalog">Layanan</a> </li>
                                             <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
-                                            <li> <a href="/Artikel/artikel">Artikel </a> </li>
+                                            <!-- <li> <a href="/Artikel/artikel">Artikel </a> </li> -->
                                             <!-- <li>
 
                                                 <a href="{{ route('login') }}" class="text-center">Login</a>
@@ -163,7 +167,7 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
     <!-- <div class="container-fluid pt-3">
     <div class="container animate-box" data-animate-effect="fadeIn">
         <div>
@@ -339,13 +343,13 @@
                     </div>
                 </div>
             </div> -->
+            </div>
+            <ul class="pagination justify-content-center mb-10">
+                {{ $semuaartikel->links() }}
+            </ul>
+
         </div>
-        <ul class="pagination justify-content-center mb-10">
-                            {{ $semuaartikel->links() }}
-                        </ul>
-        
     </div>
-</div>
 
 
     <div class="gototop js-top">
@@ -436,6 +440,17 @@
     </footr>
     <!-- Akhir Footer -->
 
+    <!-- Javascript files-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
     <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
@@ -449,6 +464,8 @@
     <script src="/js/jquery.waypoints.min.js"></script>
     <!-- Main -->
     <script src="/js/main.js"></script>
+
+
 
 </body>
 
