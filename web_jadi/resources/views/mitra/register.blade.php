@@ -27,9 +27,25 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
 
+    <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <script src="/js/modernizr-3.5.0.min.js"></script>
+
 </head>
 
 <body id="page-top">
+
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -117,9 +133,20 @@
         <!-- End of Content Wrapper -->
 
     </div>
+
     <!-- End of Page Wrapper -->
     @include('sweetalert::alert')
 
+
+
 </body>
+<script src="{{asset('js/popper.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('js/jquery-3.0.0.min.js')}}"></script>
+<script src="{{asset('js/plugin.js')}}"></script>
+<!-- sidebar -->
+<script src="{{asset('js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{asset('js/custom.js')}}"></script>
+<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
 </html>

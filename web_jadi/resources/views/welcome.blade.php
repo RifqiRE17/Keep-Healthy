@@ -62,7 +62,7 @@
                                     <nav class="main-menu ">
                                         <ul class="menu-area-main">
                                             <li> <a href="{{ url('/') }}">Halaman Awal</a> </li>
-
+                                            <li> <a href="/layouts/katalog">Layanan</a> </li>
                                             <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
                                             <li> <a href="Artikel/artikel">Artikel </a> </li>
                                             <li> <a href="{{ route('admin') }}"
@@ -270,7 +270,8 @@
                         <div class="titlepage">
                             <h2><br>Bersihkan Ruangan Rumah </h2>
                         </div>
-                        <p>Dan juga terdapat layanan untuk membersihkan ruangan yang terdapat pada rumah anda sehingga anda juga dapat memilih layanan ini saat anda membutuhkannya</p>
+                        <p>Dan juga terdapat layanan untuk membersihkan ruangan yang terdapat pada rumah anda sehingga
+                            anda juga dapat memilih layanan ini saat anda membutuhkannya</p>
                         <!-- <a href="Javascript:void(0)">Read More</a> -->
                     </div>
                 </div>
@@ -395,7 +396,7 @@
                             </div>
                         </form>
 
-                    <!-- </div>
+                        <!-- </div>
                     <div class="col-md-12 border_top">
                         <form class="news">
                             <h3>Newsletter</h3>
@@ -403,48 +404,49 @@
                             <button class="submit">Subscribe</button>
                         </form>
                     </div> -->
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                <div class="address">
-                                    <ul class="loca">
-                                        <li>
-                                            <a href="#"><img src="icon/loc.png" alt="#" /></a>Jember
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                    <div class="address">
+                                        <ul class="loca">
+                                            <li>
+                                                <a href="#"><img src="icon/loc.png" alt="#" /></a>Jember
 
-                                        <li>
+                                            <li>
 
-                                            <a href="https://api.whatsapp.com/send?phone=6287761675825"><img src="icon/call.png" alt="#" /></a>+6287761675825
+                                                <a href="https://api.whatsapp.com/send?phone=6287761675825"><img
+                                                        src="icon/call.png" alt="#" /></a>+6287761675825
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                    <ul class="social_link">
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                                         </li>
-                                        <li>
-                                            <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com
-                                        </li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                     </ul>
-
-
                                 </div>
                             </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                <ul class="social_link">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
+
                     </div>
 
                 </div>
+                <div class="container">
+                    <div class="copyright">
 
-            </div>
-            <div class="container">
-                <div class="copyright">
-
-                    <p>Keep Healthy</p>
+                        <p>Keep Healthy</p>
+                    </div>
                 </div>
             </div>
-        </div>
     </footr>
     <!-- end footer -->
     <!-- Javascript files-->

@@ -15,6 +15,21 @@
     <link rel="stylesheet" href="{{asset('template')}}/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('template')}}/dist/css/adminlte.min.css">
+
+    <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+
 </head>
 
 <body class="hold-transition login-page">
@@ -80,8 +95,7 @@
 
                     <div class="input-group mb-3">
                         <input id="nomor" type="number" class="form-control @error('nomor') is-invalid @enderror"
-                            name="nomor" value="{{ old('nomor') }}" placeholder="Nomor" required
-                            autocomplete="nomor">
+                            name="nomor" value="{{ old('nomor') }}" placeholder="Nomor" required autocomplete="nomor">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fa fa-phone"></span>
@@ -156,6 +170,15 @@
     <script src="{{asset('template')}}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="{{asset('template')}}/dist/js/adminlte.min.js"></script>
+
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

@@ -6,21 +6,22 @@
 	URL: https://freehtml5.co
 -->
 <html lang="en" class="no-js">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>KeepHealthy</title>
-    <link href="/css/media_query.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/media_query.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="/css/animate.css" rel="stylesheet" type="text/css"/>
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/css/animate.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link href="/css/owl.carousel.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/owl.theme.default.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="/css/owl.theme.default.css" rel="stylesheet" type="text/css" />
     <!-- Bootstrap CSS -->
-    <link href="/css/style_1.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/style_1.css" rel="stylesheet" type="text/css" />
     <!-- Modernizr JS -->
     <script src="/js/modernizr-3.5.0.min.js"></script>
     <!-- Css Header -->
@@ -43,13 +44,14 @@
 
     <!-- Akhir Css Header -->
 </head>
+
 <body class="single">
-<!-- Header -->
-<!-- Header -->
-<header>
+    <!-- Header -->
+    <!-- Header -->
+    <header>
         <!-- header inner -->
         <div class="header-top-artikel">
-            <div class="header"  style="background-color: #0BF7C8;">
+            <div class="header" style="background-color: #0BF7C8;">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col logo_section">
@@ -68,7 +70,7 @@
                                     <nav class="main-menu ">
                                         <ul class="menu-area-main">
                                             <li> <a href="{{ url('/home') }}">Halaman Awal</a> </li>
-
+                                            <li> <a href="/layouts/katalog">Layanan</a> </li>
                                             <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
                                             <li> <a href="/Artikel/artikel">Artikel </a> </li>
                                             <!-- <li>
@@ -115,28 +117,28 @@
                     </div>
                 </div>
             </div>
-</header>
+    </header>
 
-<!-- Akhir Header -->
-<div id="fh5co-title-box"  data-stellar-background-ratio="0.5">
-    <!-- <div class="overlay">
+    <!-- Akhir Header -->
+    <div id="fh5co-title-box" data-stellar-background-ratio="0.5">
+        <!-- <div class="overlay">
     <div class="fh5co_hover_news_img"> -->
- <img src="{{ asset('artikel/'. $artikel->upload_foto ) }}" style="margin-top:90px; width:100%; height:700px;" >
-    <!-- </div> -->
+        <img src="{{ asset('artikel/'. $artikel->upload_foto ) }}" style="margin-top:90px; width:100%; height:700px;">
+        <!-- </div> -->
     </div>
-      
-    
-</div>
-<div id="fh5co-single-content" class="container-fluid pb-4 pt-4 paddding" style="margin-top: 100px;">
-    <div class="container paddding">
-        <div class="row mx-0">
-            <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
-            <h2>{{ $artikel->namaartikel }}</h2>
-                <p>
-                    {!! $artikel->isiartikel !!}
-                </p>
-            </div>
-            <!-- <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+
+
+    </div>
+    <div id="fh5co-single-content" class="container-fluid pb-4 pt-4 paddding" style="margin-top: 100px;">
+        <div class="container paddding">
+            <div class="row mx-0">
+                <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+                    <h2>{{ $artikel->namaartikel }}</h2>
+                    <p>
+                        {!! $artikel->isiartikel !!}
+                    </p>
+                </div>
+                <!-- <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
                 <div>
                     <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Tags</div>
                 </div>
@@ -194,10 +196,10 @@
                     </div>
                 </div>
             </div> -->
+            </div>
         </div>
     </div>
-</div>
-<!-- <div class="container-fluid pb-4 pt-5">
+    <!-- <div class="container-fluid pb-4 pt-5">
     <div class="container animate-box">
         <div>
             <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Trending</div>
@@ -215,7 +217,7 @@
         </div>
     </div>
 </div> -->
-<!-- <div class="container-fluid fh5co_footer_bg pb-3">
+    <!-- <div class="container-fluid fh5co_footer_bg pb-3">
     <div class="container animate-box">
         <div class="row">
             <div class="col-12 spdp_right py-5"><img src="/imagess/white_logo.png" alt="img" class="footer_logo"/></div>
@@ -300,8 +302,8 @@
         </div>
     </div>
 </div> -->
-<!-- Footer -->
-<footr>
+    <!-- Footer -->
+    <footr>
         <div class="footer ">
             <div class="container">
                 <div class="row">
@@ -332,7 +334,7 @@
                             </div>
                         </form>
 
-                    <!-- </div>
+                        <!-- </div>
                     <div class="col-md-12 border_top">
                         <form class="news">
                             <h3>Newsletter</h3>
@@ -340,72 +342,77 @@
                             <button class="submit">Subscribe</button>
                         </form>
                     </div> -->
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                <div class="address">
-                                    <ul class="loca">
-                                        <li>
-                                            <a href="#"><img src="/icon/loc.png" alt="#" /></a>Jember
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                    <div class="address">
+                                        <ul class="loca">
+                                            <li>
+                                                <a href="#"><img src="/icon/loc.png" alt="#" /></a>Jember
 
-                                        <li>
+                                            <li>
 
-                                            <a href="#"><img src="/icon/call.png" alt="#" /></a>+6287761675825
+                                                <a href="#"><img src="/icon/call.png" alt="#" /></a>+6287761675825
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="/icon/email.png" alt="#" /></a>demo@gmail.com
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                    <ul class="social_link">
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                                         </li>
-                                        <li>
-                                            <a href="#"><img src="/icon/email.png" alt="#" /></a>demo@gmail.com
-                                        </li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                     </ul>
-
-
                                 </div>
                             </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                <ul class="social_link">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
+
                     </div>
 
                 </div>
+                <div class="container">
+                    <div class="copyright">
 
-            </div>
-            <div class="container">
-                <div class="copyright">
-
-                    <p>Keep Healthy</p>
+                        <p>Keep Healthy</p>
+                    </div>
                 </div>
             </div>
-        </div>
     </footr>
-<!-- Akhir Footer -->
+    <!-- Akhir Footer -->
 
 
-<div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
-</div>
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+    </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/owl.carousel.min.js"></script>
-<!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
-<!-- Waypoints -->
-<script src="/js/jquery.waypoints.min.js"></script>
-<!-- Parallax -->
-<script src="/js/jquery.stellar.min.js"></script>
-<!-- Main -->
-<script src="/js/main.js"></script>
-<script>if (!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)){$(window).stellar();}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script>
+    <!-- Waypoints -->
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <!-- Parallax -->
+    <script src="/js/jquery.stellar.min.js"></script>
+    <!-- Main -->
+    <script src="/js/main.js"></script>
+    <script>
+    if (!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+        $(window).stellar();
+    }
+    </script>
 
 </body>
+
 </html>

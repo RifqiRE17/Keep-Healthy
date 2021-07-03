@@ -156,7 +156,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                                                     Maka kami akan
                                                     siap datang kerumah anda dengan segera</p>
                                                 <a href="#"><img style=" width: 50px; height: 50px;"
-                                                        src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
+                                                        src="/icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
                                             </div>
                                         </div>
                                     </div>
@@ -179,7 +179,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                                                     Maka kami akan
                                                     siap datang kerumah anda dengan segera</p>
                                                 <a href="#"><img style=" width: 50px; height: 50px;"
-                                                        src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
+                                                        src="/icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
                                             </div>
                                         </div>
 
@@ -205,7 +205,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                                                     Maka kami akan
                                                     siap datang kerumah anda dengan segera</p>
                                                 <a href="#"><img style=" width: 50px; height: 50px;"
-                                                        src="icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
+                                                        src="/icon/playstore.png" alt="#" />Dapatkan DI Google Play</a>
                                             </div>
                                         </div>
                                     </div>
@@ -250,7 +250,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                    <a href="index.html"><img src="/images/logo.png" alt="#" /></a>
                                 </div>
                             </div>
                         </div>
@@ -284,7 +284,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                                                             Maka kami akan
                                                             siap datang kerumah anda dengan segera</p>
                                                         <a href="#"><img style=" width: 50px; height: 50px;"
-                                                                src="icon/playstore.png" alt="#" />Dapatkan DI Google
+                                                                src="/icon/playstore.png" alt="#" />Dapatkan DI Google
                                                             Play</a>
                                                     </div>
                                                 </div>
@@ -310,7 +310,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                                                             Maka kami akan
                                                             siap datang kerumah anda dengan segera</p>
                                                         <a href="#"><img style=" width: 50px; height: 50px;"
-                                                                src="icon/playstore.png" alt="#" />Dapatkan DI Google
+                                                                src="/icon/playstore.png" alt="#" />Dapatkan DI Google
                                                             Play</a>
                                                     </div>
                                                 </div>
@@ -339,7 +339,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                                                             Maka kami akan
                                                             siap datang kerumah anda dengan segera</p>
                                                         <a href="#"><img style=" width: 50px; height: 50px;"
-                                                                src="icon/playstore.png" alt="#" />Dapatkan DI Google
+                                                                src="/icon/playstore.png" alt="#" />Dapatkan DI Google
                                                             Play</a>
                                                     </div>
                                                 </div>
@@ -365,7 +365,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                             <div class="col-md-12">
                                 <div class="section-heading">
                                     <h2>List Layanan</h2>
-                                    <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+                                    <a href="products.html"><i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                             @foreach ($katalog as $item)
@@ -375,9 +375,9 @@ https://templatemo.com/tm-546-sixteen-clothing
 
                                     <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
                                     <div class="down-content">
-                                        <a href="#">
-                                            <h4> {{$item['nama']}}</h4>
-                                        </a>
+
+                                        <h4> {{$item['nama']}}</h4>
+
                                         <p>{{$item['layanan_servis']}}</p>
                                         <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
                                             <span>{{$item['nomor']}}</span></a>
@@ -403,9 +403,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                                 <div class="product-item">
                                     <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
                                     <div class="down-content">
-                                        <a href="#">
-                                            <h4> {{$item['nama']}}</h4>
-                                        </a>
+
+                                        <h4> {{$item['nama']}}</h4>
+
                                         <p>{{$item['layanan_servis']}}</p>
                                         <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
                                             <span>{{$item['nomor']}}</span></a>
@@ -431,9 +431,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                                 <div class="product-item">
                                     <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
                                     <div class="down-content">
-                                        <a href="#">
-                                            <h4> {{$item['nama']}}</h4>
-                                        </a>
+
+                                        <h4> {{$item['nama']}}</h4>
+
                                         <p>{{$item['layanan_servis']}}</p>
                                         <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
                                             <span>{{$item['nomor']}}</span></a>
@@ -452,9 +452,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                                 <div class="product-item">
                                     <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
                                     <div class="down-content">
-                                        <a href="#">
-                                            <h4> {{$item['nama']}}</h4>
-                                        </a>
+
+                                        <h4> {{$item['nama']}}</h4>
+
                                         <p>{{$item['layanan_servis']}}</p>
                                         <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
                                             <span>{{$item['nomor']}}</span> </a>
@@ -473,9 +473,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                                 <div class="product-item">
                                     <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
                                     <div class="down-content">
-                                        <a href="#">
-                                            <h4> {{$item['nama']}}</h4>
-                                        </a>
+
+                                        <h4> {{$item['nama']}}</h4>
+
                                         <p>{{$item['layanan_servis']}}</p>
                                         <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
                                             <span>{{$item['nomor']}}</span></a>
@@ -494,9 +494,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                                 <div class="product-item">
                                     <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
                                     <div class="down-content">
-                                        <a href="#">
-                                            <h4> {{$item['nama']}}</h4>
-                                        </a>
+
+                                        <h4> {{$item['nama']}}</h4>
+
                                         <p>{{$item['layanan_servis']}}</p>
                                         <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
                                             <span>{{$item['nomor']}}</span></a>
@@ -512,6 +512,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                         </div>
                     </div>
                 </div>
+                <ul class="pagination justify-content-center mb-10">
+                    {{ $katalog->links() }}
+                </ul>
 
                 <div id="gallery" class="Gallery">
                     <div class="container">
@@ -584,6 +587,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                         </div>
                     </div>
                 </div>
+
 
 
 
@@ -717,6 +721,8 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <!-- Bootstrap core JavaScript -->
                 <script src="/vendor_katalog/jquery/jquery.min.js"></script>
                 <script src="/vendor_katalog/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
 
 
                 <!-- Additional Scripts -->
