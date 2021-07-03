@@ -979,6 +979,15 @@ transition: all 0.3s ease-in;
      min-height: 980px;
 }
 
+.header-top-katalog {
+    background:url(../images/banner2layanan.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+   
+    min-height: 980px;
+}
+
 .header-top-artikel {
     padding-top: 0px;
    

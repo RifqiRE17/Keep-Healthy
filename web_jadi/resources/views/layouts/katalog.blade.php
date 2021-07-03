@@ -56,7 +56,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <!-- Body Header Awal -->
     <header>
         <!-- header inner -->
-        <div class="header-top">
+        <div class="header-top-katalog">
             <div class="header">
                 <div class="container">
                     <div class="row">
