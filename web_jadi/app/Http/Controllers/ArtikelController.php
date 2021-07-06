@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\uploadartikel;
 
 class ArtikelController extends Controller
+
 {
     public function __construct()
     {
