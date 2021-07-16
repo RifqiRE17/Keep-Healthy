@@ -103,15 +103,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
 
         <!-- /.content-wrapper -->
-        <!-- Main Footer -->
+
+        <!-- ./delete -->
         <footer class="main-footer">
             @include('Template.footer')
         </footer>
-    </div>
-    <!-- ./delete -->
-    <footer class="main-footer">
-        @include('Template.footer')
-    </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
         integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
