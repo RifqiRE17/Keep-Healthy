@@ -149,12 +149,12 @@
                                 alt="" />
                             <div class="fh5co_suceefh5co_height_position_absolute"></div>
                             <div class="fh5co_suceefh5co_height_position_absolute_font_2">
-                                <div style="position:relative; top:-48px;"><a href="#" class="color_fff"> <i
+                                <div style="position:relative; top:-150px;"><a href="#" class="color_fff"> <i
                                             class="fa fa-clock-o"></i>&nbsp;&nbsp;{{$item['tanggal_upload']}} </a></div>
-                                <div style="position:relative; top:-45px;"><a
+                                <div style="position:relative; top:-140px;"><a
                                         href="{{ url('/single', $item->namaartikel) }}" class="fh5co_good_font_2">
                                         {{$item['namaartikel']}} </a></div>
-                                <div class="fh5co_consectetur" style="color: white; position:relative; top:-40px; ">
+                                <div class="fh5co_consectetur" style="color: white; position:relative; top:-138px; ">
                                     {!!$isiartikel!!}
                                     <a href="{{ url('/single', $item->namaartikel) }}" style="color:aqua;">Readmore
                                     </a>
