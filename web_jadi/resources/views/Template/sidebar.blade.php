@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="#" class="brand-link">
 
         <span class="brand-text font-weight-light">Admin</span>
     </a>
@@ -63,8 +63,8 @@
                                 <p>Kategori</p>
                             </a>
                         </li>
-                        </ul>
-                        <ul class="nav nav-treeview">
+                    </ul>
+                    <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('data-artikel') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -72,7 +72,7 @@
                             </a>
                         </li>
                     </ul>
-                   
+
 
                 </li>
 
@@ -81,17 +81,17 @@
 
         <!-- <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> -->
-                <!-- Add icons to the links using the .nav-icon class
+        <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                <!-- <li class="nav-item menu-open">
+        <!-- <li class="nav-item menu-open">
                     <a href="#" class="nav-link active"> -->
 
-                        <!-- <p>
+        <!-- <p>
                             LAYANAN SERVICE
 
                         </p> -->
 
-                    <!-- </a>
+        <!-- </a>
                 
 
                     </a>
