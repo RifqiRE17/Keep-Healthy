@@ -17,6 +17,7 @@ class UploadgambarController extends Controller
         $keyword = $request->keyword;
         $dataGambar = Uploadgambar::where('nama', 'LIKE', '%'.$keyword.'%')
         ->orwhere('alamat', 'LIKE', '%'.$keyword.'%')
+        ->orwhere('layanan_servis', 'LIKE', '%'.$keyword.'%')
         ->paginate(4);
         $dataGambar->appends($request->all());
         // $dataGambar = Uploadgambar::latest()->paginate(2);

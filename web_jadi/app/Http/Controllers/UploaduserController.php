@@ -120,7 +120,7 @@ class UploadUserController extends Controller
         
 
         $dt = [
-            'nama' => $request['name'],
+            'name' => $request['name'],
             'email' => $request['email'],
             'nomor' => $request['nomor'],
             'alamat' => $request['alamat'],
