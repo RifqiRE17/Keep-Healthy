@@ -359,27 +359,41 @@ https://templatemo.com/tm-546-sixteen-clothing
                 </header>
                 <!-- Banner Ends Here -->
 
-                
+
 
                 <div class="latest-products">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
+                                <div class="container-fluid">
+                                    <h6 class="text-center display-4">Cari Layanan Yang Kamu Butuhkan!</h6>
+                                    <div class="row">
+                                        <div class="col-md-8 offset-md-2">
+                                            <form action="{{ url('layouts/katalog') }}" method="get">
+                                                <div class="input-group">
+                                                    <input type="search" name="keyword"
+                                                        class="form-control form-control-lg" placeholder="Pencarian">
+                                                    <div class="input-group-append">
+                                                        <button type="submit" class="btn btn-lg btn-default">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
                                 <div class="section-heading">
-                                    <h2>List Layanan</h2>
-                                    <div class="col-md-4">
-                            <form action="{{ url('layouts/katalog') }}" method="get">
-                                <div class="input-group custom-search-form">
-                                    <input type="text" name="keyword" class="form-control" placeholder="search">
-                                    <span class="input-group-btn">
-                                        <button type="submit" class="btn btn-primary">Pencarian</button>
-                                    </span>
+
+
+
+
                                 </div>
-                            </form>
-                        </div>
-                                    <a href="products.html"><i class="fa fa-angle-right"></i></a>
-                                </div>
+                                <h2>List Layanan</h2>
+
                             </div>
+
                             @foreach ($katalog as $item)
                             <div class="col-md-4">
 
@@ -410,7 +424,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                             </div>
                             @endforeach
 
-                         
+
                         </div>
                     </div>
                 </div>
@@ -593,14 +607,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
                                                 <ul class="social_link">
                                                     <li><a href="#"><i class="fa fa-facebook"
-                                                                aria-hidden="true"></i></a></li>
+                                                                aria-hidden="true"></i></a>
+                                                    </li>
                                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                                     </li>
                                                     <li><a href="#"><i class="fa fa-linkedin-square"
                                                                 aria-hidden="true"></i></a>
                                                     </li>
                                                     <li><a href="#"><i class="fa fa-instagram"
-                                                                aria-hidden="true"></i></a></li>
+                                                                aria-hidden="true"></i></a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
