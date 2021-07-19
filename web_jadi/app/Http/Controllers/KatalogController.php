@@ -19,9 +19,9 @@ class KatalogController extends Controller
         // $katalog = Katalog::with('harga_servis')->get();
         $data= Kategori::paginate(2);
         $keyword = $request->keyword;
-        $katalog = Katalog::where('nama', 'LIKE', '%'.$keyword.'%')
-        ->orwhere('alamat', 'LIKE', '%'.$keyword.'%')
-        ->paginate(2);
+        $katalog = Katalog::where('layanan_servis', 'LIKE', '%'.$keyword.'%')
+        ->orwhere('nama', 'LIKE', '%'.$keyword.'%')
+        ->paginate(6);
         $katalog->appends($request->all());
         return view('layouts.katalog',compact('katalog','data'));
     }

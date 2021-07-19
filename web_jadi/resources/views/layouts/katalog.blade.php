@@ -359,12 +359,24 @@ https://templatemo.com/tm-546-sixteen-clothing
                 </header>
                 <!-- Banner Ends Here -->
 
+                
+
                 <div class="latest-products">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-heading">
                                     <h2>List Layanan</h2>
+                                    <div class="col-md-4">
+                            <form action="{{ url('layouts/katalog') }}" method="get">
+                                <div class="input-group custom-search-form">
+                                    <input type="text" name="keyword" class="form-control" placeholder="search">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary">Pencarian</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
                                     <a href="products.html"><i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
@@ -398,117 +410,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                             </div>
                             @endforeach
 
-                            @foreach ($katalog as $item)
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-                                    <div class="down-content">
-
-                                        <h4> {{$item['nama']}}</h4>
-
-                                        <p>{{$item['layanan_servis']}}</p>
-                                        <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
-                                            <span>{{$item['nomor']}}</span></a>
-
-
-
-                                        @foreach ($data as $item)
-                                        <h6>{{$item['harga_servis']}}</h6>
-                                        @endforeach
-
-
-
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            @endforeach
-
-
-                            @foreach ($katalog as $item)
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-                                    <div class="down-content">
-
-                                        <h4> {{$item['nama']}}</h4>
-
-                                        <p>{{$item['layanan_servis']}}</p>
-                                        <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
-                                            <span>{{$item['nomor']}}</span></a>
-
-
-                                        <h6>{{$item['hargalayanan']}}</h6>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-
-                            @foreach ($katalog as $item)
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-                                    <div class="down-content">
-
-                                        <h4> {{$item['nama']}}</h4>
-
-                                        <p>{{$item['layanan_servis']}}</p>
-                                        <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
-                                            <span>{{$item['nomor']}}</span> </a>
-
-
-                                        <h6>{{$item['hargalayanan']}}</h6>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-
-                            @foreach ($katalog as $item)
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-                                    <div class="down-content">
-
-                                        <h4> {{$item['nama']}}</h4>
-
-                                        <p>{{$item['layanan_servis']}}</p>
-                                        <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
-                                            <span>{{$item['nomor']}}</span></a>
-
-
-                                        <h6>{{$item['hargalayanan']}}</h6>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-
-                            @foreach ($katalog as $item)
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-                                    <div class="down-content">
-
-                                        <h4> {{$item['nama']}}</h4>
-
-                                        <p>{{$item['layanan_servis']}}</p>
-                                        <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
-                                            <span>{{$item['nomor']}}</span></a>
-
-
-                                        <h6>{{$item['hargalayanan']}}</h6>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
+                         
                         </div>
                     </div>
                 </div>
