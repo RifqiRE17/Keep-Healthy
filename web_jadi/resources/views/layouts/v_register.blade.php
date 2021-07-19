@@ -37,7 +37,7 @@
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="../../index2.html" class="h2"><b>Register</b>User</a>
+                <a href="#" class="h2"><b>Register</b>User</a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Selamat Datang</p>
