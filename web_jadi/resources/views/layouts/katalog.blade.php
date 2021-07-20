@@ -30,6 +30,16 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="{{ asset('/assets_katalog/css/owl.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets_katalog/css/flex-slider.css') }}">
     <!-- header Head Awal -->
+    <link href="/assets_page/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="/assets_page/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="/assets_page/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets_page/css/custom.css">
+
+
 
     <!-- Header Awal -->
     <link rel="icon" href="/images/fevicon.png" type="image/gif" />
@@ -429,91 +439,92 @@ https://templatemo.com/tm-546-sixteen-clothing
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <ul class="pages">
-                        @include('pagination.default', ['paginator' => $katalog])
-                    </ul>
-                </div>
+
+                @include('pagination.default', ['paginator' => $katalog])
+
+
                 <!-- <ul class="pagination justify-content-center mb-10">
                     {{ $katalog->links() }}
                 </ul> -->
 
-                <div id="gallery" class="Gallery">
-                    <div class="container">
-                        <div class="row display_boxflex">
-                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
-                                        <div class="Gallery_img">
-                                            <figure><img src="/images/Gallery1.jpg" alt="#" /></figure>
-                                        </div>
-                                        <div class="hover_box">
+            </div>
 
-                                            <ul class="icon_hu">
-                                                <h3>Membersihkan Kaca</h3>
-                                                <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
-                                            </ul>
-                                        </div>
+            <div id="gallery" class="Gallery">
+                <div class="container">
+                    <div class="row display_boxflex">
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
+                                    <div class="Gallery_img">
+                                        <figure><img src="/images/Gallery1.jpg" alt="#" /></figure>
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
-                                        <div class="Gallery_img">
-                                            <figure><img src="/images/Gallery2.jpg" alt="#" /></figure>
-                                        </div>
-                                        <div class="hover_box">
+                                    <div class="hover_box">
 
-                                            <ul class="icon_hu">
-                                                <h3>Membersihkan Lantai</h3>
-                                                <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                        <ul class="icon_hu">
+                                            <h3>Membersihkan Kaca</h3>
+                                            <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
                                     <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
-                                            </ul>
-                                        </div>
+                                        </ul>
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott1">
-                                        <div class="Gallery_img">
-                                            <figure><img src="/images/Gallery3.jpg" alt="#" /></figure>
-                                        </div>
-                                        <div class="hover_box">
-
-                                            <ul class="icon_hu">
-                                                <h3>Membersihkan Kamar Mandi</h3>
-                                                <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
-                                            </ul>
-                                        </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
+                                    <div class="Gallery_img">
+                                        <figure><img src="/images/Gallery2.jpg" alt="#" /></figure>
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                        <div class="Gallery_img">
-                                            <figure><img src="/images/Gallery4.jpg" alt="#" /></figure>
-                                        </div>
-                                        <div class="hover_box">
+                                    <div class="hover_box">
 
-                                            <ul class="icon_hu">
-                                                <h3>Mencuci Baju</h3>
-                                                <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                        <ul class="icon_hu">
+                                            <h3>Membersihkan Lantai</h3>
+                                            <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
                                     <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
-                                            </ul>
-                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott1">
+                                    <div class="Gallery_img">
+                                        <figure><img src="/images/Gallery3.jpg" alt="#" /></figure>
+                                    </div>
+                                    <div class="hover_box">
+
+                                        <ul class="icon_hu">
+                                            <h3>Membersihkan Kamar Mandi</h3>
+                                            <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="Gallery_img">
+                                        <figure><img src="/images/Gallery4.jpg" alt="#" /></figure>
+                                    </div>
+                                    <div class="hover_box">
+
+                                        <ul class="icon_hu">
+                                            <h3>Mencuci Baju</h3>
+                                            <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                                <div class="Gallery_text">
-                                    <div class="titlepage">
-                                        <h2>Keep Healthy</h2>
-                                    </div>
-                                    <p>Kami akan melakukan pelayanan yang terbaik hingga anda puas</p>
-                                    <!-- <a href="Javascript:void(0)">Read More</a> -->
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="Gallery_text">
+                                <div class="titlepage">
+                                    <h2>Keep Healthy</h2>
                                 </div>
+                                <p>Kami akan melakukan pelayanan yang terbaik hingga anda puas</p>
+                                <!-- <a href="Javascript:void(0)">Read More</a> -->
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
 
 
-                <!-- <div class="call-to-action">
+            <!-- <div class="call-to-action">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -534,7 +545,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     </div> -->
 
 
-                <!-- <footer>
+            <!-- <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -548,16 +559,16 @@ https://templatemo.com/tm-546-sixteen-clothing
       </div>
     </footer> -->
 
-                <!-- Footer Awal -->
-                <footr>
-                    <div class="footer">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <form class="contact_bg">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <!-- <div class="titlepage">
+            <!-- Footer Awal -->
+            <footr>
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form class="contact_bg">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- <div class="titlepage">
                                         <h2>Contact us</h2>
                                     </div>
                                     <div class="col-md-12">
@@ -576,11 +587,11 @@ https://templatemo.com/tm-546-sixteen-clothing
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                         <button class="send">Send</button>
                                     </div> -->
-                                            </div>
                                         </div>
-                                    </form>
+                                    </div>
+                                </form>
 
-                                    <!-- </div>
+                                <!-- </div>
                     <div class="col-md-12 border_top">
                         <form class="news">
                             <h3>Newsletter</h3>
@@ -588,96 +599,94 @@ https://templatemo.com/tm-546-sixteen-clothing
                             <button class="submit">Subscribe</button>
                         </form>
                     </div> -->
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                        <div class="row">
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                                <div class="address">
-                                                    <ul class="loca">
-                                                        <li>
-                                                            <a href="#"><img src="/icon/loc.png" alt="#" /></a>Jember
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                            <div class="address">
+                                                <ul class="loca">
+                                                    <li>
+                                                        <a href="#"><img src="/icon/loc.png" alt="#" /></a>Jember
 
-                                                        <li>
+                                                    <li>
 
-                                                            <a href="https://api.whatsapp.com/send?phone=6287761675825"><img src="/icon/call.png"
-                                                                    alt="#" /></a>+6287761675825
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><img src="/icon/email.png"
-                                                                    alt="#" /></a>rifqierdiansyah@gmail.com
-                                                        </li>
-                                                    </ul>
-
-
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                                <ul class="social_link">
-                                                    <li><a href="#"><i class="fa fa-facebook"
-                                                                aria-hidden="true"></i></a>
+                                                        <a href="https://api.whatsapp.com/send?phone=6287761675825"><img
+                                                                src="/icon/call.png" alt="#" /></a>+6287761675825
                                                     </li>
-                                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                    </li>
-                                                    <li><a href="#"><i class="fa fa-linkedin-square"
-                                                                aria-hidden="true"></i></a>
-                                                    </li>
-                                                    <li><a href="#"><i class="fa fa-instagram"
-                                                                aria-hidden="true"></i></a>
+                                                    <li>
+                                                        <a href="#"><img src="/icon/email.png"
+                                                                alt="#" /></a>rifqierdiansyah@gmail.com
                                                     </li>
                                                 </ul>
+
+
                                             </div>
                                         </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                            <ul class="social_link">
+                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-linkedin-square"
+                                                            aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-
                                 </div>
 
                             </div>
-                            <div class="container">
-                                <div class="copyright">
 
-                                    <p>Keep Healthy</p>
-                                </div>
+                        </div>
+                        <div class="container">
+                            <div class="copyright">
+
+                                <p>Keep Healthy</p>
                             </div>
                         </div>
-                </footr>
-                <!-- Footer Akhir -->
+                    </div>
+            </footr>
+            <!-- Footer Akhir -->
 
 
-                <!-- Bootstrap core JavaScript -->
-                <script src="/vendor_katalog/jquery/jquery.min.js"></script>
-                <script src="/vendor_katalog/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script src="/vendor_katalog/jquery/jquery.min.js"></script>
+            <script src="/vendor_katalog/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
 
 
-                <!-- Additional Scripts -->
-                <script src="/assets_katalog/js/custom.js"></script>
-                <script src="/assets_katalog/js/owl.js"></script>
-                <script src="/assets_katalog/js/slick.js"></script>
-                <script src="/assets_katalog/js/isotope.js"></script>
-                <script src="/assets_katalog/js/accordions.js"></script>
+            <!-- Additional Scripts -->
+            <script src="/assets_katalog/js/custom.js"></script>
+            <script src="/assets_katalog/js/owl.js"></script>
+            <script src="/assets_katalog/js/slick.js"></script>
+            <script src="/assets_katalog/js/isotope.js"></script>
+            <script src="/assets_katalog/js/accordions.js"></script>
 
 
-                <script src="/js/popper.min.js"></script>
-                <script src="/js/bootstrap.bundle.min.js"></script>
-                <script src="/js/jquery-3.0.0.min.js"></script>
-                <script src="/js/plugin.js"></script>
-                <!-- sidebar -->
-                <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
-                <script src="/js/custom.js"></script>
-                <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js">
-                </script>
+            <script src="/js/popper.min.js"></script>
+            <script src="/js/bootstrap.bundle.min.js"></script>
+            <script src="/js/jquery-3.0.0.min.js"></script>
+            <script src="/js/plugin.js"></script>
+            <!-- sidebar -->
+            <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="/js/custom.js"></script>
+            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js">
+            </script>
 
 
-                <script language="text/Javascript">
-                cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-                function clearField(t) { //declaring the array outside of the
-                    if (!cleared[t.id]) { // function makes it static and global
-                        cleared[t.id] = 1; // you could use true and false, but that's more typing
-                        t.value = ''; // with more chance of typos
-                        t.style.color = '#fff';
-                    }
+            <script language="text/Javascript">
+            cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+            function clearField(t) { //declaring the array outside of the
+                if (!cleared[t.id]) { // function makes it static and global
+                    cleared[t.id] = 1; // you could use true and false, but that's more typing
+                    t.value = ''; // with more chance of typos
+                    t.style.color = '#fff';
                 }
-                </script>
+            }
+            </script>
 
 
 </body>
