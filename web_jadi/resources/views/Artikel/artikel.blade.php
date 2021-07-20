@@ -31,6 +31,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen">
 
+        <!-- page -->
+        <link href="/assets_page/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="/assets_page/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="/assets_page/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets_page/css/custom.css">
+
+
+    
+    <!-- Additional CSS Files -->
+    
+
 
     <!-- Modernizr JS -->
     <script src="/js/modernizr-3.5.0.min.js"></script>
@@ -344,9 +359,12 @@
                 </div>
             </div> -->
             </div>
-            <ul class="pagination justify-content-center mb-10">
+        
+            @include('pagination.default', ['paginator' => $semuaartikel])
+        
+            <!-- <ul class="pagination justify-content-center mb-10">
                 {{ $semuaartikel->links() }}
-            </ul>
+            </ul> -->
 
         </div>
     </div>

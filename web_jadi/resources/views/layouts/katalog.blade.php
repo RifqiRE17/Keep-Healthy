@@ -12,9 +12,8 @@
 
     <title>LAYANAN SERVICE</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/vendor_katalog/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!--
+    <!-- Bootstrap core CSS --
+    
   header
   
 
@@ -23,7 +22,7 @@ TemplateMo 546 Sixteen Clothing
 https://templatemo.com/tm-546-sixteen-clothing
 
 -->
-    <link href="{{ asset('/vendor_katalog/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="{{ asset('/assets_katalog/css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets_katalog/css/templatemo-sixteen.css') }}">
@@ -253,19 +252,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    <div class="header-top">
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col logo_section">
-                        <div class="full">
-                            <div class="center-desk">
-                                <div class="logo">
-                                    <a href="index.html"><img src="/images/logo.png" alt="#" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    
 
                     <!-- end header inner -->
 

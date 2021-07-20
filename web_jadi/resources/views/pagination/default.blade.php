@@ -26,21 +26,21 @@
 
 
  @if($paginator->lastPage() > 1)
- <div class="row">
+ <div class="row" >
      <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
          <div class="btn-group me-2" role="group" aria-label="First group">
-             <li> <a href="{{$paginator->url(1)}}"><button type="button"
+             <li> <a href="{{$paginator->url(1)}}"><button type="button" style="background-color:#6266EA;"
                          class="btn btn-secondary text-white">Previous</button></a></li>
          </div>
          @for($i = 1; $i <= $paginator->lastPage(); $i ++)
              @if ($paginator->currentPage() == $i)
              <div class="btn-group me-2" role="group" aria-label="Second group">
                  <li> <a href="{{$paginator->url($i) }}"> <button type="button"
-                             class="btn btn-light">{{$i}}</button></a></li>
+                             class="btn btn-light" style="background-color:#6266EA;">{{$i}}</button></a></li>
              </div>
              @else
              <div class="btn-group me-2" role="group" aria-label="Second group">
-                 <li> <a href="{{$paginator->url($i) }}"> <button type="button" class="btn btn-secondary text-white">
+                 <li> <a href="{{$paginator->url($i) }}"> <button type="button" class="btn btn-secondary text-white" style="background-color:#6266EA;">
                              {{$i}}
                          </button></a></li>
              </div>
@@ -48,7 +48,7 @@
              @endfor
              <div class="btn-group" role="group" aria-label="Third group">
                  <li> <a href="{{$paginator->url($paginator->lastPage())}}"> <button type="button"
-                             class="btn btn-secondary text-white">Next</button></a></li>
+                             class="btn btn-secondary text-white" style="background-color:#6266EA;">Next</button></a></li>
              </div>
      </div>
  </div>
