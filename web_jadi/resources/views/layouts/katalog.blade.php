@@ -23,11 +23,12 @@ TemplateMo 546 Sixteen Clothing
 https://templatemo.com/tm-546-sixteen-clothing
 
 -->
-
+    <link href="{{ asset('/vendor_katalog/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="/assets_katalog/css/fontawesome.css">
-    <link rel="stylesheet" href="/assets_katalog/css/templatemo-sixteen.css">
-    <link rel="stylesheet" href="/assets_katalog/css/owl.css">
+    <link rel="stylesheet" href="{{ asset('/assets_katalog/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets_katalog/css/templatemo-sixteen.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets_katalog/css/owl.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets_katalog/css/flex-slider.css') }}">
     <!-- header Head Awal -->
 
     <!-- Header Awal -->
@@ -428,9 +429,14 @@ https://templatemo.com/tm-546-sixteen-clothing
                         </div>
                     </div>
                 </div>
-                <ul class="pagination justify-content-center mb-10">
+                <div class="col-md-12">
+                    <ul class="pages">
+                        @include('pagination.default', ['paginator' => $katalog])
+                    </ul>
+                </div>
+                <!-- <ul class="pagination justify-content-center mb-10">
                     {{ $katalog->links() }}
-                </ul>
+                </ul> -->
 
                 <div id="gallery" class="Gallery">
                     <div class="container">
@@ -658,7 +664,8 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <!-- sidebar -->
                 <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
                 <script src="/js/custom.js"></script>
-                <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+                <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js">
+                </script>
 
 
                 <script language="text/Javascript">
