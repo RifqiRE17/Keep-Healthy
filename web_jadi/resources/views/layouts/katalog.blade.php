@@ -12,8 +12,9 @@
 
     <title>LAYANAN SERVICE</title>
 
-    <!-- Bootstrap core CSS --
-    
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor_katalog/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--
   header
   
 
@@ -22,7 +23,7 @@ TemplateMo 546 Sixteen Clothing
 https://templatemo.com/tm-546-sixteen-clothing
 
 -->
-    
+    <link href="{{ asset('/vendor_katalog/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="{{ asset('/assets_katalog/css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets_katalog/css/templatemo-sixteen.css') }}">
@@ -252,266 +253,267 @@ https://templatemo.com/tm-546-sixteen-clothing
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    
 
-                    <!-- end header inner -->
+    <!-- end header inner -->
 
-                    <!-- end header -->
-                    <section class="slider_section">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
+    <!-- end header -->
+    <section class="slider_section">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
 
-                                    <div class="container">
-                                        <div class="carousel-caption">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="text-bg">
-                                                        <span>Keep Healthy</span>
-                                                        <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
-                                                        <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan
-                                                            rumah dengan
-                                                            mudah dan
-                                                            cepat hanya dengan melakukan beberapa klik pada smartphone
-                                                            anda.
-                                                            Maka kami akan
-                                                            siap datang kerumah anda dengan segera</p>
-                                                        <a href="#"><img style=" width: 50px; height: 50px;"
-                                                                src="/icon/playstore.png" alt="#" />Dapatkan DI Google
-                                                            Play</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-
-                                    <div class="container ">
-                                        <div class="carousel-caption">
-
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="text-bg">
-                                                        <span>Keep Healthy</span>
-                                                        <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
-                                                        <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan
-                                                            rumah dengan
-                                                            mudah dan
-                                                            cepat hanya dengan melakukan beberapa klik pada smartphone
-                                                            anda.
-                                                            Maka kami akan
-                                                            siap datang kerumah anda dengan segera</p>
-                                                        <a href="#"><img style=" width: 50px; height: 50px;"
-                                                                src="/icon/playstore.png" alt="#" />Dapatkan DI Google
-                                                            Play</a>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="carousel-item">
-
-                                    <div class="container">
-                                        <div class="carousel-caption ">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="text-bg">
-                                                        <span>Keep Healthy</span>
-                                                        <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
-                                                        <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan
-                                                            rumah dengan
-                                                            mudah dan
-                                                            cepat hanya dengan melakukan beberapa klik pada smartphone
-                                                            anda.
-                                                            Maka kami akan
-                                                            siap datang kerumah anda dengan segera</p>
-                                                        <a href="#"><img style=" width: 50px; height: 50px;"
-                                                                src="/icon/playstore.png" alt="#" />Dapatkan DI Google
-                                                            Play</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-
-
-                    </section>
-                </div>
-                </header>
-                <!-- Banner Ends Here -->
-
-
-
-                <div class="latest-products">
                     <div class="container">
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="text-bg">
+                                        <span>Keep Healthy</span>
+                                        <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                        <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan
+                                            rumah dengan
+                                            mudah dan
+                                            cepat hanya dengan melakukan beberapa klik pada smartphone
+                                            anda.
+                                            Maka kami akan
+                                            siap datang kerumah anda dengan segera</p>
+                                        <a href="#"><img style=" width: 50px; height: 50px;" src="/icon/playstore.png"
+                                                alt="#" />Dapatkan DI Google
+                                            Play</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="container ">
+                        <div class="carousel-caption">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="text-bg">
+                                        <span>Keep Healthy</span>
+                                        <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                        <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan
+                                            rumah dengan
+                                            mudah dan
+                                            cepat hanya dengan melakukan beberapa klik pada smartphone
+                                            anda.
+                                            Maka kami akan
+                                            siap datang kerumah anda dengan segera</p>
+                                        <a href="#"><img style=" width: 50px; height: 50px;" src="/icon/playstore.png"
+                                                alt="#" />Dapatkan DI Google
+                                            Play</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="carousel-item">
+
+                    <div class="container">
+                        <div class="carousel-caption ">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="text-bg">
+                                        <span>Keep Healthy</span>
+                                        <h1>Dengan Hidup Sehat Segala Penyakit Bisa Dicegah</h1>
+                                        <p>Dengan aplikasi kami anda daoat menyewa jasa pembersihan
+                                            rumah dengan
+                                            mudah dan
+                                            cepat hanya dengan melakukan beberapa klik pada smartphone
+                                            anda.
+                                            Maka kami akan
+                                            siap datang kerumah anda dengan segera</p>
+                                        <a href="#"><img style=" width: 50px; height: 50px;" src="/icon/playstore.png"
+                                                alt="#" />Dapatkan DI Google
+                                            Play</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+    </div>
+    </header>
+    <!-- Banner Ends Here -->
+    <br>
+    <div class="latest-products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container-fluid">
+                        <center>
+                            <h6 class="text-center display-6" role="toolbar" aria-label="Toolbar with button groups"
+                                aria-label="First group">Cari
+                                Layanan Yang Kamu Butuhkan!</h6>
+                        </center>
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="container-fluid">
-                                    <h6 class="text-center display-4">Cari Layanan Yang Kamu Butuhkan!</h6>
-                                    <div class="row">
-                                        <div class="col-md-8 offset-md-2">
-                                            <form action="{{ url('layouts/katalog') }}" method="get">
-                                                <div class="input-group">
-                                                    <input type="search" name="keyword"
-                                                        class="form-control form-control-lg" placeholder="Pencarian">
-                                                    <div class="input-group-append">
-                                                        <button type="submit" class="btn btn-lg btn-default">
-                                                            <i class="fa fa-search"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </form>
+                            <div class="col-md-8 offset-md-2">
+                                <form action="{{ url('layouts/katalog') }}" method="get">
+                                    <div class="input-group">
+                                        <input type="search" name="keyword" class="form-control form-control-lg"
+                                            placeholder="Pencarian">
+                                        <div class="input-group-append">
+                                            <button type="submit" class="btn btn-lg btn-default">
+                                                <i class="fa fa-search"></i>
+                                            </button>
                                         </div>
                                     </div>
-                                </div>
-                                <br>
-                                <div class="section-heading">
-
-
-
-
-                                </div>
-                                <h2>List Layanan</h2>
-
+                                </form>
                             </div>
-
-                            @foreach ($katalog as $item)
-                            <div class="col-md-4">
-
-                                <div class="product-item">
-
-                                    <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
-                                    <div class="down-content">
-
-                                        <h4> {{$item['nama']}}</h4>
-
-                                        <p>{{$item['layanan_servis']}}</p>
-                                        <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
-                                            <span>{{$item['nomor']}}</span></a>
-
-
-                                        @foreach ($data as $item)
-                                        <h6>{{$item['harga_servis']}}</h6>
-                                        @endforeach
+                        </div>
+                    </div>
+                    <br>
+                    <div class="section-heading">
 
 
 
 
+                    </div>
+                    <h2>List Layanan</h2>
+
+                </div>
+
+                @foreach ($katalog as $item)
+                <div class="col-md-4">
+
+                    <div class="product-item">
+
+                        <a href="#"><img src="{{ asset('user/'. $item->foto ) }}" alt=""></a>
+                        <div class="down-content">
+
+                            <h4> {{$item['nama']}}</h4>
+
+                            <p>{{$item['layanan_servis']}}</p>
+                            <a href="https://api.whatsapp.com/send?phone=62{{$item['nomor']}}">
+                                <span>{{$item['nomor']}}</span></a>
 
 
-
-                                    </div>
-                                </div>
-                            </div>
+                            @foreach ($data as $item)
+                            <h6>{{$item['harga_servis']}}</h6>
                             @endforeach
 
 
+
+
+
+
+
                         </div>
                     </div>
                 </div>
+                @endforeach
 
-                @include('pagination.default', ['paginator' => $katalog])
+
+            </div>
+        </div>
+    </div>
+
+    @include('pagination.default', ['paginator' => $katalog])
 
 
-                <!-- <ul class="pagination justify-content-center mb-10">
+    <!-- <ul class="pagination justify-content-center mb-10">
                     {{ $katalog->links() }}
                 </ul> -->
 
-            </div>
+    </div>
 
-            <div id="gallery" class="Gallery">
-                <div class="container">
-                    <div class="row display_boxflex">
-                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
-                                    <div class="Gallery_img">
-                                        <figure><img src="/images/Gallery1.jpg" alt="#" /></figure>
-                                    </div>
-                                    <div class="hover_box">
+    <div id="gallery" class="Gallery">
+        <div class="container">
+            <div class="row display_boxflex">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
+                            <div class="Gallery_img">
+                                <figure><img src="/images/Gallery1.jpg" alt="#" /></figure>
+                            </div>
+                            <div class="hover_box">
 
-                                        <ul class="icon_hu">
-                                            <h3>Membersihkan Kaca</h3>
-                                            <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                <ul class="icon_hu">
+                                    <h3>Membersihkan Kaca</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
                                     <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
-                                    <div class="Gallery_img">
-                                        <figure><img src="/images/Gallery2.jpg" alt="#" /></figure>
-                                    </div>
-                                    <div class="hover_box">
-
-                                        <ul class="icon_hu">
-                                            <h3>Membersihkan Lantai</h3>
-                                            <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott1">
-                                    <div class="Gallery_img">
-                                        <figure><img src="/images/Gallery3.jpg" alt="#" /></figure>
-                                    </div>
-                                    <div class="hover_box">
-
-                                        <ul class="icon_hu">
-                                            <h3>Membersihkan Kamar Mandi</h3>
-                                            <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                    <div class="Gallery_img">
-                                        <figure><img src="/images/Gallery4.jpg" alt="#" /></figure>
-                                    </div>
-                                    <div class="hover_box">
-
-                                        <ul class="icon_hu">
-                                            <h3>Mencuci Baju</h3>
-                                            <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
-                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
-                                        </ul>
-                                    </div>
-                                </div>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="Gallery_text">
-                                <div class="titlepage">
-                                    <h2>Keep Healthy</h2>
-                                </div>
-                                <p>Kami akan melakukan pelayanan yang terbaik hingga anda puas</p>
-                                <!-- <a href="Javascript:void(0)">Read More</a> -->
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
+                            <div class="Gallery_img">
+                                <figure><img src="/images/Gallery2.jpg" alt="#" /></figure>
+                            </div>
+                            <div class="hover_box">
+
+                                <ul class="icon_hu">
+                                    <h3>Membersihkan Lantai</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott1">
+                            <div class="Gallery_img">
+                                <figure><img src="/images/Gallery3.jpg" alt="#" /></figure>
+                            </div>
+                            <div class="hover_box">
+
+                                <ul class="icon_hu">
+                                    <h3>Membersihkan Kamar Mandi</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="Gallery_img">
+                                <figure><img src="/images/Gallery4.jpg" alt="#" /></figure>
+                            </div>
+                            <div class="hover_box">
+
+                                <ul class="icon_hu">
+                                    <h3>Mencuci Baju</h3>
+                                    <!-- <li><a href="#"><img src="icon/h.png" alt="#" /></a></li>
+                                    <li><a href="#"><img src="icon/h.png" alt="#" /></a></li> -->
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="Gallery_text">
+                        <div class="titlepage">
+                            <h2>Keep Healthy</h2>
+                        </div>
+                        <p>Kami akan melakukan pelayanan yang terbaik hingga anda puas</p>
+                        <!-- <a href="Javascript:void(0)">Read More</a> -->
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
 
 
 
 
-            <!-- <div class="call-to-action">
+    <!-- <div class="call-to-action">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -532,7 +534,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     </div> -->
 
 
-            <!-- <footer>
+    <!-- <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -546,16 +548,16 @@ https://templatemo.com/tm-546-sixteen-clothing
       </div>
     </footer> -->
 
-            <!-- Footer Awal -->
-            <footr>
-                <div class="footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <form class="contact_bg">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <!-- <div class="titlepage">
+    <!-- Footer Awal -->
+    <footr>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="contact_bg">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- <div class="titlepage">
                                         <h2>Contact us</h2>
                                     </div>
                                     <div class="col-md-12">
@@ -574,11 +576,11 @@ https://templatemo.com/tm-546-sixteen-clothing
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                         <button class="send">Send</button>
                                     </div> -->
-                                        </div>
-                                    </div>
-                                </form>
+                                </div>
+                            </div>
+                        </form>
 
-                                <!-- </div>
+                        <!-- </div>
                     <div class="col-md-12 border_top">
                         <form class="news">
                             <h3>Newsletter</h3>
@@ -586,94 +588,93 @@ https://templatemo.com/tm-546-sixteen-clothing
                             <button class="submit">Subscribe</button>
                         </form>
                     </div> -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                            <div class="row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                            <div class="address">
-                                                <ul class="loca">
-                                                    <li>
-                                                        <a href="#"><img src="/icon/loc.png" alt="#" /></a>Jember
+                                    <div class="address">
+                                        <ul class="loca">
+                                            <li>
+                                                <a href="#"><img src="/icon/loc.png" alt="#" /></a>Jember
 
-                                                    <li>
+                                            <li>
 
-                                                        <a href="https://api.whatsapp.com/send?phone=6287761675825"><img
-                                                                src="/icon/call.png" alt="#" /></a>+6287761675825
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><img src="/icon/email.png"
-                                                                alt="#" /></a>rifqierdiansyah@gmail.com
-                                                    </li>
-                                                </ul>
+                                                <a href="https://api.whatsapp.com/send?phone=6287761675825"><img
+                                                        src="/icon/call.png" alt="#" /></a>+6287761675825
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="/icon/email.png"
+                                                        alt="#" /></a>rifqierdiansyah@gmail.com
+                                            </li>
+                                        </ul>
 
 
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                            <ul class="social_link">
-                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li><a href="#"><i class="fa fa-linkedin-square"
-                                                            aria-hidden="true"></i></a>
-                                                </li>
-                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
-
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                                    <ul class="social_link">
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-
                         </div>
-                        <div class="container">
-                            <div class="copyright">
 
-                                <p>Keep Healthy</p>
-                            </div>
-                        </div>
                     </div>
-            </footr>
-            <!-- Footer Akhir -->
+
+                </div>
+                <div class="container">
+                    <div class="copyright">
+
+                        <p>Keep Healthy</p>
+                    </div>
+                </div>
+            </div>
+    </footr>
+    <!-- Footer Akhir -->
 
 
-            <!-- Bootstrap core JavaScript -->
-            <script src="/vendor_katalog/jquery/jquery.min.js"></script>
-            <script src="/vendor_katalog/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor_katalog/jquery/jquery.min.js"></script>
+    <script src="/vendor_katalog/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
 
 
-            <!-- Additional Scripts -->
-            <script src="/assets_katalog/js/custom.js"></script>
-            <script src="/assets_katalog/js/owl.js"></script>
-            <script src="/assets_katalog/js/slick.js"></script>
-            <script src="/assets_katalog/js/isotope.js"></script>
-            <script src="/assets_katalog/js/accordions.js"></script>
+    <!-- Additional Scripts -->
+    <script src="/assets_katalog/js/custom.js"></script>
+    <script src="/assets_katalog/js/owl.js"></script>
+    <script src="/assets_katalog/js/slick.js"></script>
+    <script src="/assets_katalog/js/isotope.js"></script>
+    <script src="/assets_katalog/js/accordions.js"></script>
 
 
-            <script src="/js/popper.min.js"></script>
-            <script src="/js/bootstrap.bundle.min.js"></script>
-            <script src="/js/jquery-3.0.0.min.js"></script>
-            <script src="/js/plugin.js"></script>
-            <!-- sidebar -->
-            <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
-            <script src="/js/custom.js"></script>
-            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js">
-            </script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js">
+    </script>
 
 
-            <script language="text/Javascript">
-            cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-            function clearField(t) { //declaring the array outside of the
-                if (!cleared[t.id]) { // function makes it static and global
-                    cleared[t.id] = 1; // you could use true and false, but that's more typing
-                    t.value = ''; // with more chance of typos
-                    t.style.color = '#fff';
-                }
-            }
-            </script>
+    <script language="text/Javascript">
+    cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+    function clearField(t) { //declaring the array outside of the
+        if (!cleared[t.id]) { // function makes it static and global
+            cleared[t.id] = 1; // you could use true and false, but that's more typing
+            t.value = ''; // with more chance of typos
+            t.style.color = '#fff';
+        }
+    }
+    </script>
 
 
 </body>
