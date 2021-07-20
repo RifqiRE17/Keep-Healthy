@@ -173,3 +173,6 @@ Route::get('layouts/katalog', 'KatalogController@index');
 Route::group(['middleware' => ['auth','CekLevel:admin']], function() {
     Route::get('/admin','AdminController@index')->name('admin');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
