@@ -418,7 +418,7 @@
                                                         src="icon/call.png" alt="#" /></a>+6287761675825
                                             </li>
                                             <li>
-                                                <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com
+                                                <a href="#"><img src="icon/email.png" alt="#" /></a>rifqierdiansyah@gmail.com
                                             </li>
                                         </ul>
 

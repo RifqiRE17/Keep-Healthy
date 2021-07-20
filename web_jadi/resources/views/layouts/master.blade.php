@@ -177,7 +177,7 @@
                                                     </li>
                                                     <li>
                                                         <a href="#"><img src="icon/email.png"
-                                                                alt="#" /></a>demo@gmail.com
+                                                                alt="#" /></a>rifqierdiansyah@gmail.com
                                                     </li>
                                                 </ul>
 
