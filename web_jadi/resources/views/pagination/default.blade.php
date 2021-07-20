@@ -11,6 +11,6 @@
     @endfor
     <li><a href="{{$paginator->url($paginator->lastPage())}}"><i class="w3-bar-item w3-button w3-hover-black">>></i></a>
     </li>
-    </ul>
+
 
     @endif
