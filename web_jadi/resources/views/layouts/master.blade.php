@@ -27,11 +27,11 @@
 
     <!-- Dropdown -->
     <link rel="stylesheet" href="dropdown/styles.css">
-	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
- media="screen">
+        media="screen">
 
 
     <!--[if lt IE 9]>
@@ -73,42 +73,7 @@
                                             <li> <a href="/mitra/register">Menjadi Mitra</a> </li>
                                             <li> <a href="/Artikel/artikel">Artikel </a> </li>
                                             <li>
-                                            <div class="wrapper">
-    <div class="navbar">
-        <div class="right">
-            <ul>
-              <li>
-                <a style="color:white;" href="#">
-                {{ Auth::user()->name }} &nbsp; <i style="color:white;" class="fas fa-angle-down"></i>
-                </a>
-                 
-                <div style="color:#644def;" class="nav-item dropdown" >
-                    <ul>
-                      <li><a href="{{ url('profile') }}"><i class="fas fa-user"></i> Profile</a></li>
-                      <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fas fa-sign-out-alt"></i> Keluar</a></li>
-                      <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none"> @csrf </form>
-                  </ul>
-                </div>
-                
-              </li>
-          </ul>
-        </div>
-    </div>
-</div>
-                                            </li>
-                                            <!-- <li>
-
-                                                <a href="{{ route('login') }}" class="text-center">Login</a>
-
-                                            </li> -->
-                                            <!-- <li> -->
-                                                <!-- <li> <a href="concerts.html">Artikel </a> </li> -->
-                                                
-                                           
-  
-
-                                            
-                                            <!-- <li class="nav-item dropdown">
+                                            <li class="nav-item dropdown">
                                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
                                                     role="button" data-toggle="dropdown" aria-haspopup="true"
                                                     aria-expanded="false" v-pre>
@@ -116,15 +81,16 @@
                                                 </a>
 
                                                 <div class="dropdown-menu dropdown-menu-right"
-                                                    aria-labelledby="navbarDropdown">
-                                                    <a class="dropdown-item" style="background-color: grey; width: 100px; left:30px; position: relative;"
-                                                        href="{{ url('profile') }}">
+                                                    style="border-radius: 30px;" aria-labelledby=" navbarDropdown">
+                                                    <a class="dropdown-item" style="color:black;"
+                                                        href="{{ url('profile') }}"><i class="fas fa-user"></i>
                                                         Profil
                                                     </a>
-                                                    <br>
-                                                    <a class="dropdown-item" style="background-color: grey; border: radius 100px; border: 100px;"
+
+                                                    <a class="dropdown-item" style="color: black;"
                                                         href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                                     document.getElementById('logout-form').submit();"> <i
+                                                            class="fas fa-sign-out-alt"></i>
                                                         {{ __('Logout') }}
                                                     </a>
 
@@ -136,8 +102,45 @@
                                                         @csrf
                                                     </form>
                                                 </div>
-                                            </li> 
- -->
+                                            </li>
+
+                                            <!-- <li>
+
+                                                <a href="{{ route('login') }}" class="text-center">Login</a>
+
+                                            </li> -->
+                                            <!-- <li> -->
+                                            <!-- <li> <a href="concerts.html">Artikel </a> </li> -->
+
+
+
+
+
+
+
+                                            <!-- <a href="#" aria-haspopup="true" aria-expanded="false" v-pre>
+                                                    {{ Auth::user()->name }}
+                                                </a>
+                                                <ul>
+                                                    <div class="nav-item dropdown" aria-labelledby=" navbarDropdown">
+                                                        <li> <a class="dropdown-item" style="color: black;"
+                                                                href="{{ url('profile') }}"><i class="fas fa-user"></i>
+                                                                Profile</a></li>
+                                                        <li><a class="dropdown-item" style="color: black"
+                                                                href="{{ route('logout') }}"> <i
+                                                                    class="fas fa-sign-out-alt" onclick="event.preventDefault();
+                                                                document.getElementById('logout-form').submit();"></i>
+                                                                {{ __('Logout') }}
+                                                            </a></li>
+                                                        <form id="logout-form" action="{{ route('logout') }}"
+                                                            method="POST" class="d-none">
+                                                            @csrf
+                                                        </form>
+                                                    </div>
+                                                </ul>
+
+                                            </li> -->
+
 
 
                                             <!-- <li> <a class="last_manu" href="#"><img src="images/search_icon.png"
@@ -207,8 +210,8 @@
 
                                                     <li>
 
-                                                        <a href="https://api.whatsapp.com/send?phone=6287761675825"><img src="icon/call.png"
-                                                                alt="#" /></a>+6287761675825
+                                                        <a href="https://api.whatsapp.com/send?phone=6287761675825"><img
+                                                                src="icon/call.png" alt="#" /></a>+6287761675825
                                                     </li>
                                                     <li>
                                                         <a href="#"><img src="icon/email.png"
@@ -255,16 +258,17 @@
             <!-- sidebar -->
             <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
             <script src="js/custom.js"></script>
-            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js">
+            </script>
 
             <script src="gule/app.js"></script>
 
             <!-- Dropdown Script -->
             <script>
-	document.querySelector(".right ul li").addEventListener("click", function(){
-		  this.classList.toggle("active");
-	});
-</script>
+            document.querySelector(".right ul li").addEventListener("click", function() {
+                this.classList.toggle("active");
+            });
+            </script>
 
 
             @include('sweetalert::alert')
